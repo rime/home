@@ -1,3 +1,4 @@
+<% page.humble = page.source && page.source.match(/-update\/index\.md$/) %>
 <article class="<%= item.layout %>">
   <% if (item.photos){ %>
     <%- partial('post/gallery') %>
@@ -17,6 +18,7 @@
         <%- item.content %>
       <% } %>
     </div>
+<% if (!page.humble) { %>
     <footer>
       <% if (index){ %>
         <% if (item.excerpt){ %>
@@ -36,6 +38,7 @@
       <% } %>
       <div class="clearfix"></div>
     </footer>
+<% } %>
   </div>
 </article>
 
