@@ -1,4 +1,4 @@
-<% page.humble = page.source && page.source.match(/-update\/index\.md$/) %>
+<% page.humble = page.source && page.source.match(/\w+\/index\.md$/) %>
 <article class="<%= item.layout %>">
   <% if (item.photos){ %>
     <%- partial('post/gallery') %>
