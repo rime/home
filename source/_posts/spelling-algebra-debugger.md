@@ -40,23 +40,23 @@ Rime 希望這些不同的輸入形式是用家可以自定義的。如每一種
   * __node-webkit-v0.7.1-win-ia32.zip__ : node-webkit Windows 版本，或由 [node-webkit 主頁](https://github.com/rogerwang/node-webkit#downloads) 下載其他版本
   * __rimekit-1.0-preview20130827.nw__ : 用 node-webkit 的 `nw` 程序打開
 
-![Rime 工具箱](images/rimekit-00.png)
+![Rime 工具箱](/images/rimekit-00.png)
 
 # 用法
 
 以下一組屏幕截圖，演示本品常見的使用場景。
 
-![從輸入方案載入拼寫運算規則](images/sadebugger-01.png)
+![從輸入方案載入拼寫運算規則](/images/sadebugger-01.png)
 
-![用於格式化編碼行](images/sadebugger-02.png)
+![用於格式化編碼行](/images/sadebugger-02.png)
 
-![音節表上的投影運算](images/sadebugger-03.png)
+![音節表上的投影運算](/images/sadebugger-03.png)
 
-![高亮顯示當前運算產生的變更](images/sadebugger-04.png)
+![高亮顯示當前運算產生的變更](/images/sadebugger-04.png)
 
-![碼表式輸入法通常不做拼寫運算](images/sadebugger-05.png)
+![碼表式輸入法通常不做拼寫運算](/images/sadebugger-05.png)
 
-![回顯按鍵字符與倉頡字母並列](images/sadebugger-06.png)
+![回顯按鍵字符與倉頡字母並列](/images/sadebugger-06.png)
 
 # 技術
 
