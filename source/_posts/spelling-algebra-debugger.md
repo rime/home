@@ -60,6 +60,11 @@ Rime 希望這些不同的輸入形式是用家可以自定義的。如每一種
 
 # 技術
 
+Rime Kit 源代碼：
+https://github.com/lotem/rimekit
+
+開源許可證：MIT
+
 本品使用的開發技術有：
 
   * [AngularJS](http://angularjs.org)
