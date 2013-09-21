@@ -3,6 +3,8 @@
 menu:
   '主頁': /
   '歸檔': /archives
+  '【小狼毫】': /weasel-update
+  '【鼠鬚管】': /squirrel-update
 
 widgets:
 - search
