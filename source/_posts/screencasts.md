@@ -3,8 +3,7 @@ date: 2013-11-24 11:25:24
 tags:
 ---
 
-最近錄製了一些 [Rime 輸入法](http://code.google.com/p/rimeime/
-)的打字視頻：
+最近錄製了一些[Rime 輸入法](http://code.google.com/p/rimeime/)的打字視頻：
 
 * [重度輸入法控](#rime-con)
 * [中古漢語拼音輸入「鼠鬚管」](#rime-middle-chinese)
