@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 title: 【小狼毫】更新日誌
-date: 2013-12-22 19:00:00
+date: 2013-12-23 23:00:00
 ---
 
 RIME 主頁： http://code.google.com/p/rimeime/
@@ -9,6 +9,7 @@ RIME 主頁： http://code.google.com/p/rimeime/
 ---
 【小狼毫】變更集
 
+  * 變更：不再支持 Windows XP SP2，因升級編譯器以支持 C++11
   * 修復：輸入語言選爲中文（臺灣）在 Windows 8 系統上出現多餘的輸入法選項
   * 修復：升級安裝後，外觀設定介面未及時顯示出新增的配色方案
   * 修復：配色方案 Google+ 的預覽圖
