@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 title: 【鼠鬚管】更新日誌
-date: 2013-12-26 12:00:00
+date: 2014-03-30 12:00:00
 ---
 
 RIME 主頁： http://code.google.com/p/rimeime/
