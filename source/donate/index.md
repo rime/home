@@ -118,15 +118,20 @@ table {
 
 </style>
 
-## 捐贈方式
-
 很高興 Rime 輸入法能幫到您。
 
-時有 Rime 的用家通過小額捐贈的方式表達對 Rime 開發工作的支持和鼓勵。
-以下按鈕通往捐贈頁面：
+時有 Rime 的用家通過小額捐贈的方式寄來對 Rime 開發工作的支持和鼓勵。
 
-### 支付寶
+無論金額多少，都足夠表達您這份心意。謝謝！
+
+## 捐贈方式
+
+### [支付寶錢包](https://mobile.alipay.com/)掃描二維碼捐贈
+![掃描二維碼捐贈](/images/qr-donate.jpg)
+
+<!--
 [![去捐贈頁](https://img.alipay.com/sys/personalprod/style/mc/btn-index.png)](http://me.alipay.com/lotem)
+ -->
 
 ### PayPal
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -142,8 +147,6 @@ table {
 </form>
 
 ## 捐贈記錄
-
-無論金額多少都足夠表達您這份心意。非常感謝！
 
 |日期|寄語|捐贈者|捐贈金額|
 |--------------------|
