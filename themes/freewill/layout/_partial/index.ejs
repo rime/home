@@ -1,0 +1,37 @@
+<!-- _partial/index -->
+<div class="row page">
+
+	<% if (theme.widgets.length) { %>
+	<div class="col-md-9">
+	<% } else { %>
+	<div class="col-md-12">
+	<% } %>
+
+		<%- partial('post/slogan') %>
+
+		<div class="mypage">
+
+			<!-- title and entry -->
+			<div class="panel panel-default">
+				<% page.posts.each(function(item){ %>
+					<%- partial('post/title', {item: item, index: index}) %>
+					<%- partial('post/entry', {item: item, index: index}) %>
+				<% }); %>
+
+			</div>
+
+			<!-- pagination -->
+			<div>
+	  		<center>
+			<%- partial('index_pagination') %>
+	  		</center>
+			</div>
+	</div>
+
+	</div> <!-- col-md-9 -->
+
+	<% if (theme.widgets.length) { %>
+		<%- partial('sidebar') %>
+	<% } %>
+
+</div> <!-- row-fluid -->

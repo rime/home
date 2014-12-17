@@ -1,0 +1,23 @@
+<!-- _partial/post/title -->
+<div class="panel-heading">
+<% if (item.link) { %>
+	<% if (item.title){ %>
+		<h3 class="panel-title"><a href="<%- item.link %>" target="_blank"><%= item.title %></a></h1>
+	<% } else { %>
+		<h3 class="panel-title"><a href="<%- item.link %>" target="_blank"><%= item.link %></a></h1>
+	<% } %>
+<% } else { %>
+	<% if (index) { %>
+	<!-- display as entry -->
+		<h3 class="xtitle">
+			<a href="<%- config.root %><%- item.path %>" <% if(item.description) { %>title="<%= item.description %>"<% } %>><%= item.title %></a>
+			<span class="text-muted pull-right"><small> <%= item.date.format(config.date_format) %> </small></span>
+		</h3>
+	<% } else { %>
+  <!-- display as page -->
+		<div class="page-header">
+			<h1><% if (item.icon) { %> <i class="<%= item.icon %>"></i> <% } %> <% if (item.page_title) { %><%= item.page_title %><% }else{ %><%= item.title %><% } %></h1>
+		</div>
+	<% } %>
+<% } %>
+</div>

@@ -1,0 +1,10 @@
+<!-- _partial/post/category -->
+  <%
+  var cats = [];
+  item.categories.forEach(function(cat){
+    cats.push('<li><a href="' + config.root + cat.path + '">' + cat.name + '<span>' + cat.length  + '</span></a></li>');
+  });
+  %>
+  <li>
+    <%- cats.join(' ') %>
+  </li>

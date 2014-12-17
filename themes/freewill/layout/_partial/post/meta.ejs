@@ -1,0 +1,44 @@
+<!-- _partial/post/meta -->
+<div class="col-md-3"> 
+
+	<!-- date -->
+	<% if (item.date) { %>
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	<%= item.date.format(config.date_format) %>
+	</div>
+	<% } %>
+
+	<!-- categories -->
+    <% if (item.categories  && item.categories.length ) { %>
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+        <%- partial('category') %>
+    </ul>
+	</div>
+	<% } %>
+
+	<!-- tags -->
+	<% if(item.tags && item.tags.length ){ %>
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>
+    <ul id="tags" class="tag_box list-unstyled collapse in">
+	  <%- partial('tag') %>
+    </ul>
+	</div>
+	<% } %>
+
+	<!-- toc -->
+	<div class="meta-widget">
+	<% if(item.toc){ %>
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+			<%- toc(item.content, {class: "toc-article", list_number:false}) %>
+		</div>
+	<% } %>
+	</div>
+
+    <hr>
+
+</div><!-- col-md-3 -->

@@ -1,0 +1,14 @@
+<!-- _widget/tagcloud -->
+<% if (site.tags.length){ %>
+	<div class="widget">
+		<h4><%= __('tagcloud') %></h4>
+		<ul class="tag_box inline list-unstyled">
+		<% site.tags.random().limit(20).each(function(item){ %>
+			<li><a href="<%- config.root %><%- item.path %>"><%= item.name %><span><%= item.posts.length %></span></a></li>
+		<% }); %>
+		<% if (site.tags.length > 20) { %>
+		   <li><a href="/tags">...<span><%= site.tags.length %></span></a></li>
+		<% } %>
+		</ul>
+	</div>
+<% } %>

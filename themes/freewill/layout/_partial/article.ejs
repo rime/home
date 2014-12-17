@@ -1,0 +1,39 @@
+<!-- _partial/article -->
+
+<%- partial('post/title', {item: item, index: false}) %>
+
+<div class="row <% if (post) { %>post<% } else { %>page<% } %>">
+	<!-- cols -->
+	<% if (post) { %>
+	<div class="col-md-9">
+	<% } else { %>
+	<div class="col-md-12">
+	<% } %>
+
+	<% if (item.description) { %>
+		 <div class="alert alert-success description">
+			<i class="fa fa-info-circle"></i> <%- markdown(item.description) %>
+		</div> <!-- alert -->
+	<% } %>
+
+	<!-- content -->
+	<div class="mypage">
+	    <%- item.content %>
+	</div>
+
+	<div>
+  	<center>
+	<%- partial('post/pagination', {page: item}) %>
+    </center>
+	</div>
+
+	<!-- comment -->
+	<%- partial('post/comment', {page: item}) %>
+
+	</div> <!-- col-md-9/col-md-12 -->
+
+	<% if (post) { %>
+		<%- partial('post/meta', {item: item}) %>
+	<% } %>
+
+</div><!-- row -->
