@@ -15,10 +15,6 @@ menu:
     url: tags
     intro: "所有標籤"
     icon: "fa fa-tags"
-  - title: 【小狼毫】
-    url: weasel-update
-  - title: 【鼠鬚管】
-    url: squirrel-update
 
 links:
   - title: Rime on Github
