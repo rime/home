@@ -1,29 +1,33 @@
 bootswatch: flatly
 
-slogan: "A bootswatch theme."
+slogan: "聰明的輸入法懂我心意"
 
 menu:
-  - title: Archives
+  - title: 卷宗
     url: archives
-    intro: "All the articles."
+    intro: "全部文章"
     icon: "fa fa-archive"
-  - title: Categories
+  - title: 分類
     url: categories
-    intro: "All the categories."
+    intro: "所有分類"
     icon: "fa fa-folder"
-  - title: Tags
+  - title: 標籤
     url: tags
-    intro: "All the tags."
+    intro: "所有標籤"
     icon: "fa fa-tags"
+  - title: 【小狼毫】
+    url: weasel-update
+  - title: 【鼠鬚管】
+    url: squirrel-update
 
 links:
-  - title: Freemind
-    url: https://github.com/yieme/freewill/
-    intro: "Freewill's Github repository."
+  - title: Rime on Github
+    url: https://github.com/rimeime
+    intro: "Rime's Github repository."
     icon: "fa fa-github"
-  - title: "My Github"
-    url: http://www.github.com/yieme
-    intro: "My Github account."
+  - title: "佛振 @ Github"
+    url: http://www.github.com/lotem
+    intro: "Rime 開發者佛振"
     icon: "fa fa-github"
 
 widgets:

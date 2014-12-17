@@ -4,11 +4,11 @@
 
 # Site
 title: RIME | 中州韻輸入法引擎
-subtitle: Rime Input Method Engine
+subtitle: Rime 輸入法：思想用鍵盤表達
 description: Le blog de la Rime
 author: 佛振@式恕堂
 email: chen.sst@gmail.com
-language: zh-CN
+language: zh
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

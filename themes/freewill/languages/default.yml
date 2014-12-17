@@ -1,14 +1,15 @@
-categories: Categories
-search: Search
-tags: Tags
-tagcloud: "Tag Cloud"
-tweets: Tweets
-prev: Prev
-next: Next
-comment: Comments
-archive_a: Archives
-archive_b: "Archives: %s"
-page: "Page %d"
-recent_posts: "Recent Posts"
-description: Description
-read_more: "Read More"
+categories: 分類
+search: 檢索
+tags: 標籤
+tagcloud: 標籤雲
+tweets: 推文
+prev: 前葉
+next: 次葉
+comment: 留言
+archive_a: 卷宗
+archive_b: "卷宗：%s"
+page: "第 %d 葉"
+recent_posts: 新作
+links: 鏈接
+description: 描述
+read_more: 全文
