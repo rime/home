@@ -3,7 +3,7 @@ date: 2013-11-24 11:25:24
 tags:
 ---
 
-最近錄製了一些[Rime 輸入法](http://code.google.com/p/rimeime/)的打字視頻：
+最近錄製了一些[Rime 輸入法](https://rimeime.github.io)的打字視頻：
 
 * [重度輸入法控](#rime-con)
 * [中古漢語拼音輸入「鼠鬚管」](#rime-middle-chinese)
@@ -20,6 +20,8 @@ tags:
 * VirtualDub 用於編輯視頻、轉碼
 
 哈，純粹地用於學習和研究輸入法。音樂的神碼版權問題，看官都莫要深究啦。
+
+<!-- more -->
 
 # <a name="rime-con"></a>重度輸入法控
 

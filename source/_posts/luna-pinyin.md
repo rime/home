@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 title: 中秋與朙月拼音
 date: 2013-09-19 21:25:33
 tags:
@@ -16,6 +15,8 @@ patch:
 部署後，按 `Control+~` 切換到【朙月拼音】。
 
 ![此刻正在寫字的朙月拼音](/images/mingyue-pinyin-2013-09-19.png)
+
+<!-- more -->
 
 兩年前的中秋，【朙月拼音】[第一個版本](https://code.google.com/p/rimeime/downloads/detail?name=luna-pinyin-dev-251.zip)開發完成。
 
