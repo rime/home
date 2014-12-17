@@ -1,0 +1,39 @@
+bootswatch: cerulean
+
+slogan: "A bootswatch theme."
+
+menu:
+  - title: Archives
+    url: archives
+    intro: "All the articles."
+    icon: "fa fa-archive"
+  - title: Categories
+    url: categories
+    intro: "All the categories."
+    icon: "fa fa-folder"
+  - title: Tags
+    url: tags
+    intro: "All the tags."
+    icon: "fa fa-tags"
+
+links:
+  - title: Freemind
+    url: https://github.com/yieme/freewill/
+    intro: "Freewill's Github repository."
+    icon: "fa fa-github"
+  - title: "My Github"
+    url: http://www.github.com/yieme
+    intro: "My Github account."
+    icon: "fa fa-github"
+
+widgets:
+- search
+- category
+- tagcloud
+- recent_posts
+- links
+
+rss: true
+fancybox: true
+favicon: favicon.png
+google_analytics:

@@ -1,0 +1,6 @@
+<!-- index -->
+<div class="jumbotron page-header bg-primary">
+  <h1><% if (config.subtitle){ %><%= config.subtitle %><% } else { %><%= config.title %><% } %></h1>
+</div>
+
+<%- partial('_partial/index', {index: true}) %>

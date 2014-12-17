@@ -1,0 +1,11 @@
+<!-- _widget/links -->
+<% if (theme.links.length){ %>
+<div class="widget">
+	<h4>Links</h4>
+	<ul class="blogroll list-unstyled">
+	<% for (var i in theme.links){ %>
+		<li><i class="<%- theme.links[i].icon %>"></i><a href="<%- theme.links[i].url %>" title="<%- theme.links[i].intro %>" target="_blank"]);"><%= theme.links[i].title %></a></li>
+	<% } %>
+	</ul>
+</div>
+<% } %>
