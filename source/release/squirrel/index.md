@@ -1,11 +1,14 @@
 title: 【鼠鬚管】更新日誌
-date: 2014-03-30 12:00:00
+date: 2014-12-19 12:00:00
 ---
 
-RIME 主頁： https://rimeime.github.io
+RIME 主葉：https://rimeime.github.io
 
-鼠鬚管 0.9.26 <2014-12-16>
+鼠鬚管 0.9.26 <2014-12-19>
 ---
+
+下載：[Bintray](http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.zip) | [百度雲分享鏈接](http://yun.baidu.com/s/1mg2yDc8)
+sha1: c0c704169cae07d96cf465e3b60eae18daaa5332
 
 【鼠鬚管】變更集
 

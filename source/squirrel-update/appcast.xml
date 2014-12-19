@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
-<channel>
-    <title>【鼠鬚管】輸入法更新</title>
+  <channel>
+    <title>【鼠鬚管】輸入法更新頻道（僅更新至 0.9.26）</title>
     <link>http://rimeime.github.io/squirrel-update/appcast.xml</link>
-    <description>鼠鬚管Appcast更新頻道</description>
+    <description>鼠鬚管 Appcast 更新頻道，爲舊版本升級到過渡版本並遷移用戶詞典</description>
     <language>zh</language>
     <item>
-      <title>鼠鬚管 0.9.25</title>
+      <title>鼠鬚管 0.9.26</title>
       <sparkle:releaseNotesLink>http://rimeime.github.io/squirrel-update/</sparkle:releaseNotesLink>
       <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
-      <pubDate>Sat, 29 Mar 2014 21:00:00 +0800</pubDate>
-      <enclosure url="http://dl.bintray.com/lotem/rime/Squirrel-0.9.25.zip?direct"
-                 sparkle:version="0.9.25"
-                 sparkle:dsaSignature="MC0CFQCh3tWMqc+0de+b6m7Qk03TAgflogIUdyJF4Z8QOjhzJ9QS2S7WsVoBQ60="
-                 length="7932872"
+      <pubDate>Fri, 19 Dec 2014 12:00:00 +0800</pubDate>
+      <enclosure url="http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.zip"
+                 sparkle:version="0.9.26"
+                 sparkle:dsaSignature="MC0CFQCfRXFA0TRMuhqQw2WyEWx9MKamlQIUJOv65J7xrqwdElla55VvXT5Tru8="
+                 length="9578469"
                  type="application/octet-stream"/>
     </item>
   </channel>
