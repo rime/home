@@ -7,7 +7,7 @@ RIME 主葉：https://rimeime.github.io
 鼠鬚管 0.9.26.2 <2014-12-23>
 ---
 
-下載：[Bintray](http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.2.zip) | [百度雲分享鏈接](http://pan.baidu.com/s/1eQGil5S)
+下載：[Bintray](http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.2.zip) | [百度雲分享鏈接](http://pan.baidu.com/s/1bELzg)
 sha1: 8bd466d6219c6d145985afeb5f4999037a205dbc
 
   * 修復：安裝後輸入法在一些 app 中無法啓用 [#43](https://github.com/lotem/squirrel/issues/43)
