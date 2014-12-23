@@ -1,14 +1,19 @@
 title: 【鼠鬚管】更新日誌
-date: 2014-12-22 12:00:00
+date: 2014-12-23 12:00:00
 ---
 
 RIME 主葉：https://rimeime.github.io
 
-鼠鬚管 0.9.26.1 <2014-12-22>
+鼠鬚管 0.9.26.2 <2014-12-23>
 ---
 
-下載：[Bintray](http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.1.zip) | [百度雲分享鏈接](http://pan.baidu.com/s/1nPYAM)
-sha1: d6efabbaf4f16f7ecdf9b588e6bfdf81d06d51c1
+下載：[Bintray](http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.2.zip) | [百度雲分享鏈接](http://pan.baidu.com/s/1eQGil5S)
+sha1: 8bd466d6219c6d145985afeb5f4999037a205dbc
+
+  * 修復：安裝後輸入法在一些 app 中無法啓用 [#43](https://github.com/lotem/squirrel/issues/43)
+
+鼠鬚管 0.9.26.1 <2014-12-22>
+---
 
   * 修復：0.9.26 版本設置 `translator/enable_user_dict: false` 發生崩潰
 
