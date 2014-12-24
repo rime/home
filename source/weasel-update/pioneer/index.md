@@ -2,7 +2,7 @@ title: 【小狼毫】更新日誌
 date: 2014-03-31 00:00:00
 ---
 
-RIME 主葉：https://rimeime.github.io
+RIME 主葉：http://rimeime.github.io
 
 小狼毫 0.9.30 <2014-04-01>
 ---
