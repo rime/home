@@ -11,7 +11,10 @@
 	<!-- display as entry -->
 		<h3 class="xtitle">
 			<a href="<%- config.root %><%- item.path %>" <% if(item.description) { %>title="<%= item.description %>"<% } %>><%= item.title %></a>
-			<span class="text-muted pull-right"><small> <%= item.date.format(config.date_format) %> </small></span>
+			<span class="text-muted pull-right">
+				<small> <%= item.date.format(config.date_format) %> </small>
+				<small style="padding-left:1em;"><a href="<%- config.root %><%- item.path %>#disqus_thread"><%= __('comment') %></a></small>
+			</span>
 		</h3>
 	<% } else { %>
   <!-- display as page -->

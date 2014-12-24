@@ -7,6 +7,12 @@
 	<i class="fa fa-clock-o"></i>
 	<%= item.date.format(config.date_format) %>
 	</div>
+	<div>
+		<a href="<%- config.root %><%- item.path %>#disqus_thread">
+			<i class="fa fa-comments"></i>
+			<%= __('comment') %>
+		</a>
+	</div>
 	<% } %>
 
 	<!-- categories -->
