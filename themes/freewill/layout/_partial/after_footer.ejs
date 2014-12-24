@@ -8,7 +8,7 @@
 <script src="<%- config.root %>js/bootstrap.min.js"></script>
 <script src="<%- config.root %>js/main.js"></script>
 
-<% if (config.disqus_shortname){ %>
+<% if (config.disqus_shortname && page.comment){ %>
 <script type="text/javascript">
 var disqus_shortname = '<%= config.disqus_shortname %>';
 
