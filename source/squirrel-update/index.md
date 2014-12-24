@@ -20,7 +20,7 @@ RIME 主葉：https://rimeime.github.io
 ----------
 
 下載：[Bintray](http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.2.zip) | [百度雲分享鏈接](http://pan.baidu.com/s/1bELzg)
-sha1: 8bd466d6219c6d145985afeb5f4999037a205dbc
+<small style="color:#999;">sha1: 8bd466d6219c6d145985afeb5f4999037a205dbc</small>
 
 【鼠鬚管】變更集
 
