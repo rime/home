@@ -12,7 +12,7 @@ language: zh
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://rimeime.github.io
+url: http://rime.github.io
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
@@ -89,5 +89,5 @@ exclude_generator:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: github
-  repository: git@github.com:rimeime/rimeime.github.io.git
+  repository: git@github.com:rime/rime.github.io.git
   branch: master
