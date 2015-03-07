@@ -1,2 +1,2 @@
 # docs
-Rime Wiki
+Welcome to [Rime Wiki](https://github.com/rime/docs/wiki).
