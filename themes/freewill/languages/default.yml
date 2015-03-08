@@ -6,8 +6,8 @@ tweets: 推文
 prev: 前葉
 next: 次葉
 comment: 留言
-archive_a: 卷宗
-archive_b: "卷宗：%s"
+archive_a: 存檔
+archive_b: "存檔：%s"
 page: "第 %d 葉"
 recent_posts: 新作
 links: 鏈接

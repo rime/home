@@ -14,12 +14,14 @@ body {
 .content {
   padding: 20px;
   margin: 20px -20px; /* negative indent the amount of the padding to maintain the grid system */
+  /*
   -webkit-border-radius: 6px 6px 6px 6px;
   -moz-border-radius: 6px 6px 6px 6px;
   border-radius: 6px 6px 6px 6px;
   -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.75);
   -moz-box-shadow: 0 2px 102px rgba(0,0,0,.75);
   box-shadow: 0 2px 10px rgba(0,0,0,.75);
+  */
 }
 
 #sidebar {
@@ -213,6 +215,10 @@ img {
 /* =============================================================================
    Jumbotron
    ========================================================================== */
+
+.jumbotron {
+  background-color: #fff;
+}
 
 .jumbotron .logo {
   max-width: 33%;

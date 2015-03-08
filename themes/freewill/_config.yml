@@ -3,7 +3,7 @@ bootswatch: flatly
 slogan: "聰明的輸入法懂我心意"
 
 menu:
-  - title: 卷宗
+  - title: 存檔
     url: archives
     intro: "全部文章"
     icon: "fa fa-archive"
@@ -15,8 +15,32 @@ menu:
     url: tags
     intro: "所有標籤"
     icon: "fa fa-tags"
+#  - title: 代碼
+#    url: code
+#    icon: "fa fa-code"
+#  - title: 文檔
+#    url: docs
+#    icon: "fa fa-question-circle"
+#  - title: 下載
+#    url: download
+#    icon: "fa fa-download"
+  - title: 捐贈
+    url: donate
+    icon: "fa fa-heart"
+#  - title: 小狼毫
+#    url: release/weasel
+#    icon: "fa fa-windows"
+  - title: 鼠鬚管
+    url: release/squirrel
+    icon: "fa fa-apple"
+#  - title: ibus-rime
+#    url: release/rime
+#    icon: "fa fa-linux"
 
 links:
+  - title: Rime Wiki
+    url: https://github.com/rime/docs/wiki
+    icon: "fa fa-github"
   - title: Rime on Github
     url: https://github.com/rime
     intro: "Rime's Github repository."
