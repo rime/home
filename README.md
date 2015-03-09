@@ -1,2 +1,3 @@
-# docs
-Welcome to [Rime Wiki](https://github.com/rime/docs/wiki).
+# Rime::Home
+
+Welcome to [Rime Wiki](https://github.com/rime/home/wiki).
