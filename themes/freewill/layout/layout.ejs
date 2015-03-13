@@ -1,6 +1,9 @@
 <%- partial('_partial/head') %>
  <body>
   <%- partial('_partial/navigation') %>
+  <% if (path.indexOf('/') == -1) { %>
+    <%- partial('_partial/front_matter') %>
+  <% } %>
   <div class="container">
   	<div class="content">
     	 <%- body %>
