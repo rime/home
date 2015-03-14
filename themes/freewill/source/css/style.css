@@ -35,6 +35,18 @@ body {
    navbar
    ========================================================================== */
 
+.navbar-inverse {
+  background-color: #434343;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+  color: #3be6c4;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+  color: #3be6c4;
+}
+
 .navbar-brand {
   text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
   -webkit-transition: all .2s linear;
@@ -228,20 +240,17 @@ img {
 
 
 /* =============================================================================
-   Jumbotron
+   Front matter
    ========================================================================== */
 
-.jumbotron {
-  background-color: #fff;
-}
-
-.jumbotron .logo {
-  max-width: 25%;
-}
-
-.jumbotron .subtitle {
-  font-size: 1.5em;
-  margin: 10px auto;
+.front-matter {
+  margin-top: 0;
+  padding: 90px 0 60px;
+  background-color: #434343;
+  background-image: url(/images/home-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* =============================================================================
