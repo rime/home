@@ -80,6 +80,11 @@ li i {
    code
    ========================================================================== */
 
+figure.highlight {
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
 .panel-body figure.highlight {
   border-radius: 0;
   margin-left: -15px;
@@ -248,6 +253,10 @@ h1,h2,h3,h4,h5,h6 {
   font-weight:bold;
 }
 
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
 .page h3.title {
   position:relative;
 /*  padding: 2px 5px 5px 5px;
@@ -278,7 +287,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .page, .post{
-  line-height: 1.5em;
+  line-height: 1.8em;
 }
 
 .page .more {
