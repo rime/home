@@ -1,6 +1,6 @@
 bootswatch: flatly
 
-slogan: "聰明的輸入法懂我心意"
+slogan: 聰明的輸入法懂我心意
 
 menu:
   - title: 下載
@@ -16,7 +16,7 @@ menu:
     url: donate
     icon: "fa fa-heart"
   - title: 網誌
-    url: archives
+    url: blog
     intro: "全部文章"
     icon: "fa fa-book"
 #  - title: 分類
