@@ -12,7 +12,7 @@
 		<ul class="nav navbar-nav">
 		  <% theme.menu.forEach(function(m){ %>
 		  <li>
-			<a href="<%- config.root %><%- m.url %>" title="<%- m.intro %>">
+			<a href="<%- url_for(m.url) %>" title="<%- m.intro %>">
 			  <i class="<%- m.icon %>"></i><%- m.title %>
 			</a>
 		  </li>

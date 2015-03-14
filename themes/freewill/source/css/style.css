@@ -135,7 +135,7 @@ li i {
 
 .archive-title:before {
   font-family: FontAwesome;
-  content: '\f187  ';
+  content: '\f02d  ';
 }
 
 .archive-title-tag:before {
@@ -221,7 +221,7 @@ img {
 }
 
 .jumbotron .logo {
-  max-width: 33%;
+  max-width: 25%;
 }
 
 .jumbotron .subtitle {

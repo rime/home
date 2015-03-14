@@ -3,10 +3,10 @@ search: 檢索
 tags: 標籤
 tagcloud: 標籤雲
 tweets: 推文
-prev: 前葉
-next: 次葉
+prev: 後一篇
+next: 前一篇
 comment: 留言
-archive_a: 存檔
+archive_a: 網誌
 archive_b: "存檔：%s"
 page: "第 %d 葉"
 recent_posts: 新作
