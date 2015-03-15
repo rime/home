@@ -48,6 +48,12 @@ body {
 }
 
 .navbar-brand {
+  background-image: url('/images/logo.png');
+  background-repeat: no-repeat;
+  background-position: left 0.8em;
+  background-size: 1.5em;
+  padding-left: 2.2em;
+
   text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
   -webkit-transition: all .2s linear;
      -moz-transition: all .2s linear;
