@@ -1,8 +1,16 @@
 <!-- _partial/post/title -->
+<%
+(function () {
+  var subpath = item.path.replace(/\/index\.html$/, '');
+  item.icon =  _.result(_.find(theme.menu, function(m) {
+    return (m.url == subpath);
+  }), 'icon', '');
+})();
+%>
 <div class="panel-heading">
 <% if (item.link) { %>
 	<% if (item.title){ %>
-		<h3 class="panel-title"><a href="<%- item.link %>" target="_blank"><%= item.title %></a></h1>
+		<h3 class="panel-title <%- item.icon %>"><a href="<%- item.link %>" target="_blank"><%= item.title %></a></h1>
 	<% } else { %>
 		<h3 class="panel-title"><a href="<%- item.link %>" target="_blank"><%= item.link %></a></h1>
 	<% } %>
