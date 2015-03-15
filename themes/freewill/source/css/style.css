@@ -255,7 +255,7 @@ img {
   background-color: #434343;
   background-image: url(/images/home-background.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
 }
 
