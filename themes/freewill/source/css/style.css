@@ -284,7 +284,7 @@ img {
 .download,
 .feature {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 12px 18px;
 }
 
 .feature > div {
