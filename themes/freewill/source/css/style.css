@@ -263,7 +263,7 @@ img {
   margin-top: 0;
   padding: 90px 0 60px;
   background-color: #434343;
-  background-image: url(/images/home-background.png);
+  /*background-image: url(/images/home-background.png);*/
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
