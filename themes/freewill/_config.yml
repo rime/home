@@ -1,6 +1,6 @@
 bootswatch: flatly
 
-slogan:
+slogan: 思想用鍵盤表達
 
 menu:
   - title: 下載
@@ -17,8 +17,8 @@ menu:
     icon: "fa fa-heart"
   - title: 網誌
     url: blog
-    intro: "全部文章"
-    icon: "fa fa-book"
+    intro: "Rime::Blog"
+    icon: "fa fa-pencil-square-o"
 #  - title: 分類
 #    url: categories
 #    intro: "所有分類"

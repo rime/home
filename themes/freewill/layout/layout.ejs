@@ -1,7 +1,7 @@
 <%- partial('_partial/head') %>
  <body>
   <%- partial('_partial/navigation') %>
-  <% if (path.match(/^(blog\/)?index.html$/)) { %>
+  <% if (path == 'index.html') { %>
     <%- partial('_partial/front_matter') %>
   <% } %>
   <div class="container">
