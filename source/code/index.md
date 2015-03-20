@@ -1,4 +1,5 @@
-title: 代碼
+title: Rime with the Code
+icon: fa fa-code
 date: 2015-03-14 17:34:02
 ---
 
