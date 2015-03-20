@@ -5,7 +5,7 @@ slogan: 思想用鍵盤表達
 menu:
   - title: 下載
     url: download
-    icon: "fa fa-download"
+    icon: "fa fa-arrow-down"
   - title: 幫助
     url: docs
     icon: "fa fa-question-circle"

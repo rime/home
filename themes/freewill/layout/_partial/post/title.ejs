@@ -1,11 +1,11 @@
 <!-- _partial/post/title -->
 <%
-(function () {
+if (!item.icon) {
   var subpath = item.path.replace(/\/index\.html$/, '');
   item.icon =  _.result(_.find(theme.menu, function(m) {
     return (m.url == subpath);
   }), 'icon', '');
-})();
+}
 %>
 <div class="panel-heading">
 <% if (item.link) { %>
