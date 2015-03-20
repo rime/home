@@ -117,6 +117,46 @@ li i {
 
 
 /* =============================================================================
+   Blog
+   ========================================================================== */
+
+a {
+  color: #009bd1;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #009bd1;
+  text-decoration: underline;
+}
+
+.has-success .form-control,
+.has-success .form-control:focus {
+  border-color: #009bd1;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+  background-color: #009bd1;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+  background-color: #007cb2;
+}
+
+.pagination>.disabled>span,
+.pagination>.disabled>span:hover,
+.pagination>.disabled>span:focus,
+.pagination>.disabled>a,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>a:focus {
+  background-color: #88ccee;
+}
+
+/* =============================================================================
    code
    ========================================================================== */
 
