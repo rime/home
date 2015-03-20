@@ -36,15 +36,27 @@ body {
    ========================================================================== */
 
 .navbar-inverse {
-  background-color: #434343;
+  background-color: #37393d;
 }
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
-  color: #3be6c4;
+  color: #00bdff;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
-  color: #3be6c4;
+  color: #00bdff;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #00bdff;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: #00bdff;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #00bdff;
 }
 
 .navbar-brand {
@@ -262,7 +274,7 @@ img {
 .front-matter {
   margin-top: 0;
   padding: 90px 0 60px;
-  background-color: #434343;
+  background-color: #3f4144;
   /*background-image: url(/images/home-background.png);*/
   background-repeat: no-repeat;
   background-position: bottom;
@@ -272,6 +284,28 @@ img {
 /* =============================================================================
    Index page
    ========================================================================== */
+
+.btn-default {
+  background-color: #4f5356;
+  border-color: #4f5356;
+  border-radius: 4px;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+  background-color: #3f4144;
+  border-color: #3f4144;
+}
+
+.btn-primary {
+  background-color: #009bd1;
+  border-color: #009bd1;
+  border-radius: 4px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  background-color: #007cb2;
+  border-color: #007cb2;
+}
 
 .downloads,
 .features {

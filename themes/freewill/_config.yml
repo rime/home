@@ -6,12 +6,12 @@ menu:
   - title: 下載
     url: download
     icon: "fa fa-download"
-  - title: 文檔
+  - title: 幫助
     url: docs
     icon: "fa fa-question-circle"
-  - title: 代碼
+  - title: 源碼
     url: code
-    icon: "fa fa-code"
+    icon: "fa fa-github"
   - title: 捐贈
     url: donate
     icon: "fa fa-heart"
