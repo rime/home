@@ -362,11 +362,6 @@ hr.thin {
   margin: 12px;
 }
 
-.ending-panel {
-  background-color: #f0f0f0;
-  margin: 40px 0 80px;
-}
-
 .features {
   width: 860px;
   margin-left: auto;
@@ -380,11 +375,11 @@ hr.thin {
   height: 300px;
 }
 
-.feature :first-child {
+.feature .left {
   padding-right: 20px;
 }
 
-.feature .left, .feature .right {
+.feature > div {
   display: table-cell;
   float: none;
   vertical-align: middle;
@@ -414,6 +409,32 @@ hr.thin {
 
 .feature.delta .illustration {
   background-image: url(/images/home-feature-4.png);
+}
+
+.user-quotes {
+  background-color: #f0f0f0;
+  margin: 30px 0 80px;
+}
+
+.user-quotes .left {
+  padding: 30px 0;
+}
+
+.quote {
+  margin: 1.6em 0;
+}
+
+.quote:first-child {
+  margin-top: 0;
+}
+
+.quote-header p {
+  color: #808080;
+  margin-bottom: 0.5em;
+}
+
+.quote-content {
+  font-size: 1.4em;
 }
 
 /* =============================================================================

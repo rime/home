@@ -1,0 +1,15 @@
+beginner:
+  title: 開始使用
+  description: |
+    ABC
+    DEF
+intermediate:
+  title: 設計方案
+  description: |
+    Nice [logo](/images/logo.png)
+
+    And...
+advanced:
+  title: 破解源碼
+  description: |
+    `Code` and hacks.

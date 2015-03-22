@@ -1,10 +1,10 @@
 <!-- index -->
 <div class="downloads">
   <div class="download">
-    <a class="btn btn-lg btn-primary" href="<%- url_for('download/weasel/') %>"><i class="fa fa-windows"></i>〔小狼毫〕<small><%- site.data.rime.version.weasel %></small></a>
+    <a class="btn btn-lg btn-primary" href="<%- url_for('download/weasel/') %>"><i class="fa fa-windows"></i>〔小狼毫〕<small><%- site.data.versions.weasel %></small></a>
   </div>
   <div class="download">
-    <a class="btn btn-lg btn-primary" href="<%- url_for('download/squirrel/') %>"><i class="fa fa-apple"></i>〔鼠鬚管〕<small><%- site.data.rime.version.squirrel %></small></a>
+    <a class="btn btn-lg btn-primary" href="<%- url_for('download/squirrel/') %>"><i class="fa fa-apple"></i>〔鼠鬚管〕<small><%- site.data.versions.squirrel %></small></a>
   </div>
   <div class="download">
     <a class="btn btn-lg btn-default" href="https://github.com/rime/home/wiki/RimeWithTheCode"><i class="fa fa-code-fork"></i>&nbsp;&nbsp;複刻源碼</a>
@@ -15,17 +15,15 @@
   <div class="feature alpha">
     <div class="left illustration"></div>
     <div class="right">
-      <h3>A TODO feature</h3>
-      <p>A paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph.</p>
-      <p>Another paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph.</p>
+      <h3><%= site.data.features.beginner.title %></h3>
+      <%- markdown(site.data.features.beginner.description) %>
     </div>
   </div>
   <hr class="thin" />
   <div class="feature beta">
     <div class="left">
-      <h3>A TODO feature</h3>
-      <p>A paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph.</p>
-      <p>Another paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph.</p>
+      <h3><%= site.data.features.intermediate.title %></h3>
+      <%- markdown(site.data.features.intermediate.description) %>
     </div>
     <div class="right illustration"></div>
   </div>
@@ -33,19 +31,22 @@
   <div class="feature gamma">
     <div class="left illustration"></div>
     <div class="right">
-      <h3>A TODO feature</h3>
-      <p>A paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph.</p>
-      <p>Another paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph.</p>
+      <h3><%= site.data.features.advanced.title %></h3>
+      <%- markdown(site.data.features.advanced.description) %>
     </div>
   </div>
 </div>
-<div class="ending-panel">
+<div class="user-quotes">
   <div class="features">
     <div class="feature delta">
       <div class="left">
-        <h3>A TODO feature</h3>
-        <p>A paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph.</p>
-        <p>Another paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph.</p>
+        <% for (var i in site.data.user_quotes) { %>
+          <div class="quote">
+            <div class="quote-header"><%- markdown(site.data.user_quotes[i].header) %></div>
+            <div class="quote-content"><%- markdown(site.data.user_quotes[i].content) %></div>
+          </div>
+        <% } %>
+        <div><a target="_blank" href="https://github.com/rime/home/wiki/UserQuotes">更多說法 »</a></div>
       </div>
       <div class="right illustration"></div>
     </div>
