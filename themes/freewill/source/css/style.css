@@ -313,12 +313,12 @@ img {
 
 .front-matter {
   margin-top: 0;
-  padding: 90px 0 60px;
+  padding: 110px 0 80px;
   background-color: #3f4144;
-  /*background-image: url(/images/home-background.png);*/
+  background-image: url(/images/home-watermarks.png);
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+  background-position: center;
+  background-size: auto 95%;
 }
 
 /* =============================================================================
