@@ -1,10 +1,10 @@
 <!-- index -->
 <div class="downloads">
   <div class="download">
-    <a class="btn btn-lg btn-primary" href=""><i class="fa fa-windows"></i>〔小狼毫〕<small>0.9.30</small></a>
+    <a class="btn btn-lg btn-primary" href="<%- url_for('download/weasel/') %>"><i class="fa fa-windows"></i>〔小狼毫〕<small><%- site.data.rime.version.weasel %></small></a>
   </div>
   <div class="download">
-    <a class="btn btn-lg btn-primary" href=""><i class="fa fa-apple"></i>〔鼠鬚管〕<small>0.9.26</small></a>
+    <a class="btn btn-lg btn-primary" href="<%- url_for('download/squirrel/') %>"><i class="fa fa-apple"></i>〔鼠鬚管〕<small><%- site.data.rime.version.squirrel %></small></a>
   </div>
   <div class="download">
     <a class="btn btn-lg btn-default" href="https://github.com/rime/home/wiki/RimeWithTheCode"><i class="fa fa-code-fork"></i>&nbsp;&nbsp;複刻源碼</a>
