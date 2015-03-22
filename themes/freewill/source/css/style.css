@@ -312,21 +312,25 @@ img {
    ========================================================================== */
 
 .front-matter {
-  margin-top: 0;
-  padding: 110px 0 80px;
+  margin: 0;
+  padding: 150px 0 120px;
   background-color: #3f4144;
   background-image: url(/images/home-watermarks.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 95%;
+  background-size: auto 85%;
 }
 
 /* =============================================================================
    Index page
    ========================================================================== */
 
-hr.thin {
+.home hr {
   margin: 0;
+}
+
+.home .btn {
+  min-width: 240px;
 }
 
 .btn-default {
@@ -352,14 +356,15 @@ hr.thin {
 }
 
 .downloads {
-  width: 100%;
+  background-color: #f0f0f0;
   text-align: center;
-  margin: 40px 0;
+  padding: 60px 0;
+  width: 100%;
 }
 
 .download {
   display: inline-block;
-  margin: 12px;
+  margin: 12px 18px;
 }
 
 .features {

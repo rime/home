@@ -3,7 +3,9 @@
   <%- partial('_partial/navigation') %>
   <% if (is_home()) { %>
     <%- partial('_partial/front_matter') %>
-    <%- body %>
+    <div class="home">
+      <%- body %>
+    </div>
   <% } %>
   <div class="container">
     <% if (!is_home()) { %>
