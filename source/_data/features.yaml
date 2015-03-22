@@ -1,8 +1,10 @@
 beginner:
   title: 開始使用
   description: |
-    ABC
-    DEF
+    下載、安裝完成後，試試：
+    切換到 Rime 輸入法，按組合鍵 <code>Ctrl+`</code> 喚出輸入方案選單，調整 Rime 輸入法最常用的選項。
+    由此切換到朙月拼音、倉頡等已啓用的輸入方案。〔[說明書](https://github.com/rime/home/wiki/UserGuide)〕
+
 intermediate:
   title: 設計方案
   description: |
