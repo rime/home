@@ -15,14 +15,20 @@
   <div class="feature alpha">
     <div class="left illustration"></div>
     <div class="right">
-      <h3><%= site.data.features.beginner.title %></h3>
+      <h3>
+        <%= site.data.features.beginner.title %><br />
+        <small><%= site.data.features.beginner.subtitle %></small>
+      </h3>
       <%- markdown(site.data.features.beginner.description) %>
     </div>
   </div>
   <hr />
   <div class="feature beta">
     <div class="left">
-      <h3><%= site.data.features.intermediate.title %></h3>
+      <h3>
+        <%= site.data.features.intermediate.title %><br />
+        <small><%= site.data.features.intermediate.subtitle %></small>
+      </h3>
       <%- markdown(site.data.features.intermediate.description) %>
     </div>
     <div class="right illustration"></div>
@@ -31,7 +37,10 @@
   <div class="feature gamma">
     <div class="left illustration"></div>
     <div class="right">
-      <h3><%= site.data.features.advanced.title %></h3>
+      <h3>
+        <%= site.data.features.advanced.title %><br />
+        <small><%= site.data.features.advanced.subtitle %></small>
+      </h3>
       <%- markdown(site.data.features.advanced.description) %>
     </div>
   </div>

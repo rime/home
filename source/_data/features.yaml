@@ -1,17 +1,24 @@
 beginner:
-  title: 開始使用
+  title: 擊響中文之韻
+  subtitle: Rime Input Method Engine, rimes with your keystrokes.
   description: |
-    下載、安裝完成後，試試：
-    切換到 Rime 輸入法，按組合鍵 <code>Ctrl+`</code> 喚出輸入方案選單，調整 Rime 輸入法最常用的選項。
-    由此切換到朙月拼音、倉頡等已啓用的輸入方案。〔[說明書](https://github.com/rime/home/wiki/UserGuide)〕
+    下載、安裝完成後，切換到 Rime 輸入法，立即擊響中文之韻。
+    按組合鍵 <code>Ctrl+`</code> 喚出輸入方案選單，由此切換到朙月拼音、倉頡等已啓用的輸入方案。
+    亦可調整 Rime 輸入法最常用的選項。〔[說明書](https://github.com/rime/home/wiki/UserGuide)〕
 
 intermediate:
-  title: 設計方案
+  title: 設計輸入方案
+  subtitle: Rime with input schemata, and innovate.
   description: |
-    Nice [logo](/images/logo.png)
+    Rime 輸入方案貴在原創。
+    不止於拼音、注音、倉頡、速成、五筆、雙拼、粵拼、吳語、中古漢語拼音、五筆畫、Emoji、國際音標、宮保拼音……
+    讀《[方案設計書](https://github.com/rime/home/wiki/RimeWithSchemata)》，親手來創作，把輸入法變成理想的模樣。
 
-    And...
 advanced:
   title: 破解源碼
+  subtitle: Rime with the code, and contribute.
   description: |
-    `Code` and hacks.
+    [瞭解](https://github.com/rime/home/wiki/RimeWithTheDesign) Rime 解決已知輸入難題的技術方案；
+    動手 [複刻源碼](code)，增益其所不能。
+    合力打造功能更完備、擴展更容易的開源輸入法框架。
+
