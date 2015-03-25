@@ -418,7 +418,7 @@ img {
 
 .user-quotes {
   background-color: #f0f0f0;
-  margin: 30px 0 80px;
+  margin: 30px 0;
 }
 
 .user-quotes .left {
@@ -440,6 +440,15 @@ img {
 
 .quote-content {
   font-size: 1.4em;
+}
+
+.finale {
+  margin: 70px 0;
+  text-align: center;
+}
+
+.finale .download {
+  margin: 0 0 60px;
 }
 
 /* =============================================================================
