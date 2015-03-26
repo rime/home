@@ -42,5 +42,6 @@ function detectOSForDownloads() {
   if (os != 'unknown') {
     $('.os-unknown').addClass('hidden');
     $('.os-' + os).removeClass('hidden');
+    $('.downloads .footnote span.hidden').removeClass('hidden');
   }
 }

@@ -15,7 +15,10 @@
   <div class="download">
     <a class="btn btn-lg btn-default" href="<%- url_for('code') %>"><i class="fa fa-code-fork"></i>複刻源碼</a>
   </div>
-  <div class="footnote text-muted"><%- site.data.downloads.footnote %></div>
+  <div class="footnote text-muted">
+    <%- site.data.downloads.footnote %>
+    <span class="hidden">&nbsp;&nbsp;<a href="<%- url_for('download') %>">下載更多版本 »</a></span>
+  </div>
 </div>
 <hr />
 <div class="features">
