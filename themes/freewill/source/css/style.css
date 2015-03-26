@@ -312,6 +312,7 @@ img {
    ========================================================================== */
 
 .front-matter {
+  height: 460px;
   margin: 0;
   padding: 150px 0 120px;
   background-color: #3f4144;
