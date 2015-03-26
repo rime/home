@@ -330,7 +330,11 @@ img {
 }
 
 .home .btn {
-  min-width: 240px;
+  min-width: 250px;
+}
+
+.home .btn i {
+  margin-right: 0.6em;
 }
 
 .btn-default {
@@ -365,6 +369,10 @@ img {
 .download {
   display: inline-block;
   margin: 12px 18px;
+}
+
+.downloads .footnote {
+  margin-top: 24px;
 }
 
 .features {

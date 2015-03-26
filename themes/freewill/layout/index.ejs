@@ -1,14 +1,21 @@
 <!-- index -->
 <div class="downloads">
-  <div class="download">
-    <a class="btn btn-lg btn-primary" href="<%- url_for('download/weasel') %>"><i class="fa fa-windows"></i>〔小狼毫〕<small><%- site.data.versions.weasel %></small></a>
+  <div class="download os-windows hidden">
+    <a class="btn btn-lg btn-primary" href="<%- url_for(site.data.downloads.weasel.url) %>"><i class="fa fa-windows"></i>【<%= site.data.downloads.weasel.name %>】<small><%= site.data.downloads.weasel.version %></small></a>
+  </div>
+  <div class="download os-mac hidden">
+    <a class="btn btn-lg btn-primary" href="<%- url_for(site.data.downloads.squirrel.url) %>"><i class="fa fa-apple"></i>【<%= site.data.downloads.squirrel.name %>】<small><%= site.data.downloads.squirrel.version %></small></a>
+  </div>
+  <div class="download os-linux hidden">
+    <a class="btn btn-lg btn-primary" href="<%- url_for('download#linux') %>"><i class="fa fa-linux"></i>安裝到 Linux</a>
+  </div>
+  <div class="download os-unknown">
+    <a class="btn btn-lg btn-primary" href="<%- url_for('download') %>"><i class="fa fa-arrow-down"></i>下載 Rime 輸入法</a>
   </div>
   <div class="download">
-    <a class="btn btn-lg btn-primary" href="<%- url_for('download/squirrel') %>"><i class="fa fa-apple"></i>〔鼠鬚管〕<small><%- site.data.versions.squirrel %></small></a>
+    <a class="btn btn-lg btn-default" href="<%- url_for('code') %>"><i class="fa fa-code-fork"></i>複刻源碼</a>
   </div>
-  <div class="download">
-    <a class="btn btn-lg btn-default" href="<%- url_for('code') %>"><i class="fa fa-code-fork"></i>&nbsp;&nbsp;複刻源碼</a>
-  </div>
+  <div class="footnote text-muted"><%- site.data.downloads.footnote %></div>
 </div>
 <hr />
 <div class="features">
@@ -55,7 +62,7 @@
             <div class="quote-content"><%- markdown(site.data.user_quotes[i].content) %></div>
           </div>
         <% } %>
-        <div><a target="_blank" href="https://github.com/rime/home/wiki/UserQuotes">更多說法 »</a></div>
+        <div><a href="https://github.com/rime/home/wiki/UserQuotes">更多說法 »</a></div>
       </div>
       <div class="right illustration"></div>
     </div>
@@ -63,7 +70,7 @@
 </div>
 <div class="finale">
   <div class="download">
-    <a class="btn btn-lg btn-primary" href="<%- url_for('download') %>"><i class="fa fa-arrow-down"></i> 下載 Rime 輸入法</a>
+    <a class="btn btn-lg btn-primary" href="<%- url_for('download') %>"><i class="fa fa-arrow-down"></i>下載 Rime 輸入法</a>
   </div>
   <p>今天不想打字？一閱《<a href="https://github.com/rime/home/wiki/MoodCollection">Rime 心情集</a>》。</p>
   <p>純粹地喜歡？您可以通過 <a href="<%- url_for('donate') %>">捐贈</a>，支持開發者爲 Rime 投入更大的努力。</p>
