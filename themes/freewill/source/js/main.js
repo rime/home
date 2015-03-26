@@ -1,5 +1,6 @@
 $(document).ready(function() {
   setupScrolling();
+  detectOSForDownloads();
 });
 
 function setupScrolling() {
@@ -25,4 +26,21 @@ function setupScrolling() {
       $(".navbar").fadeTo(100, 0.2);
     }
   });
+}
+
+function getOSName() {
+  var os = "unknown";
+  if (~navigator.appVersion.indexOf("Win")) os = "windows";
+  else if (~navigator.appVersion.indexOf("Mac")) os = "mac";
+  else if (~navigator.appVersion.indexOf("Linux")) os = "linux";
+  //else if (~navigator.appVersion.indexOf("X11")) os = "unix";
+  return os;
+}
+
+function detectOSForDownloads() {
+  var os = getOSName();
+  if (os != 'unknown') {
+    $('.os-unknown').addClass('hidden');
+    $('.os-' + os).removeClass('hidden');
+  }
 }
