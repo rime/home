@@ -1,10 +1,10 @@
 <!-- index -->
 <div class="downloads">
   <div class="download os-windows hidden">
-    <a class="btn btn-lg btn-primary" href="<%- url_for(site.data.downloads.weasel.url) %>"><i class="fa fa-windows"></i>【<%= site.data.downloads.weasel.name %>】<small><%= site.data.downloads.weasel.version %></small></a>
+    <a class="btn btn-lg btn-primary" href="<%- url_for(site.data.downloads.weasel.url) %>"><i class="fa fa-windows"></i><%= site.data.downloads.weasel.name %><small><%= site.data.downloads.weasel.version %></small></a>
   </div>
   <div class="download os-mac hidden">
-    <a class="btn btn-lg btn-primary" href="<%- url_for(site.data.downloads.squirrel.url) %>"><i class="fa fa-apple"></i>【<%= site.data.downloads.squirrel.name %>】<small><%= site.data.downloads.squirrel.version %></small></a>
+    <a class="btn btn-lg btn-primary" href="<%- url_for(site.data.downloads.squirrel.url) %>"><i class="fa fa-apple"></i><%= site.data.downloads.squirrel.name %><small><%= site.data.downloads.squirrel.version %></small></a>
   </div>
   <div class="download os-linux hidden">
     <a class="btn btn-lg btn-primary" href="<%- url_for('download#linux') %>"><i class="fa fa-linux"></i>安裝到 Linux</a>
