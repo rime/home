@@ -1,6 +1,6 @@
 # Hexo-Theme-Freewill
 
-A [Hexo](http://zespia.tw/hexo/) [bootstrap](http://getbootstrap.com) theme based on [freewill](https://github.com/wzpan/hexo-theme-freewill). [Freewill](https://github.com/yieme/hexo-theme-freewill) aims at fully taking advantages of Bootstrap and the strengths of freewill with an styling adjusted for personal preference.
+A [Hexo](http://hexo.io/) [bootstrap](http://getbootstrap.com) theme based on [freewill](https://github.com/wzpan/hexo-theme-freewill). [Freewill](https://github.com/yieme/hexo-theme-freewill) aims at fully taking advantages of Bootstrap and the strengths of freewill with an styling adjusted for personal preference.
 
 ## Features
 
