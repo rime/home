@@ -363,7 +363,8 @@ img {
 .downloads {
   background-color: #f0f0f0;
   text-align: center;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   width: 100%;
 }
 

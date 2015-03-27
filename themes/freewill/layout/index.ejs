@@ -1,5 +1,5 @@
 <!-- index -->
-<div class="downloads">
+<div class="downloads container">
   <div class="download os-windows hidden">
     <a class="btn btn-lg btn-primary" href="<%- url_for(site.data.downloads.weasel.url) %>"><i class="fa fa-windows"></i><%= site.data.downloads.weasel.name %> <small><%= site.data.downloads.weasel.version %></small></a>
   </div>
@@ -21,7 +21,7 @@
   </div>
 </div>
 <hr />
-<div class="features">
+<div class="features container">
   <div class="feature alpha">
     <div class="left illustration"></div>
     <div class="right">
@@ -56,7 +56,7 @@
   </div>
 </div>
 <div class="user-quotes">
-  <div class="features">
+  <div class="features container">
     <div class="feature delta">
       <div class="left">
         <% for (var i in site.data.user_quotes) { %>
@@ -71,7 +71,7 @@
     </div>
   </div>
 </div>
-<div class="finale">
+<div class="finale container">
   <div class="download">
     <a class="btn btn-lg btn-primary" href="<%- url_for('download') %>"><i class="fa fa-arrow-down"></i>下載 Rime 輸入法</a>
   </div>
