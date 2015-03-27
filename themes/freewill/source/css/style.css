@@ -376,6 +376,8 @@ img {
   margin-top: 24px;
 }
 
+@media (min-width: 860px) {
+
 .features {
   width: 860px;
   margin-left: auto;
@@ -423,6 +425,14 @@ img {
 
 .feature.delta .illustration {
   background-image: url(/images/home-feature-4.png);
+}
+
+}
+
+@media (max-width: 859px) {
+  .features {
+    width: 100%;
+  }
 }
 
 .user-quotes {
