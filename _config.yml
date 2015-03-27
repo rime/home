@@ -70,6 +70,6 @@ theme: freewill
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: github
-  repository: git@github.com:rime/rime.github.io.git
+  type: git
+  repo: git@github.com:rime/rime.github.io.git
   branch: master
