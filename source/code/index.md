@@ -22,12 +22,12 @@ Fork Rime on [GitHub](https://github.com/rime):
 
 ## Linux
 
-See [this guide](https://github.com/rime/RimeWithIBus) for instructions on building and installing ibus-rime.
+See [this guide](https://github.com/rime/home/wiki/RimeWithIBus) for instructions on building and installing ibus-rime.
 
 ## Mac OS X
 
-See [this guilde](https://github.com/rime/RimeWithSquirrel) for instructions on building Squirrel.
+See [this guide](https://github.com/rime/home/wiki/RimeWithSquirrel) for instructions on building Squirrel.
 
 ## Windows
 
-[Instructions](https://github.com/rime/RimeWithWeasel) on building Weasel in Visual Studio.
+[Instructions](https://github.com/rime/home/wiki/RimeWithWeasel) on building Weasel in Visual Studio.
