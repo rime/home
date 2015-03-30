@@ -21,6 +21,11 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
   * [鼠鬚管 0.9.26.2](https://bintray.com/lotem/rime/Squirrel)〔[下載](http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.2.zip)〕〔[更新日誌](/release/squirrel/)〕，適用於64位 Mac OS X 10.7+
   * [neolee/SCU](https://github.com/neolee/SCU) 是由 [Neo Lee](https://github.com/neolee) 開發的圖形化配置工具。
 
+其他安裝方式：
+
+  * Install via [Homebrew Cask](http://caskroom.io/): `brew cask install squirrel`
+  * Install via [Boxen](https://boxen.github.com/): [boxen/puppet-squirrel](https://github.com/boxen/puppet-squirrel)
+
 ## XIME <small>XIME Input Method Editor</small>
 
 [stackia/XIME](https://github.com/stackia/XIME) 是由 [Stackie Jia](https://github.com/stackia) 創作的基於 Rime 引擎的 OS X 輸入法。
