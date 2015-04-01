@@ -65,7 +65,11 @@
             <div class="quote-content"><%- markdown(site.data.user_quotes[i].content) %></div>
           </div>
         <% } %>
-        <div><a href="https://github.com/rime/home/wiki/UserQuotes">更多說法 »</a></div>
+        <div>
+          <a href="https://github.com/rime/home/wiki/UserQuotes">更多說法 »</a>
+          &nbsp;&nbsp;
+          <a href="<%- url_for('discuss') %>">參加討論 »</a>
+        </div>
       </div>
       <div class="right illustration"></div>
     </div>
