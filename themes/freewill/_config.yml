@@ -15,6 +15,9 @@ menu:
   - title: 捐贈
     url: donate
     icon: "fa fa-heart"
+  - title: 討論
+    url: discuss
+    icon: "fa fa-comments"
   - title: 網誌
     url: blog
     intro: "Rime::Blog"

@@ -21,11 +21,13 @@
 	    <%- item.content %>
 	</div>
 
+    <% if (post) { %>
 	<div>
   	<center>
 	<%- partial('post/pagination', {page: item}) %>
     </center>
 	</div>
+    <% } %>
 
 	<!-- comment -->
 	<%- partial('post/comment', {page: item}) %>
