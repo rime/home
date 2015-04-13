@@ -1,6 +1,6 @@
 (function($){
   // Caption
-  $('.content').each(function(i){
+  $('.content:not(.nofancybox)').each(function(i){
     $(this).find('img').each(function(){
       if (!$(this).hasClass('nofancybox')){
         var alt = this.alt;

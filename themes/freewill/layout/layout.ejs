@@ -9,7 +9,7 @@
   <% } %>
   <div class="container">
     <% if (!is_home()) { %>
-    <div class="content">
+    <div class="content <%- page.content_class %>">
       <%- body %>
     </div>
     <% } %>
