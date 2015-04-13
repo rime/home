@@ -1,5 +1,6 @@
 title: 捐贈
 icon: fa fa-gift
+content_class: nofancybox
 date: 2014-12-17 12:00:00
 ---
 
@@ -11,6 +12,7 @@ table tr th { font-weight: bold; border: 1px solid #cccccc; margin: 0; padding: 
 table tr td { border: 1px solid #cccccc; margin: 0; padding: 6px 13px; }
 table tr th :first-child, table tr td :first-child { margin-top: 0; }
 table tr th :last-child, table tr td :last-child { margin-bottom: 0; }
+img { display: inline-block; }
 </style>
 
 很高興 Rime 輸入法能幫到您。
@@ -24,10 +26,8 @@ table tr th :last-child, table tr td :last-child { margin-bottom: 0; }
 用 [支付寶錢包](https://mobile.alipay.com/) 掃描二維碼捐贈：
 ![掃描二維碼捐贈](/images/qr-donate.jpg)
 
-Leave me a tip on Gratipay:
-<script data-gratipay-username="lotem"
-        data-gratipay-widget="button"
-        src="//grtp.co/v1.js"></script>
+Or leave me a tip on Gratipay:
+[![Gratipay](https://img.shields.io/gratipay/lotem.svg)](https://gratipay.com/lotem/)
 
 ### 捐贈記錄
 
