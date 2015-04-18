@@ -30,16 +30,28 @@ function setupScrolling() {
 
 function getOSName() {
   var os = "unknown";
-  if (~navigator.appVersion.indexOf("Win")) os = "windows";
+  if (navigator.userAgent.match(/Android/i)) os = "android";
+  else if (navigator.userAgent.match(/BlackBerry/i)) os = "blackberry";
+  else if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) os = "ios";
+  else if (navigator.userAgent.match(/webOS/i)) os = "webos";
+  else if (navigator.userAgent.match(/Windows Phone/i)) os = "windows-phone";
+  else if (~navigator.appVersion.indexOf("Win")) os = "windows";
   else if (~navigator.appVersion.indexOf("Mac")) os = "mac";
   else if (~navigator.appVersion.indexOf("Linux")) os = "linux";
-  //else if (~navigator.appVersion.indexOf("X11")) os = "unix";
+  else if (~navigator.appVersion.indexOf("X11")) os = "unix";
   return os;
 }
 
+var rimeSupportedOS = {
+  mac: true,
+  linux: true,
+  windows: true,
+};
+
 function detectOSForDownloads() {
   var os = getOSName();
-  if (os != 'unknown') {
+  console.log('os: ' + os);
+  if (rimeSupportedOS[os]) {
     $('.os-unknown').addClass('hidden');
     $('.os-' + os).removeClass('hidden');
     $('.downloads .footnote span.hidden').removeClass('hidden');
