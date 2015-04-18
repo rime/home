@@ -31,25 +31,15 @@
     /**
      * 转换文本
      * @param {String} str - 待转换的文本
-     * @param {Boolean} toT - 是否转换成繁体
      * @returns {String} - 转换结果
      */
-    function tranStr(str, toT) {
+    function tranStr(str) {
         var i;
         var letter;
         var code;
         var isChinese;
         var index;
-        var src, des;
         var result = '';
-
-        if (toT) {
-            src = S;
-            des = T;
-        } else {
-            src = T;
-            des = S;
-        }
 
         if (typeof str !== "string") {
             return str;
@@ -71,16 +61,36 @@
                 continue;
             }
 
-            index = src.indexOf(letter);
+            index = T.indexOf(letter);
 
             if (index !== -1) {
-                result += des.charAt(index);
+                result += S.charAt(index);
             } else {
                 result += letter;
             }
         }
 
         return result;
+    }
+
+    /**
+     * 转换为简体或取消转换
+     * 若发生转换，繁体原文备份为 element 节点上由 backupAttr 指定的属性，以备恢复为繁体
+     * @param {String} original - 待转换文字，若未提供则取消上一次转换
+     * @param {Element} element - 所属节点
+     * @param {String} backupAttr - 用于备份繁体原文的属性名
+     * @param {Function} setter - 通过参数 value 设置转换后的值
+     */
+    function translateOrRestore(original, element, backupAttr, setter) {
+        if (original) {
+            var translated = tranStr(original);
+            if (translated != original) {
+                element.setAttribute(backupAttr, original);
+                setter(translated);
+            }
+        } else if (element.hasAttribute(backupAttr)) {
+            setter(element.getAttribute(backupAttr));
+        }
     }
 
     /**
@@ -98,9 +108,10 @@
             }
         } else {
             attrValue = element.getAttribute(attr);
-
             if (attrValue !== "" && attrValue !== null) {
-                element.setAttribute(attr, tranStr(attrValue, toT));
+                translateOrRestore(!toT && attrValue, element, 'data-hant-' + attr, function(value) {
+                    element.setAttribute(attr, value);
+                });
             }
         }
     }
@@ -139,28 +150,24 @@
                     && childNode.type !== "text"
                     && childNode.type !== "hidden")
                 {
-                    childNode.value = tranStr(childNode.value, toT);
+                    translateOrRestore(!toT && childNode.value, childNode, 'data-hant-value', function(value) {
+                        childNode.value = value;
+                    });
                 }
 
                 // 继续递归调用
                 tranElement(childNode, toT);
             } else if (childNode.nodeType === 3) {  // 若为文本节点
-                childNode.data = tranStr(childNode.data, toT);
+                // 繁体原文备份在当前节点而非子节点
+                translateOrRestore(!toT && childNode.data, element, 'data-hant-text-' + i, function(value) {
+                    childNode.data = value;
+                });
             }
         }
     }
 
     // 扩展jQuery全局方法
     $.extend({
-        /**
-         * 文本简转繁
-         * @param {String} str - 待转换的文本
-         * @returns {String} 转换结果
-         */
-        s2t: function(str) {
-            return tranStr(str, true);
-        },
-
         /**
          * 文本繁转简
          * @param {String} str - 待转换的文本
