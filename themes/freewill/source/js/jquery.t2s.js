@@ -64,7 +64,7 @@
             // [1] http://www.unicode.org
             // [2] http://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8
             // [3] http://xylonwang.iteye.com/blog/519552
-            isChinese = (code > 0x3400 && code < 0x9FC3) || (code > 0xF900 && code < 0xFA6A);
+            isChinese = (code > 0x3400 && code < 0x9FFF) || (code > 0xF900 && code < 0xFAFF);
 
             if (!isChinese) {
                 result += letter;
