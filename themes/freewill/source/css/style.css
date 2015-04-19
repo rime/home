@@ -88,6 +88,33 @@ body {
   }
 }
 
+.navbar-convert {
+  background-color: inherit;
+  color: #888;
+  border: 1px solid #888;
+  border-radius: 4px;
+  margin: 16px;
+  float: right;
+}
+
+@media (max-width: 767px) {
+  .navbar-convert {
+    margin-right: 32px;
+  }
+}
+
+.navbar-convert.simplified {
+  color: #00bdff;
+  border-color: #00bdff;
+}
+
+.navbar-convert:hover,
+.navbar-convert:focus {
+  background-color: #00bdff;
+  border-color: #00bdff;
+  color: #37393d;
+}
+
 /* =============================================================================
    pagination
    ========================================================================== */
