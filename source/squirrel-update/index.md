@@ -2,7 +2,7 @@ title: 【鼠鬚管】更新日誌
 date: 2014-12-23 12:00:00
 ---
 
-RIME 主葉：http://rime.github.io
+RIME 主頁：http://rime.github.io
 
 鼠鬚管 0.9.26.2 <2014-12-23>
 ---
