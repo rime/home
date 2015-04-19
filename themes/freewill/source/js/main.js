@@ -1,6 +1,7 @@
 $(document).ready(function() {
   setupScrolling();
   detectOSForDownloads();
+  initializeChineseConversion();
 });
 
 function setupScrolling() {
@@ -56,4 +57,25 @@ function detectOSForDownloads() {
     $('.os-' + os).removeClass('hidden');
     $('.downloads .footnote span.hidden').removeClass('hidden');
   }
+}
+
+function simplifyTextInPage(simplified) {
+  if (simplified) {
+    $(document.body).t2s();
+    $('#btn-simplify').addClass('simplified');
+  } else {
+    $(document.body).s2t();
+    $('#btn-simplify').removeClass('simplified');
+  }
+}
+
+function initializeChineseConversion() {
+  var simplified = +$.cookie('simplified');
+  $('#btn-simplify').click(function() {
+    simplified = +!simplified;
+    $.cookie('simplified', simplified, {expires: 365, path: '/'});
+    simplifyTextInPage(simplified);
+    $(this).blur();
+  });
+  simplifyTextInPage(simplified);
 }
