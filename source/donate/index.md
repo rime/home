@@ -23,7 +23,7 @@ img { display: inline-block; }
 
 ### 捐贈方式
 
-用 [支付寶錢包](https://mobile.alipay.com/) 掃描二維碼捐贈：
+用 [支付寶錢包](https://mobile.alipay.com/) 掃描二維碼，捐贈到支付寶賬號 `contralisk@gmail.com`
 ![掃描二維碼捐贈](/images/qr-donate.jpg)
 
 Or leave me a tip on Gratipay:
