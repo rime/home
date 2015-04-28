@@ -12,6 +12,6 @@ Rime 代碼之家
 
 Submit general issues about Rime to [Rime::Home](https://github.com/rime/home/issue) for triage.
 
-Of course that also include bug reports and feature requests specific to the project site, docs or Rime::Home itself.
-
 [![GitHub issues](https://img.shields.io/github/issues/rime/home.svg)](https://github.com/rime/home/issues)
+
+Of course that also include bug reports and feature requests specific to the project site, docs or Rime::Home itself.
