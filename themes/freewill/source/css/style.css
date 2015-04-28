@@ -282,6 +282,10 @@ img {
   height: auto;
 }
 
+.badges img {
+  display: inline-block;
+  margin-right: 12px;
+}
 
 /* =============================================================================
    slogan
