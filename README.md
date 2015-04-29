@@ -10,7 +10,7 @@ Rime 代碼之家
 
 ## Bug Report
 
-Submit general issues about Rime to [Rime::Home](https://github.com/rime/home/issue) for triage.
+Submit general issues about Rime to [Rime::Home](https://github.com/rime/home/issues) for triage.
 
 [![GitHub issues](https://img.shields.io/github/issues/rime/home.svg)](https://github.com/rime/home/issues)
 
