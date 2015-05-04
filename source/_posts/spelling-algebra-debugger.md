@@ -18,12 +18,12 @@ Rime 希望這些不同的輸入形式是用家可以自定義的。如每一種
 
 # 方案
 
-[拼寫運算／Spelling Algebra](http://code.google.com/p/rimeime/wiki/SpellingAlgebra) 是 Rime 輸入法的一項獨創技術。
+[拼寫運算／Spelling Algebra](https://github.com/rime/home/wiki/SpellingAlgebra) 是 Rime 輸入法的一項獨創技術。
 其思想是用一組規則描述輸入碼到音節碼的對應關係。
 
 拼寫運算規則基於正則表達式／regular expression，基本運算有轉寫、變形、派生、消除等。通過組合這幾種操作，完成由音節碼集合到輸入碼集合的投影。
 
-雖然有[文檔](http://code.google.com/p/rimeime/wiki/SpellingAlgebra) 對算法作了解釋，又有 Rime 預設的輸入方案提供了多個用例，但是因爲算法本身十分複雜和抽象，編制拼寫運算規則及除錯仍有不小難度。
+雖然有[文檔](https://github.com/rime/home/wiki/SpellingAlgebra) 對算法作了解釋，又有 Rime 預設的輸入方案提供了多個用例，但是因爲算法本身十分複雜和抽象，編制拼寫運算規則及除錯仍有不小難度。
 
 # 工具
 

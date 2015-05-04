@@ -96,7 +96,7 @@ Rime 算法庫變更集
   * 變更：候選窗默認英文字體設爲 Lucida Grande，非嵌入模式中較爲美觀
   * 改進：高亮候選的背景色延伸到候選註釋區域，新增配色選項 `hilited_comment_text_color:`
   * 改進：提示（碼表輸入法）大字符集開關狀態「通用／增廣」
-  * 修復：[Issue 509](https://code.google.com/p/rimeime/issues/detail?id=509) 打開方案選單時設定 `style/label_color` 被重置
+  * 修復：[Issue 509](https://github.com/lotem/rimeime/issues/509) 打開方案選單時設定 `style/label_color` 被重置
 
 Rime 算法庫變更集
 
@@ -267,7 +267,7 @@ Rime 算法庫變更集
 
 鼠鬚管 0.9.14 <2013-01-07>
 ---
-  * 新增：同步用戶詞典，詳見 [Wiki » UserGuide](https://code.google.com/p/rimeime/wiki/UserGuide)
+  * 新增：同步用戶詞典，詳見 [Wiki » UserGuide](https://github.com/rime/home/wiki/UserGuide)
   * 新增：上屏錯誤的詞組後立即按回退鍵（BackSpace）撤銷組詞
   * 改進：拼音輸入法中，按左方向鍵以音節爲單位移動光標
   * 修復：【地球拼音】不能以 - 鍵輸入第一聲

@@ -50,8 +50,8 @@ Rime 算法庫變更集
 【小狼毫】變更集
 
   * 新增：一組配色方案，作者：P1461、Patricivs、skoj、五磅兔
-  * 修復：[Issue 528](https://code.google.com/p/rimeime/issues/detail?id=528) Windows 7 IE11 文字無法上屏
-  * 修復：[Issue 531](https://code.google.com/p/rimeime/issues/detail?id=531) Windows 8 卸載輸入法後在輸入法列表中有殘留項
+  * 修復：[Issue 528](https://github.com/lotem/rimeime/issues/528) Windows 7 IE11 文字無法上屏
+  * 修復：[Issue 531](https://github.com/lotem/rimeime/issues/531) Windows 8 卸載輸入法後在輸入法列表中有殘留項
   * 變更：註冊輸入法時同時啓用 IME、TSF 模式
 
 Rime 算法庫變更集
@@ -225,7 +225,7 @@ Rime 算法庫變更集
 
 小狼毫 0.9.18 <2013-01-05>
 ---
-  * 新增：同步用戶詞典，詳見 [Wiki » UserGuide](https://code.google.com/p/rimeime/wiki/UserGuide)
+  * 新增：同步用戶詞典，詳見 [Wiki » UserGuide](https://github.com/rime/home/wiki/UserGuide)
   * 新增：上屏錯誤的詞組後立即按回退鍵（BackSpace）撤銷組詞
   * 改進：拼音輸入法中，按左方向鍵以音節爲單位移動光標
   * 修復：【地球拼音】不能以 - 鍵輸入第一聲

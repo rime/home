@@ -64,7 +64,7 @@ tags:
     奉送原甫侍讀出守永興
     嘉祐五年
     歐陽修
-    
+
     酌君以荊州魚枕之蕉
     贈君以宣城鼠鬚之管
     酒如長虹飲滄海
@@ -122,7 +122,7 @@ tags:
 
 # <a name="rime-chord-typing-yanhuayileng"></a>注音並擊輸入　周杰倫《煙花易冷》
 
-輸入方案爲[佛振](https://github.com/lotem)製作的[中州注音法](https://github.com/lotem/brise-zhung)，中原官話注音結合[宮保拼音](https://code.google.com/p/rimeime/wiki/ComboPinyin)的並擊輸入方式。
+輸入方案爲[佛振](https://github.com/lotem)製作的[中州注音法](https://github.com/lotem/brise-zhung)，中原官話注音結合[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)的並擊輸入方式。
 
 視頻播放速度：4X
 
@@ -171,7 +171,7 @@ tags:
 
 錄《精忠岳飛》主題曲《精忠傳奇》。
 
-[宮保拼音](https://code.google.com/p/rimeime/wiki/ComboPinyin) 是一種用電腦鍵盤多鍵並擊輸入拼音的方法。
+[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin) 是一種用電腦鍵盤多鍵並擊輸入拼音的方法。
 
 視頻播放速度：2X
 
@@ -220,17 +220,17 @@ tags:
 全文：
 
     倉頡轉世賦
-    
+
     倉頡公轉世　巧匠出河陰
     修此中州韻　豈言是凡品
     且大道至簡　亦玄奧高深
     運用之妙法　但存乎一心
-    
+
     縱情漁獵字海詞林
     會不會某天穿越古今
     口中言語是華夏正音
     怎教我肯將主流放任
-    
+
     苦執一念　終不得瀟灑
     難於講明了心裏真話
     寄情編碼　用千萬次敲打
