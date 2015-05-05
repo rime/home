@@ -1,17 +1,5 @@
 # Rime::Home
 
-Rime 代碼之家
+`blog` is the Hexo project for rimeime.github.io.
 
-[![Join the chat at https://gitter.im/rime/home](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/rime/home?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-## Docs
-
-[Rime Wiki](https://github.com/rime/home/wiki)
-
-## Bug Report
-
-Submit general issues about Rime to [Rime::Home](https://github.com/rime/home/issues) for triage.
-
-[![GitHub issues](https://img.shields.io/github/issues/rime/home.svg)](https://github.com/rime/home/issues)
-
-Of course that also include bug reports and feature requests specific to the project site, docs or Rime::Home itself.
+rimeime.github.io is still live today to host Appcast channels that might be used by some old Squirrel and Weasel clients.
