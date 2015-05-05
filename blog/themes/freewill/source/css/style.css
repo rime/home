@@ -1,0 +1,616 @@
+/* =============================================================================
+   Body and structure
+   ========================================================================== */
+
+body {
+  position: relative;
+  padding-top: 40px;
+  background-color: #fff;
+  background-repeat: repeat-x;
+  background-position: 0 40px;
+  padding-bottom: 70px;
+}
+
+.content {
+  padding: 20px;
+  margin: 20px -20px; /* negative indent the amount of the padding to maintain the grid system */
+  /*
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.75);
+  -moz-box-shadow: 0 2px 102px rgba(0,0,0,.75);
+  box-shadow: 0 2px 10px rgba(0,0,0,.75);
+  */
+}
+
+#sidebar {
+  margin-left: 5px;
+  padding-left: 15px;
+  border-left: 1px solid #e0e0e0;
+  font-size: 0.9em;
+}
+
+/* =============================================================================
+   navbar
+   ========================================================================== */
+
+.navbar-inverse {
+  background-color: #37393d;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+  color: #00bdff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+  color: #00bdff;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #00bdff;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: #00bdff;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #00bdff;
+}
+
+.navbar-brand {
+  background-image: url('/images/logo.png');
+  background-repeat: no-repeat;
+  background-position: left 0.8em;
+  background-size: 1.5em;
+  padding-left: 2.2em;
+
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
+}
+
+@media (max-width: 767px) {
+  .nav-menu {
+    clear: left;
+  }
+}
+@media (min-width: 768px) {
+  .nav-menu {
+    float: right;
+  }
+}
+
+.navbar-convert {
+  background-color: inherit;
+  color: #888;
+  border: 1px solid #888;
+  border-radius: 4px;
+  margin: 16px;
+  float: right;
+}
+
+@media (max-width: 767px) {
+  .navbar-convert {
+    margin-right: 32px;
+  }
+}
+
+.navbar-convert.simplified {
+  color: #00bdff;
+  border-color: #00bdff;
+}
+
+.navbar-convert:hover,
+.navbar-convert:focus {
+  background-color: #00bdff;
+  border-color: #00bdff;
+  color: #37393d;
+}
+
+/* =============================================================================
+   pagination
+   ========================================================================== */
+
+.pagination {
+  margin: 10px 0;
+}
+
+.pagination a{
+  color:#555;
+}
+
+
+
+/* =============================================================================
+   List
+   ========================================================================== */
+
+li i {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.listing-item {
+  line-height: 24px;
+}
+
+
+/* =============================================================================
+   Blog
+   ========================================================================== */
+
+a {
+  color: #009bd1;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #009bd1;
+  text-decoration: underline;
+}
+
+.has-success .form-control,
+.has-success .form-control:focus {
+  border-color: #009bd1;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+  background-color: #009bd1;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+  background-color: #007cb2;
+}
+
+.pagination>.disabled>span,
+.pagination>.disabled>span:hover,
+.pagination>.disabled>span:focus,
+.pagination>.disabled>a,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>a:focus {
+  background-color: #88ccee;
+}
+
+/* =============================================================================
+   code
+   ========================================================================== */
+
+figure.highlight {
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.panel-body figure.highlight {
+  border-radius: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* =============================================================================
+   widget and tag box
+   ========================================================================== */
+
+.meta-widget {
+  margin: 10px 0;
+}
+
+.meta-widget a{
+  color:#555;
+}
+
+.tag_box {
+  margin:0;
+  overflow:hidden;
+}
+.tag_box li {
+  line-height:28px;
+}
+.tag_box li i {
+  opacity:0.9;
+}
+.tag_box.inline li {
+  float:left;
+}
+.tag_box a {
+  padding: 2px 6px;
+  margin: 2px;
+  background: #e5e5e5;
+  color:#555;
+  border-radius: 3px;
+  text-decoration:none;
+  border:1px dashed #bbb;
+}
+.tag_box a span{
+  vertical-align:super;
+  font-size:0.8em;
+}
+.tag_box a:hover {
+  background-color:#397bdd;
+  color:#FFF;
+}
+.tag_box a.active {
+  background:#57A957;
+  border:1px solid #4C964D;
+  color:#FFF;
+}
+
+.widget {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tagcloud .entry{
+  width: 100%;
+}
+
+.archive-title:before {
+  font-family: FontAwesome;
+  content: '\f02d  ';
+}
+
+.archive-title-tag:before {
+  font-family: FontAwesome;
+  content: '\f02c  ';
+}
+
+.archive-title-category:before {
+  font-family: FontAwesome;
+  content: '\f07b  ';
+}
+
+/* =============================================================================
+   img
+   ========================================================================== */
+
+img {
+  max-width: 97.5%;
+  margin: 15px auto;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.badges img {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+/* =============================================================================
+   slogan
+   ========================================================================== */
+
+.slogan .icon-heart{
+  opacity: 0.5;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+.slogan .icon-heart:hover{
+  opacity: 1;
+}
+
+.slogan{
+  font-size: 1.2em;
+  color: #888;
+  display:block;
+  margin-bottom: 1em;
+}
+
+
+/* =============================================================================
+   scroll to top
+   ========================================================================== */
+
+#gotop{
+  display:block;
+  width:36px;
+  height:36px;
+  position:fixed;
+  bottom:40px;
+  right:30px;
+  border-radius:7px;
+  text-decoration:none;
+  display:none;
+  background-color:#999999;
+}
+#gotop span{
+  display:block;
+  color:#dddddd;
+}
+#gotop span:hover{
+  color:#cccccc;
+}
+#gotop span{
+  font-size:24px;
+  text-align:center;
+}
+
+
+/* =============================================================================
+   Front matter
+   ========================================================================== */
+
+.front-matter {
+  height: 460px;
+  margin: 0;
+  padding: 150px 0 120px;
+  background-color: #3f4144;
+  background-image: url(/images/home-watermarks.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* =============================================================================
+   Index page
+   ========================================================================== */
+
+.home hr {
+  margin: 0;
+}
+
+.home .btn {
+  min-width: 250px;
+}
+
+.home .btn i {
+  margin-right: 0.6em;
+}
+
+.btn-default {
+  background-color: #4f5356;
+  border-color: #4f5356;
+  border-radius: 4px;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+  background-color: #3f4144;
+  border-color: #3f4144;
+}
+
+.btn-primary {
+  background-color: #009bd1;
+  border-color: #009bd1;
+  border-radius: 4px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  background-color: #007cb2;
+  border-color: #007cb2;
+}
+
+.downloads {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.download {
+  display: inline-block;
+  margin: 12px 18px;
+}
+
+.downloads .footnote {
+  margin-top: 24px;
+}
+
+@media (min-width: 860px) {
+
+.features {
+  width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature {
+  display: table;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}
+
+.feature .left {
+  padding-right: 20px;
+}
+
+.feature > div {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.feature .illustration {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feature .illustration:nth-child(odd) {
+  background-position: left center;
+}
+
+.feature.alpha .illustration {
+  background-image: url(/images/home-feature-1.png);
+}
+
+.feature.beta .illustration {
+  background-image: url(/images/home-feature-2.png);
+}
+
+.feature.gamma .illustration {
+  background-image: url(/images/home-feature-3.png);
+}
+
+.feature.delta .illustration {
+  background-image: url(/images/home-feature-4.png);
+}
+
+}
+
+@media (max-width: 859px) {
+  .features {
+    width: 100%;
+  }
+}
+
+.user-quotes {
+  background-color: #f0f0f0;
+  margin: 30px 0;
+}
+
+.user-quotes .left {
+  padding: 30px 0;
+}
+
+.quote {
+  margin: 1.6em 0;
+}
+
+.quote:first-child {
+  margin-top: 0;
+}
+
+.quote-header p {
+  color: #808080;
+  margin-bottom: 0.5em;
+}
+
+.quote-content {
+  font-size: 1.4em;
+}
+
+.finale {
+  width: 100%;
+  margin: 70px 0;
+  text-align: center;
+}
+
+.finale .download {
+  margin: 0 0 60px;
+}
+
+/* =============================================================================
+   Blog index
+   ========================================================================== */
+
+.mypage > .panel-default > .panel-heading {
+  background-color: inherit;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.mypage > .panel-default > .panel-heading:not(:first-child) {
+  border-top: 1px solid #ecf0f1;
+}
+
+/* =============================================================================
+   Headers
+   ========================================================================== */
+
+h1,h2,h3,h4,h5,h6 {
+  text-rendering:optimizelegibility;
+  font-weight:bold;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+.page h3.title {
+  position:relative;
+/*  padding: 2px 5px 5px 5px;
+  border-top:1px solid #ccc;
+  font-size: 1.9em;
+  font-weight: normal;
+  background-color: #e5e5e5;
+  border-radius:3px; */
+}
+
+.page h3.title span.date {
+  position:absolute;
+  right:5px;
+  font-size:0.7em;
+/*  color: #777; */
+}
+
+/* =============================================================================
+   page, post
+   ========================================================================== */
+
+.post{
+  font-size: 1.2em;
+}
+
+.page{
+  font-size: 16px;
+}
+
+.page, .post{
+  line-height: 1.8em;
+}
+
+.page .more {
+  text-pull: right;
+}
+
+.post .date {
+  margin-bottom:20px;
+  font-weight:bold;
+}
+
+
+/* =============================================================================
+   Archives list
+   ========================================================================== */
+
+.archive-ul > .caret {
+  vertical-align: 7px;
+  margin-left: 5px;
+  opacity: 0.3;
+}
+
+.archive-ul:hover > .caret {
+  opacity: 1;
+}
+
+
+
+/**
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: ""; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}

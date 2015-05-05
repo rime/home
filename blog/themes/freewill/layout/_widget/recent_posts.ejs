@@ -1,0 +1,13 @@
+<!-- _widget/recent_posts -->
+<% if (site.posts.length){ %>
+<div class="widget">
+  <h4><%= __('recent_posts') %></h4>
+  <ul class="entry list-unstyled">
+    <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+      <li>
+        <a href="<%= config.root %><%= post.path %>" <% if (post.description) { %> title="<%= post.description %>" <% } %>><i class="fa fa-file-o"></i><%= truncate(post.title, 25) %></a>
+      </li>
+    <% }); %>
+  </ul>
+</div>
+<% } %>

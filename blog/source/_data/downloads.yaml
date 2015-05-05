@@ -1,0 +1,36 @@
+footnote: |
+    支持 Windows XP sp3, Windows 7+, Mac OS X 10.7+, Linux (IBus, Fcitx)
+
+fcitx-rime:
+  name: fcitx-rime
+  repo: https://github.com/fcitx/fcitx-rime
+
+ibus-rime:
+  name: ibus-rime
+  version: '1.2'
+  repo: https://github.com/rime/ibus-rime
+  url: download#tarball
+
+librime:
+  name: librime
+  version: '1.2'
+  repo: https://github.com/rime/librime
+  url: download#tarball
+
+brise:
+  name: brise
+  version: '0.35'
+  repo: https://github.com/rime/brise
+  url: download#tarball
+
+squirrel:
+  name: 鼠鬚管
+  version: '0.9.26.2'
+  repo: https://github.com/rime/squirrel
+  url: http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.2.zip
+
+weasel:
+  name: 小狼毫
+  version: '0.9.30'
+  repo: https://github.com/rime/weasel
+  url: http://dl.bintray.com/lotem/rime/weasel-0.9.30.0-installer.exe
