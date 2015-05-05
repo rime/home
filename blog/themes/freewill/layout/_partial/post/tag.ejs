@@ -1,0 +1,8 @@
+  <!-- _partial/post/tag -->
+  <%
+  var tags = [];
+  item.tags.forEach(function(tag){
+    tags.push('<li><a href="' + config.root + tag.path + '">' + tag.name + '<span>' + tag.length  + '</span></a></li>');
+  });
+  %>
+  <%- tags.join(' ') %>

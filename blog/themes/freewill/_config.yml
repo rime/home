@@ -1,0 +1,39 @@
+bootswatch: flatly
+
+slogan: "聰明的輸入法懂我心意"
+
+menu:
+  - title: 卷宗
+    url: archives
+    intro: "全部文章"
+    icon: "fa fa-archive"
+  - title: 分類
+    url: categories
+    intro: "所有分類"
+    icon: "fa fa-folder"
+  - title: 標籤
+    url: tags
+    intro: "所有標籤"
+    icon: "fa fa-tags"
+
+links:
+  - title: Rime on Github
+    url: https://github.com/rime
+    intro: "Rime's Github repository."
+    icon: "fa fa-github"
+  - title: "佛振 @ Github"
+    url: http://www.github.com/lotem
+    intro: "Rime 開發者佛振"
+    icon: "fa fa-github"
+
+widgets:
+- search
+- category
+- tagcloud
+- recent_posts
+- links
+
+rss: true
+fancybox: true
+favicon: favicon.png
+google_analytics:

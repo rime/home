@@ -1,0 +1,13 @@
+<!-- _partial/footer -->
+<p><% if (config.author){ %>
+  &copy; <%= new Date().getFullYear() %> by <%= config.author %>
+  <% } else { %>
+  &copy; <%= new Date().getFullYear() %> <%= config.title %>
+  <% } %>&nbsp;
+  <span class="text-muted">Powered by:
+    <a class="text-muted" href="http://zespia.tw/hexo/" target="_blank">Hexo</a>,
+    <a class="text-muted" href="http://github.com/yieme/hexo-theme-freewill/">Freewill</a>
+    &amp;
+    <a class="text-muted" href="http://bootswatch.com/" target="_blank">Bootswatch <small>v3.2</small></a>
+  </span>
+</p>

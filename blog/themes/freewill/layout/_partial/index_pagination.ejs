@@ -1,0 +1,20 @@
+<!-- _partial/index_pagination -->
+<div class="pagination">
+<ul class="pagination">
+	 <% if (page.prev || page.next) { %>
+		<% if (page.prev){ %>
+    	<li class="prev"><a href="<%- config.root %><%- page.prev_link %>" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i> <%= __('prev') %></a></li>
+  		<% } else { %>
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i><%= __('prev') %></a></li>
+        <% } %>
+
+        <li><a href="<%- config.root %>"><i class="fa fa-home"></i>Home</a></li>
+
+		<% if (page.next){ %>
+		   <li class="next"> <a href="<%- config.root %><%- page.next_link %>" class="alignright next"><%= __('next') %><i class="fa fa-arrow-circle-o-right"></i></a> </li>
+        <% } else { %>
+          <li class="next disabled"><a><%= __('next') %><i class="fa fa-arrow-circle-o-right"></i></a></li>
+        <% } %>
+	<% }  %>
+</ul>
+</div>
