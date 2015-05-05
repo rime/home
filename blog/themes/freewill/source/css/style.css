@@ -103,6 +103,12 @@ body {
   }
 }
 
+@media (max-width: 399px) {
+  .navbar-convert {
+    display: none;
+  }
+}
+
 .navbar-convert.simplified {
   color: #00bdff;
   border-color: #00bdff;
