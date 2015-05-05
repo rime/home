@@ -62,6 +62,9 @@ pagination_dir: page
 # Disqus
 disqus_shortname: rimeime
 
+# Duoshuo
+duoshuo_shortname: rime
+
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
