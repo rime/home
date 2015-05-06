@@ -1,0 +1,3 @@
+[submodule "wiki"]
+	path = wiki
+	url = git@github.com:rime/home.wiki.git
