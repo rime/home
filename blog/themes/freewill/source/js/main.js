@@ -71,11 +71,18 @@ function simplifyTextInPage(simplified) {
 
 function initializeChineseConversion() {
   var simplified = +$.cookie('simplified');
+  // ?lang=zh-Hans, ?lang=zh-Hant
+  var scriptCode = /[?&;]lang=[^&;]*(Han[st])/i.exec(window.location.search);
+  if (scriptCode) {
+    simplified = +(scriptCode[1].match(/Hans/i) != null);
+    $.cookie('simplified', simplified, {expires: 365, path: '/'});
+  }
+  simplifyTextInPage(simplified);
+
   $('#btn-simplify').click(function() {
     simplified = +!simplified;
     $.cookie('simplified', simplified, {expires: 365, path: '/'});
     simplifyTextInPage(simplified);
     $(this).blur();
   });
-  simplifyTextInPage(simplified);
 }
