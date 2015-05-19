@@ -8,9 +8,9 @@ date: 2015-03-14 17:33:46
 
   * [打字入門](https://github.com/rime/home/wiki/GettingStarted)：新手須知的使用方法和技巧
   * [定製指南](https://github.com/rime/home/wiki/CustomizationGuide)（初階）
-  * [輸入方案設計書](https://github.com/rime/home/wiki/RimeWithSchemata)（中階）
-  * [程序開發路線圖](/code)（高階）
-  * [常見問題及解法](https://github.com/rime/home/wiki/FAQ)
+  * [方案設計](https://github.com/rime/home/wiki/RimeWithSchemata)（中階）
+  * [程序開發](/code)（高階）
+  * [常見問題](https://github.com/rime/home/wiki/FAQ)
 
 [查閱全部文檔 »](https://github.com/rime/home/wiki)
 
