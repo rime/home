@@ -1,4 +1,4 @@
-title: 捐贈
+title: 小額贊助
 icon: fa fa-gift
 content_class: nofancybox
 date: 2015-04-26 18:00:00
@@ -16,13 +16,13 @@ table tr th :last-child, table tr td :last-child { margin-bottom: 0; }
 
 很高興 Rime 輸入法能幫到您。
 
-時有 Rime 的用家通過小額捐贈的方式寄來對 Rime 開發工作的支持和鼓勵。
+時有 Rime 的用家通過小額贊助的方式寄來對 Rime 開發工作的支持和鼓勵。
 
 無論金額多少，都足夠表達您這份心意。謝謝！
 
 ### 捐贈方式
 
-用 [支付寶錢包](https://mobile.alipay.com/) 掃描二維碼，捐贈到支付寶賬號 `contralisk@gmail.com`
+用 [手機支付寶](https://mobile.alipay.com/) 掃描二維碼，捐款到支付寶賬號 `chen.sst@gmail.com`
 <span class="badges">![掃描二維碼捐贈](/images/qr-donate.jpg)</span>
 
 Or leave me a tip on Gratipay:
