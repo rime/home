@@ -57,6 +57,11 @@ function detectOSForDownloads() {
     $('.os-' + os).removeClass('hidden');
     $('.downloads .footnote span.hidden').removeClass('hidden');
   }
+  // iRimeWithFool
+  var today = new Date();
+  if (today.getMonth() == 3 && today.getDate() == 1) {
+    $('.os-ios').removeClass('hidden');
+  }
 }
 
 function simplifyTextInPage(simplified) {
