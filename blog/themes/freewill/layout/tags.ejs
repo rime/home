@@ -28,7 +28,7 @@
 	   <ul id="modal-<%= item.name %>" class="collapse in">
 
 	   <% site.posts.sort('date', -1).forEach(function(it){ %>
-		   <% if (it.tags._index.indexOf(item._id) > -1){ %>
+		   <% if (it.tags.find({_id: item._id}) > -1){ %>
 	   	   	 <li class="listing-item"><a href="<%= config.root %><%= it.path %>" <% if (it.description) { %> title="<%= it.description %>" <% } %>><%= it.title %></a></li>
 		  <% } %>
 	   <% }); %>
