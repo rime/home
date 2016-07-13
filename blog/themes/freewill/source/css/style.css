@@ -60,7 +60,7 @@ body {
 }
 
 .navbar-brand {
-  background-image: url('/images/logo.png');
+  background-image: url('/images/logo.svg');
   background-repeat: no-repeat;
   background-position: left 0.8em;
   background-size: 1.5em;
@@ -353,9 +353,15 @@ img {
   margin: 0;
   padding: 150px 0 120px;
   background-color: #3f4144;
-  background-image: url(/images/home-watermarks.png);
+  background-image: url(/images/home-watermarks.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto 83%;
+}
+
+.front-matter img {
+  width: 360px;
+  height: auto;
 }
 
 /* =============================================================================
@@ -442,6 +448,7 @@ img {
 .feature .illustration {
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 360px 280px;
 }
 
 .feature .illustration:nth-child(odd) {
@@ -449,19 +456,19 @@ img {
 }
 
 .feature.alpha .illustration {
-  background-image: url(/images/home-feature-1.png);
+  background-image: url(/images/home-feature-1.svg);
 }
 
 .feature.beta .illustration {
-  background-image: url(/images/home-feature-2.png);
+  background-image: url(/images/home-feature-2.svg);
 }
 
 .feature.gamma .illustration {
-  background-image: url(/images/home-feature-3.png);
+  background-image: url(/images/home-feature-3.svg);
 }
 
 .feature.delta .illustration {
-  background-image: url(/images/home-feature-4.png);
+  background-image: url(/images/home-feature-4.svg);
 }
 
 }
