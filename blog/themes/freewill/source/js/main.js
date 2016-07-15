@@ -1,8 +1,18 @@
 $(document).ready(function() {
+  detectSvgSupport();
   setupScrolling();
   detectOSForDownloads();
   initializeChineseConversion();
 });
+
+function detectSvgSupport() {
+  if(!Modernizr.svg) {
+    var images = $('img[data-png-fallback]');
+    images.each(function(i) {
+      $(this).attr('src', $(this).data('png-fallback'));
+    });
+  }
+}
 
 function setupScrolling() {
   $(window).scroll(function(){  //As long as the window to scroll to trigger the code below

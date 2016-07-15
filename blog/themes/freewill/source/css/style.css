@@ -60,7 +60,7 @@ body {
 }
 
 .navbar-brand {
-  background-image: url('/images/logo.svg');
+  background-image: url(/images/logo.svg);
   background-repeat: no-repeat;
   background-position: left 0.8em;
   background-size: 1.5em;
@@ -513,6 +513,32 @@ img {
 
 .finale .download {
   margin: 0 0 60px;
+}
+
+/* Fallback to PNG images if SVG is not supported. */
+
+.no-svg {
+  .navbar-brand {
+    background-image: url(/images/logo.png);
+  }
+  .front-matter {
+    background-image: url(/images/home-watermarks.png);
+  }
+  .feature.alpha .illustration {
+    background-image: url(/images/home-feature-1.png);
+  }
+
+  .feature.beta .illustration {
+    background-image: url(/images/home-feature-2.png);
+  }
+
+  .feature.gamma .illustration {
+    background-image: url(/images/home-feature-3.png);
+  }
+
+  .feature.delta .illustration {
+    background-image: url(/images/home-feature-4.png);
+  }
 }
 
 /* =============================================================================
