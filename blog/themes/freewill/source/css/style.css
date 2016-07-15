@@ -72,6 +72,10 @@ body {
           transition: all .2s linear;
 }
 
+.no-svg .navbar-brand {
+  background-image: url(/images/logo.png);
+}
+
 .navbar-brand:hover {
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
@@ -359,6 +363,10 @@ img {
   background-size: auto 83%;
 }
 
+.no-svg .front-matter {
+  background-image: url(/images/home-watermarks.png);
+}
+
 .front-matter img {
   width: 360px;
   height: auto;
@@ -471,6 +479,24 @@ img {
   background-image: url(/images/home-feature-4.svg);
 }
 
+.no-svg .feature.alpha .illustration {
+  background-image: url(/images/home-feature-1.png);
+}
+
+.no-svg .feature.beta .illustration {
+  background-image: url(/images/home-feature-2.png);
+}
+
+.no-svg .feature.gamma .illustration {
+  background-image: url(/images/home-feature-3.png);
+}
+
+.no-svg .feature.delta .illustration {
+  background-image: url(/images/home-feature-4.png);
+}
+
+}
+
 }
 
 @media (max-width: 859px) {
@@ -513,32 +539,6 @@ img {
 
 .finale .download {
   margin: 0 0 60px;
-}
-
-/* Fallback to PNG images if SVG is not supported. */
-
-.no-svg {
-  .navbar-brand {
-    background-image: url(/images/logo.png);
-  }
-  .front-matter {
-    background-image: url(/images/home-watermarks.png);
-  }
-  .feature.alpha .illustration {
-    background-image: url(/images/home-feature-1.png);
-  }
-
-  .feature.beta .illustration {
-    background-image: url(/images/home-feature-2.png);
-  }
-
-  .feature.gamma .illustration {
-    background-image: url(/images/home-feature-3.png);
-  }
-
-  .feature.delta .illustration {
-    background-image: url(/images/home-feature-4.png);
-  }
 }
 
 /* =============================================================================
