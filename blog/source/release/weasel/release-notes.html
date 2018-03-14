@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p><a name="0.10.0"></a></p>
+<h2 id="-0-10-0-2018-03-14-">小狼毫 0.10.0 (2018-03-14)</h2>
+<h4 id="-">主要更新</h4>
+<ul>
+<li>兼容 Windows 8 ~ Windows 10</li>
+<li>支持高分辨率顯示屏</li>
+<li>介面風格選項<ul>
+<li>在內嵌編碼行預覽結果文字</li>
+<li>可指定候選序號的樣式</li>
+</ul>
+</li>
+<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#130-2018-03-09">librime 1.3.0</a><ul>
+<li>支持 YAML 節點引用，方便模塊化配置</li>
+<li>改進部署流程，在 <code>build</code> 子目錄集中存放生成的數據文件</li>
+</ul>
+</li>
+<li>精簡安裝包預裝的輸入方案，更多方案可由 <a href="https://github.com/rime/brise">東風破</a> 取得</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>build.bat:</strong>  customize PLATFORM_TOOLSET settings (<a href="https://github.com/rime/weasel/commit/c7a9a4fb530e0274450e4296cb0db2906d2f1fb4">c7a9a4fb</a>)</li>
+<li><strong>config:</strong><ul>
+<li>enable customization of label format (<a href="https://github.com/rime/weasel/commit/76b08bae810735c5f1c8626ec39a7afd463f0269">76b08bae</a>)</li>
+<li>alias <code>style/layout/border_width</code> to <code>style/layout/border</code> (<a href="https://github.com/rime/weasel/commit/013eefebaa4474e7814b6cfb6c905bcc12543a7f">013eefeb</a>)</li>
+</ul>
+</li>
+<li><strong>tsf:</strong><ul>
+<li>fix candidate selecting in preview preedit mode (<a href="https://github.com/rime/weasel/commit/206efd692124339d0e256198360c1860c72cd807">206efd69</a>)</li>
+<li>support user defined preedit display type (<a href="https://github.com/rime/weasel/commit/f76379b01abe9d3971d68e2e272067e0bb855cc9">f76379b0</a>)</li>
+</ul>
+</li>
+</ul>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li>Support High DPI Display <a href="https://github.com/rime/weasel/issues/28">#28</a></li>
+<li><strong>WeaselUI:</strong>  limit to subscript range when processing candidates (<a href="https://github.com/rime/weasel/commit/6b686c717bfab141469c3d48ec1c6acbeb79921e">6b686c71</a>, closes <a href="https://github.com/rime/weasel/issues/121">#121</a>)</li>
+<li><strong>install.bat:</strong>  run in elevate cmd; detach WeaselServer process (<a href="https://github.com/rime/weasel/commit/2194d9fbd7d0341fef94efdbe9268af8a6237438">2194d9fb</a>)</li>
+<li><strong>librime:</strong>  make rime_api.h available in librime\build\include\ (<a href="https://github.com/rime/weasel/commit/3793e22c47b34c61d305ca80567dfdafe08b2302">3793e22c</a>)</li>
+<li><strong>tsf:</strong><ul>
+<li>Results of auto-selection cleared by subsequent manual selection <a href="https://github.com/rime/weasel/issues/107">#107</a></li>
+<li>use commmit text preview to show inline preview (<a href="https://github.com/rime/weasel/commit/b1d1ec43e132998ea8764d8dac2098a2b3d9a3e8">b1d1ec43</a>)</li>
+</ul>
+</li>
+</ul>
+
+</body>
+</html>
