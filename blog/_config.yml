@@ -26,6 +26,8 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - '{release,testing}/*/appcast.xml'
+  - '{release,testing}/*/release-notes.html'
 
 # Writing
 new_post_name: :title.md # File name of new posts
