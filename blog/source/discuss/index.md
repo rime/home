@@ -9,6 +9,11 @@ date: 2015-04-01 21:43:48
 
 ## 求解 ?
 請移步 [幫助與反饋](/docs) :
+
 ## 技術話題 ?
 歡迎光臨 [Rime 代碼之家](https://github.com/rime/home) :
 
+上 `rime/home` 聊天室
+參加問答、分享心得、吟一首詩，
+抑或圍繞 Rime 輸入法作一番發散討論 ;
+<span class="badges">[![https://gitter.im/rime/home](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/rime/home?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)</span>
