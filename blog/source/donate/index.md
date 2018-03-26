@@ -18,15 +18,12 @@ table tr th :last-child, table tr td :last-child { margin-bottom: 0; }
 
 時有 Rime 的用家通過小額贊助的方式寄來對 Rime 開發工作的支持和鼓勵。
 
-無論金額多少，都足夠表達您這份心意。謝謝！
+無論金額多少都足夠表達您的一份心意。謝謝！
 
 ### 捐贈方式
 
-用 [手機支付寶](https://mobile.alipay.com/) 掃描二維碼，捐款到支付寶賬號 `chen.sst@gmail.com`
+用 [手機支付寶](https://mobile.alipay.com/) 掃描二維碼，捐款到支付寶賬號 <code>chen.sst@gmail.com</code>
 <span class="badges">![掃描二維碼捐贈](/images/qr-donate.jpg)</span>
-
-Or leave me a tip on Gratipay:
-<span class="badges">[![Gratipay](https://img.shields.io/gratipay/lotem.svg)](https://gratipay.com/lotem/)</span>
 
 ### 捐贈記錄
 
@@ -134,3 +131,8 @@ Or leave me a tip on Gratipay:
 |2015-04-23|张施主|1.00|　|
 |2015-04-23|张施主|10.00|　|
 |2015-04-24|黄施主|100.00|　|
+
+……
+篇幅所限，後續受贈記錄未能全部列入表格。
+贊助款已用於添置開發工具、維護網站域名。
+再次感謝大家！
