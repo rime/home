@@ -1,5 +1,5 @@
 title: 幫助與反饋
-comment: true
+comment: false
 content_class: nofancybox
 date: 2015-03-14 17:33:46
 ---
