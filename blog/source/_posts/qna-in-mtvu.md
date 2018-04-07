@@ -80,7 +80,7 @@ tags: QnA
 
 還有一些數據項目和輸入方案的命名：
 
-  * [**東風破**](https://github.com/rime/brise)：一份 Rime 輸入方案集，得名於《[韻畧易通](https://zh.wikipedia.org/wiki/%E9%9F%BB%E7%95%A7%E6%98%93%E9%80%9A)》開篇的《[早梅詩](https://zh.wikipedia.org/wiki/%E6%97%A9%E6%A2%85%E8%A9%A9)》，詩中明代官話二十字母排列爲「東風破早梅」
+  * [**東風破**](https://github.com/rime/plum)：一份 Rime 輸入方案集，得名於《[韻畧易通](https://zh.wikipedia.org/wiki/%E9%9F%BB%E7%95%A7%E6%98%93%E9%80%9A)》開篇的《[早梅詩](https://zh.wikipedia.org/wiki/%E6%97%A9%E6%A2%85%E8%A9%A9)》，詩中明代官話二十字母排列爲「東風破早梅」
   * **八股文**：一份詞彙表和簡陋的語言模型
   * [**朙月拼音**](http://rime.im/blog/2013/09/19/luna-pinyin/)：與 Rime 同時開發的傳統字形的拼音輸入方案，爲致敬他山「昇陽拼音」，即 Mac / Linux 平臺的知名開源拼音輸入法 [SunPinyin](http://sunpinyin.org)
   * **地球拼音**：地球人學的用的都是包括聲調的《[漢語拼音](http://www.zdic.net/appendix/f8.htm)》。打倒聲調失傳的（僞）[全拼](https://zh.wikipedia.org/wiki/%E5%85%A8%E6%8B%BC)

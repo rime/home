@@ -15,11 +15,6 @@ librime:
   repo: https://github.com/rime/librime
   url: download#tarball
 
-brise:
-  name: brise
-  repo: https://github.com/rime/brise
-  url: download#tarball
-
 squirrel:
   name: 鼠鬚管
   version: '0.9.26.2'

@@ -122,7 +122,7 @@ tags:
 
 # <a name="rime-chord-typing-yanhuayileng"></a>注音並擊輸入　周杰倫《煙花易冷》
 
-輸入方案爲[佛振](https://github.com/lotem)製作的[中州注音法](https://github.com/lotem/brise-zhung)，中原官話注音結合[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)的並擊輸入方式。
+輸入方案爲[佛振](https://github.com/lotem)製作的[中州注音法](https://github.com/lotem/rime-zhung)，中原官話注音結合[宮保拼音](https://github.com/rime/home/wiki/ComboPinyin)的並擊輸入方式。
 
 視頻播放速度：4X
 

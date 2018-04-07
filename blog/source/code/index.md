@@ -9,8 +9,8 @@ Fork Rime on [GitHub](https://github.com/rime):
   * __La rime__ - the core library - <https://github.com/rime/librime>
     <span class="badges">[![GitHub issues](https://img.shields.io/github/issues/rime/librime.svg)](https://github.com/rime/librime/issues)[![GitHub forks](https://img.shields.io/github/forks/rime/librime.svg)](https://github.com/rime/librime)[![GitHub stars](https://img.shields.io/github/stars/rime/librime.svg)](https://github.com/rime/librime)</span>
 
-  * __La brise__ - Rime schema repository - <https://github.com/rime/brise>
-    <span class="badges">[![GitHub issues](https://img.shields.io/github/issues/rime/brise.svg)](https://github.com/rime/brise/issues)[![GitHub forks](https://img.shields.io/github/forks/rime/brise.svg)](https://github.com/rime/brise)[![GitHub stars](https://img.shields.io/github/stars/rime/brise.svg)](https://github.com/rime/brise)</span>
+  * __/plum/__ - Rime configuration manager and input schema repository - <https://github.com/rime/plum>
+    <span class="badges">[![GitHub issues](https://img.shields.io/github/issues/rime/plum.svg)](https://github.com/rime/plum/issues)[![GitHub forks](https://img.shields.io/github/forks/rime/plum.svg)](https://github.com/rime/plum)[![GitHub stars](https://img.shields.io/github/stars/rime/plum.svg)](https://github.com/rime/plum)</span>
 
   * __ibus-rime__ - Linux client powered by IBus - <https://github.com/rime/ibus-rime>
     <span class="badges">[![GitHub issues](https://img.shields.io/github/issues/rime/ibus-rime.svg)](https://github.com/rime/ibus-rime/issues)[![GitHub forks](https://img.shields.io/github/forks/rime/ibus-rime.svg)](https://github.com/rime/ibus-rime)[![GitHub stars](https://img.shields.io/github/stars/rime/ibus-rime.svg)](https://github.com/rime/ibus-rime)</span>

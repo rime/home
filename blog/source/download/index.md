@@ -38,11 +38,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 ## ibus-rime
 
 基於 IBus 輸入法框架。
-請查看各 Linux 發行版 [安裝說明](https://github.com/rime/home/wiki/RimeWithIBus)，或下載 tar 包從源碼編譯安裝：
-
-  * [ibus-rime](https://github.com/rime/ibus-rime/releases)
-  * [librime](https://github.com/rime/librime/releases)
-  * [brise](https://github.com/rime/brise/releases)
+請 [查看](https://github.com/rime/home/wiki/RimeWithIBus) 各 Linux 發行版安裝說明，或從源碼編譯安裝。
 
 ## fcitx-rime
 
@@ -56,15 +52,25 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 <hr/>
 
-## 下一步：使用方案選單
+## 下一步：選擇輸入方案
+
+### 使用方案選單
 
 下載、安裝完成後，試試：
 按組合鍵 <code>Ctrl+`</code> 或 <code>F4</code> 鍵喚出輸入方案選單，由此調整 Rime 輸入法最常用的選項。
 
-與 Rime 一同發行的輸入方案有：朙月拼音、注音、倉頡、五筆畫、地球拼音等。
-您可通過方案選單切換輸入方案。〔[說明書](https://github.com/rime/home/wiki/UserGuide)〕
+您可通過方案選單切換已經安裝的輸入方案。〔[說明書](https://github.com/rime/home/wiki/UserGuide)〕
 
-還可以從 [Rime 輸入方案倉庫](https://github.com/rime/brise) 安裝：速成、五筆、雙拼、宮保拼音、粵拼、吳語、中古漢語拼音、Emoji、國際音標……
+### 安裝更多輸入方案
+
+通過 [/plum/](https://github.com/rime/plum) 配置管理器獲取並安裝輸入方案：〔[庫藏一覽](https://github.com/rime/plum#packages)〕
+
+  - 現代標準漢語：[朙月拼音](https://github.com/rime/rime-luna-pinyin)、[地球拼音](https://github.com/rime/rime-terra-pinyin)、[注音](https://github.com/rime/rime-bopomofo)
+  - 拼音的變體：[雙拼](https://github.com/rime/rime-double-pinyin)、[宮保拼音](https://github.com/rime/rime-combo-pinyin)、[打字速記法](https://github.com/rime/rime-stenotype)
+  - 漢語方言：[粵拼](https://github.com/rime/rime-jyutping)、吳語（[上海話](https://github.com/rime/rime-wugniu)、[蘇州話](https://github.com/rime/rime-soutzoe)）
+  - 歷史音韻：[中古漢語拼音](https://github.com/rime/rime-middle-chinese)
+  - 字形輸入法：[五筆畫](https://github.com/rime/rime-stroke)、[倉頡](https://github.com/rime/rime-cangjie)、[速成](https://github.com/rime/rime-quick)、[五筆](https://github.com/rime/rime-wubi)
+  - 符號輸入：[繪文字](https://github.com/rime/rime-emoji)、[國際音標](https://github.com/rime/rime-ipa)
 
 <hr/>
 
