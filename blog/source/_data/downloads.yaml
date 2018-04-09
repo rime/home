@@ -23,6 +23,6 @@ squirrel:
 
 weasel:
   name: 小狼毫
-  version: '0.10.0'
+  version: '0.11.0'
   repo: https://github.com/rime/weasel
-  url: https://dl.bintray.com/rime/weasel/weasel-0.10.0.0-installer.exe
+  url: https://dl.bintray.com/rime/weasel/weasel-0.11.0.0-installer.exe
