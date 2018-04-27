@@ -1,85 +1,41 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
 </head>
+
 <body>
-<p><a name="0.11.0"></a></p>
-<h2 id="0-11-0-2018-04-07-">0.11.0 (2018-04-07)</h2>
-<h4 id="-">主要更新</h4>
-<ul>
-<li>新增 <a href="https://github.com/rime/plum">Rime 配置管理器</a>，通過「輸入法設定／獲取更多輸入方案」調用</li>
-<li>在輸入法語言欄顯示狀態切換按鈕（TSF 模式）</li>
-<li>修復多個前端兼容性問題</li>
-<li>新增配色主題「現代藍」<code>metroblue</code>、「幽能」<code>psionics</code></li>
-<li>安裝程序支持繁體中文介面</li>
-<li>修復 0.10 版升級安裝後，因用戶文件夾中保留舊文件、配置不生效的問題</li>
-<li>升級 0.9 版 <code>.kct</code> 格式的用戶詞典
-<strong>注意</strong>：僅此一個版本支持格式升級，請務必由 0.9 升級到 0.11，再安裝後續版本</li>
-</ul>
-<h4 id="features">Features</h4>
-<ul>
-<li><strong>WeaselDeployer:</strong>  add Get Schemata button to run plum script (#174) (<a href="https://github.com/rime/weasel/commit/c786bb5ba2f1cc7e79b66f36d0190e61cd7233ae">c786bb5b</a>)</li>
-<li><strong>build.bat:</strong>  customize PLATFORM_TOOLSET settings (<a href="https://github.com/rime/weasel/commit/c7a9a4fb530e0274450e4296cb0db2906d2f1fb4">c7a9a4fb</a>)</li>
-<li><strong>config:</strong><ul>
-<li>enable customization of label format (<a href="https://github.com/rime/weasel/commit/76b08bae810735c5f1c8626ec39a7afd463f0269">76b08bae</a>)</li>
-<li>alias <code>style/layout/border_width</code> to <code>style/layout/border</code> (<a href="https://github.com/rime/weasel/commit/013eefebaa4474e7814b6cfb6c905bcc12543a7f">013eefeb</a>)</li>
-</ul>
-</li>
-<li><strong>install.nsi:</strong><ul>
-<li>add Traditional Chinese for installer (<a href="https://github.com/rime/weasel/commit/d1a9696a57dfc9e04c51899572e156fb1676f786">d1a9696a</a>)</li>
-<li>upgrade to Modern UI 2 and prompt reboot (#128) (<a href="https://github.com/rime/weasel/commit/f59006f8d195ca848e45cd934f44b3318fb135c1">f59006f8</a>)</li>
-</ul>
-</li>
-<li><strong>ipc:</strong>  specify user name for named pipe (<a href="https://github.com/rime/weasel/commit/2dfa5e1a63ee1c26ef983d25471682f87cc60b62">2dfa5e1a</a>)</li>
-<li><strong>preset_color_schemes:</strong><ul>
-<li>add homepage featured color scheme <code>psionics</code> (<a href="https://github.com/rime/weasel/commit/89a0eb8b861b9b3f2abc42df65821254010b24ff">89a0eb8b</a>)</li>
-<li>add metroblue color scheme (<a href="https://github.com/rime/weasel/commit/f43e2af608bde38a6d345ba540f4c37ec024853a">f43e2af6</a>)</li>
-</ul>
-</li>
-<li><strong>submodules:</strong>  switch from rime/brise to rime/plum (<a href="https://github.com/rime/weasel/commit/f3ff5aa962a7b8cce2b74a5cb583a69cb8938e55">f3ff5aa9</a>)</li>
-<li><strong>tsf:</strong><ul>
-<li>enable language bar button (#170) (<a href="https://github.com/rime/weasel/commit/2b660397950f348205e6a93bf44a46e4a72bcc81">2b660397</a>)</li>
-<li>accomplish candidate UI interfaces (#156) (<a href="https://github.com/rime/weasel/commit/1f0ae7936fd495ecf4ff3ef162c0e38297d2d582">1f0ae793</a>)</li>
-<li>fix candidate selecting in preview preedit mode (<a href="https://github.com/rime/weasel/commit/206efd692124339d0e256198360c1860c72cd807">206efd69</a>)</li>
-<li>support user defined preedit display type (<a href="https://github.com/rime/weasel/commit/f76379b01abe9d3971d68e2e272067e0bb855cc9">f76379b0</a>)</li>
-</ul>
-</li>
-<li><strong>weasel.yaml:</strong>  enable ascii_mode in console applications by default (<a href="https://github.com/rime/weasel/commit/28cdd09692f77e471784bf85ff7a19bc48e113f4">28cdd096</a>)</li>
-</ul>
-<h4 id="bug-fixes">Bug Fixes</h4>
-<ul>
-<li>fix defects according to Coverity Scan (<a href="https://github.com/rime/weasel/commit/526a91d2954492cc8e23c2c4c8def2a053af7c20">526a91d2</a>)</li>
-<li>inline_preedit &amp;&amp; fullscreen causing dead lock when there&#39;s no candidates. (<a href="https://github.com/rime/weasel/commit/deb0bb24b3f3aeaf73aef344968b7f15b471443f">deb0bb24</a>)</li>
-<li><strong>RimeWithWeasel:</strong>  fix wild pointer (<a href="https://github.com/rime/weasel/commit/ae2e3c4a256fb9a2f7851c54114822d1bfbf0316">ae2e3c4a</a>)</li>
-<li><strong>ServerImpl:</strong>  do finalization before exit process (<a href="https://github.com/rime/weasel/commit/b1bae01eb25c5e24e074807b7b3cb8a6d8401276">b1bae01e</a>)</li>
-<li><strong>WeaselUI:</strong><ul>
-<li>specify default label format in constructor (<a href="https://github.com/rime/weasel/commit/4374d2440b99726894799861fb3bd5b93e73dec5">4374d244</a>, closes <a href="https://github.com/rime/weasel/issues/147">#147</a>)</li>
-<li>limit to subscript range when processing candidates (<a href="https://github.com/rime/weasel/commit/6b686c717bfab141469c3d48ec1c6acbeb79921e">6b686c71</a>, closes <a href="https://github.com/rime/weasel/issues/121">#121</a>)</li>
-</ul>
-</li>
-<li><strong>composition:</strong><ul>
-<li>improve compositions and edit sessions (#146) (<a href="https://github.com/rime/weasel/commit/fbdb66791da3291b740edf3c337032674e4377e8">fbdb6679</a>)</li>
-<li>fix crashes in notebook with inline preedit (<a href="https://github.com/rime/weasel/commit/5e257088be823a2569609f0b3591af3a51d47a46">5e257088</a>)</li>
-<li>fix crashes in notebook with inline preedit (<a href="https://github.com/rime/weasel/commit/892930cebc4235a0a1ef58803fe88c32ccc8b4e9">892930ce</a>)</li>
-</ul>
-</li>
-<li><strong>install.bat:</strong>  run in elevate cmd; detach WeaselServer process (<a href="https://github.com/rime/weasel/commit/2194d9fbd7d0341fef94efdbe9268af8a6237438">2194d9fb</a>)</li>
-<li><strong>ipc:</strong><ul>
-<li>add version check for security descriptor initialization (<a href="https://github.com/rime/weasel/commit/b97ccffe76a6abf3e353724ce0607d5dd97de6f2">b97ccffe</a>, closes <a href="https://github.com/rime/weasel/issues/157">#157</a>)</li>
-<li>grant access to IE protected mode (<a href="https://github.com/rime/weasel/commit/16c163a41d0afc9824723009ba8b9b9ba37b1c72">16c163a4</a>)</li>
-<li>try to reconnect when failed (<a href="https://github.com/rime/weasel/commit/3c286b6a942769abf13188d88f9ab5e4c125807b">3c286b6a</a>)</li>
-</ul>
-</li>
-<li><strong>librime:</strong>  make rime_api.h available in librime\build\include\ (<a href="https://github.com/rime/weasel/commit/3793e22c47b34c61d305ca80567dfdafe08b2302">3793e22c</a>)</li>
-<li><strong>server:</strong>  postpone tray icon updating when focusing on explorer (<a href="https://github.com/rime/weasel/commit/45cf112099fa6db335cda06b1aaa0ae9c7975efe">45cf1120</a>)</li>
-<li><strong>tsf:</strong><ul>
-<li>fix candidate behavior (<a href="https://github.com/rime/weasel/commit/9e2f9f17c059bf129c2c8b2561471670ea200dd7">9e2f9f17</a>)</li>
-<li>fix <code>ITfCandidateListUIElement</code> implemention (<a href="https://github.com/rime/weasel/commit/9ce1fa87e6ef788e791e68193700e2ebdd950d20">9ce1fa87</a>)</li>
-<li>use commmit text preview to show inline preview (<a href="https://github.com/rime/weasel/commit/b1d1ec43e132998ea8764d8dac2098a2b3d9a3e8">b1d1ec43</a>)</li>
-</ul>
-</li>
-</ul>
+    <p>
+        <a name="0.11.1"></a>
+    </p>
+    <h2 id="0-11-1-2018-04-26-">0.11.1 (2018-04-26)</h2>
+    <h4 id="-">主要更新</h4>
+    <ul>
+        <li>修復了在 Excel 中奇怪的輸入丟失問題（<a href="https://github.com/rime/weasel/issues/185">#185</a>）</li>
+        <li>功能鍵不再會觸發輸入焦點（<a href="https://github.com/rime/weasel/issues/194">#194</a>、<a href="https://github.com/rime/weasel/issues/195">#195</a>、<a href="https://github.com/rime/weasel/issues/204">#204</a>）</li>
+        <li>「獲取更多輸入方案」功能優化（<a href="https://github.com/rime/weasel/issues/180">#180</a>）</li>
+        <li>修復了後臺可能同時出現多個算法服務的問題（<a href="https://github.com/rime/weasel/issues/199">#199</a>）</li>
+        <li>恢復語言欄右鍵菜單中「用戶資料同步」一項</li>
+    </ul>
+    <h4 id="bug-fixes">Bug Fixes</h4>
+    <ul>
+        <li><strong>server:</strong> use kernel mutex to ensure single instance (#207) (<a href="https://github.com/rime/weasel/commit/bd0c4720669c61087dd930b968640c60a526ecb2">bd0c4720</a>)</li>
+        <li><strong>tsf:</strong>
+            <ul>
+                <li>do not reset composition on document focus set (<a href="https://github.com/rime/weasel/commit/124fc9475c30963a9bbbf9a097b452b52e8ab658">124fc947</a>)</li>
+                <li>use <code>ITfContext::GetSelection</code> to get cursor position (<a href="https://github.com/rime/weasel/commit/5664481cc9ddd28db35c3155f7ddf83a55b65275">5664481c</a>)</li>
+                <li>recover sync option in TSF language bar menu (<a href="https://github.com/rime/weasel/commit/7a0a8cc2a3dd913ce34204d6e966b263af766f3b">7a0a8cc2</a>)</li>
+            </ul>
+        </li>
+    </ul>
+    <h4 id="features">Features</h4>
+    <ul>
+        <li><strong>build.bat:</strong> build installer (<a href="https://github.com/rime/weasel/commit/e18117b7b42d5af0fbfa807e4c858c40206b4967">e18117b7</a>)</li>
+        <li><strong>installer:</strong> bundle curl, update rime-install.bat, fixes #180 (<a href="https://github.com/rime/weasel/commit/2f3b283d6ef4aa0580d186e626dadb9e1030dfd5">2f3b283d</a>)</li>
+        <li><strong>rime-install.bat:</strong> built-in ZIP package installer (<a href="https://github.com/rime/weasel/commit/739be9bc9ba08e294f51e1d7232407148ded716c">739be9bc</a>)</li>
+    </ul>
 
 </body>
+
 </html>
