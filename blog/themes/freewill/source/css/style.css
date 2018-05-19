@@ -11,6 +11,12 @@ body {
   padding-bottom: 70px;
 }
 
+body.rip-mode {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
 .content {
   padding: 20px;
   margin: 20px -20px; /* negative indent the amount of the padding to maintain the grid system */
@@ -374,6 +380,11 @@ img {
 .front-matter img {
   width: 360px;
   height: auto;
+}
+
+.front-matter .notice {
+  color: white;
+  text-align: center;
 }
 
 /* =============================================================================
