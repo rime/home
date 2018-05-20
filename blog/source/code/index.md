@@ -18,8 +18,8 @@ Fork Rime on [GitHub](https://github.com/rime):
 
   * __Weasel__ - Windows client - <https://github.com/rime/weasel>
     <span class="badges">[![GitHub issues](https://img.shields.io/github/issues/rime/weasel.svg)](https://github.com/rime/weasel/issues)[![GitHub forks](https://img.shields.io/github/forks/rime/weasel.svg)](https://github.com/rime/weasel)[![GitHub stars](https://img.shields.io/github/stars/rime/weasel.svg)](https://github.com/rime/weasel)</span>
-    [Build instructions](https://github.com/rime/weasel/blob/develop/INSTALL.md) for Weasel
+    [Build instructions](https://github.com/rime/weasel/blob/master/INSTALL.md) for Weasel
 
   * __Squirrel__ - Mac OS client - <https://github.com/rime/squirrel>
     <span class="badges">[![GitHub issues](https://img.shields.io/github/issues/rime/squirrel.svg)](https://github.com/rime/squirrel/issues)[![GitHub forks](https://img.shields.io/github/forks/rime/squirrel.svg)](https://github.com/rime/squirrel)[![GitHub stars](https://img.shields.io/github/stars/rime/squirrel.svg)](https://github.com/rime/squirrel)</span>
-    [Build instructions](https://github.com/rime/squirrel/blob/develop/INSTALL.md) for Squirrel
+    [Build instructions](https://github.com/rime/squirrel/blob/master/INSTALL.md) for Squirrel
