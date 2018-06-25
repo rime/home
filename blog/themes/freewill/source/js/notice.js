@@ -1,6 +1,6 @@
 const notices = [
   {
-    start: '2018-05-19 GMT+0800',
+    start: '2018/05/19 GMT+0800',
     length: 7,
     mode: 'rip-mode',
     notice: '鄭張尚芳先生千古'
