@@ -4,31 +4,32 @@
 <meta charset="utf-8">
 </head>
 <body>
-<p><a name="0.11.1"></a></p>
-<h2 id="0-11-1-2018-04-26-">0.11.1 (2018-04-26)</h2>
+<p><a name="0.12.0"></a></p>
+<h2 id="0-12-0-2018-11-12-">0.12.0  (2018-11-12)</h2>
 <h4 id="-">主要更新</h4>
 <ul>
-<li>修復了在 Excel 中奇怪的輸入丟失問題（<a href="https://github.com/rime/weasel/issues/185">#185</a>）</li>
-<li>功能鍵不再會觸發輸入焦點（<a href="https://github.com/rime/weasel/issues/194">#194</a>、<a href="https://github.com/rime/weasel/issues/195">#195</a>、<a href="https://github.com/rime/weasel/issues/204">#204</a>）</li>
-<li>「獲取更多輸入方案」功能優化（<a href="https://github.com/rime/weasel/issues/180">#180</a>）</li>
-<li>修復了後臺可能同時出現多個算法服務的問題（<a href="https://github.com/rime/weasel/issues/199">#199</a>）</li>
-<li>恢復語言欄右鍵菜單中「用戶資料同步」一項</li>
-</ul>
-<h4 id="bug-fixes">Bug Fixes</h4>
-<ul>
-<li><strong>server:</strong>  use kernel mutex to ensure single instance (#207) (<a href="https://github.com/rime/weasel/commit/bd0c4720669c61087dd930b968640c60a526ecb2">bd0c4720</a>)</li>
-<li><strong>tsf:</strong><ul>
-<li>do not reset composition on document focus set (<a href="https://github.com/rime/weasel/commit/124fc9475c30963a9bbbf9a097b452b52e8ab658">124fc947</a>)</li>
-<li>use <code>ITfContext::GetSelection</code> to get cursor position (<a href="https://github.com/rime/weasel/commit/5664481cc9ddd28db35c3155f7ddf83a55b65275">5664481c</a>)</li>
-<li>recover sync option in TSF language bar menu (<a href="https://github.com/rime/weasel/commit/7a0a8cc2a3dd913ce34204d6e966b263af766f3b">7a0a8cc2</a>)</li>
+<li>合併小狼毫與小狼毫（TSF）兩種輸入法</li>
+<li>合併32位與64位系統下的安裝程序</li>
+<li>使用系統的關閉輸入法功能（默認快捷鍵 Ctrl + Space）後，輸入法圖標將顯示禁用狀態</li>
+<li>修復一些情況下的崩潰問題</li>
+<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#132-2018-11-12">librime 1.3.2</a><ul>
+<li>允許多個翻譯器共用同一個詞典時的組詞，實現固定單字順序的形碼組詞(<a href="https://github.com/rime/librime/issues/184">librime#184</a>)。</li>
+<li>新增 translator/always_show_comments 選項，允許始終顯示候選詞註解。</li>
 </ul>
 </li>
 </ul>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>candidate:</strong> fix COM pointer reference (<a href="https://github.com/nameoverflow/weasel/commit/63d6d9a">63d6d9a</a>)</li>
+<li><strong>ipc:</strong> eliminate some trivial warnings (<a href="https://github.com/nameoverflow/weasel/commit/dae945c">dae945c</a>)</li>
+<li>fix constructor (<a href="https://github.com/nameoverflow/weasel/commit/b25f968">b25f968</a>)</li>
+</ul>
 <h4 id="features">Features</h4>
 <ul>
-<li><strong>build.bat:</strong>  build installer (<a href="https://github.com/rime/weasel/commit/e18117b7b42d5af0fbfa807e4c858c40206b4967">e18117b7</a>)</li>
-<li><strong>installer:</strong>  bundle curl, update rime-install.bat, fixes #180 (<a href="https://github.com/rime/weasel/commit/2f3b283d6ef4aa0580d186e626dadb9e1030dfd5">2f3b283d</a>)</li>
-<li><strong>rime-install.bat:</strong>  built-in ZIP package installer (<a href="https://github.com/rime/weasel/commit/739be9bc9ba08e294f51e1d7232407148ded716c">739be9bc</a>)</li>
+<li><strong>compartment:</strong> show IME disabled on language bar (<a href="https://github.com/nameoverflow/weasel/issues/263">#263</a>) (<a href="https://github.com/nameoverflow/weasel/commit/4015d18">4015d18</a>)</li>
+<li><strong>install:</strong> combine IME and TSF (<a href="https://github.com/nameoverflow/weasel/issues/257">#257</a>) (<a href="https://github.com/nameoverflow/weasel/commit/91cbd2c">91cbd2c</a>)</li>
+<li><strong>tsf:</strong> get IME keyboard identifier by searching registry (<a href="https://github.com/nameoverflow/weasel/issues/272">#272</a>) (<a href="https://github.com/nameoverflow/weasel/commit/b60b5b1">b60b5b1</a>)</li>
+<li><strong>WeaselSetup:</strong> detect 64-bit on single 32-bit build (<a href="https://github.com/nameoverflow/weasel/issues/266">#266</a>) (<a href="https://github.com/nameoverflow/weasel/commit/fb3ae0f">fb3ae0f</a>)</li>
 </ul>
 
 </body>

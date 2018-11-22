@@ -1,6 +1,60 @@
 title: 【小狼毫】更新日誌
-date: 2018-04-09 00:00:00
+date: 2018-11-12 00:00:00
 ---
+
+<a name="0.12.0"></a>
+## 0.12.0  (2018-11-12)
+
+#### 主要更新
+
+* 合併小狼毫與小狼毫（TSF）兩種輸入法
+* 合併32位與64位系統下的安裝程序
+* 使用系統的關閉輸入法功能（默認快捷鍵 Ctrl + Space）後，輸入法圖標將顯示禁用狀態
+* 修復一些情況下的崩潰問題
+* 升級核心算法庫 [librime 1.3.2](https://github.com/rime/librime/blob/master/CHANGELOG.md#132-2018-11-12)
+  * 允許多個翻譯器共用同一個詞典時的組詞，實現固定單字順序的形碼組詞([librime#184](https://github.com/rime/librime/issues/184))。
+  * 新增 translator/always_show_comments 選項，允許始終顯示候選詞註解。
+
+#### Bug Fixes
+
+* **candidate:** fix COM pointer reference ([63d6d9a](https://github.com/rime/weasel/commit/63d6d9a))
+* **ipc:** eliminate some trivial warnings ([dae945c](https://github.com/rime/weasel/commit/dae945c))
+* fix constructor ([b25f968](https://github.com/rime/weasel/commit/b25f968))
+
+
+#### Features
+
+* **compartment:** show IME disabled on language bar ([#263](https://github.com/rime/weasel/issues/263)) ([4015d18](https://github.com/rime/weasel/commit/4015d18))
+* **install:** combine IME and TSF ([#257](https://github.com/rime/weasel/issues/257)) ([91cbd2c](https://github.com/rime/weasel/commit/91cbd2c))
+* **tsf:** get IME keyboard identifier by searching registry ([#272](https://github.com/rime/weasel/issues/272)) ([b60b5b1](https://github.com/rime/weasel/commit/b60b5b1))
+* **WeaselSetup:** detect 64-bit on single 32-bit build ([#266](https://github.com/rime/weasel/issues/266)) ([fb3ae0f](https://github.com/rime/weasel/commit/fb3ae0f))
+
+
+<a name="0.11.1"></a>
+## 0.11.1 (2018-04-26)
+
+#### 主要更新
+
+* 修復了在 Excel 中奇怪的輸入丟失問題（[#185](https://github.com/rime/weasel/issues/185)）
+* 功能鍵不再會觸發輸入焦點（[#194](https://github.com/rime/weasel/issues/194)、[#195](https://github.com/rime/weasel/issues/195)、[#204](https://github.com/rime/weasel/issues/204)）
+* 「獲取更多輸入方案」功能優化（[#180](https://github.com/rime/weasel/issues/180)）
+* 修復了後臺可能同時出現多個算法服務的問題（[#199](https://github.com/rime/weasel/issues/199)）
+* 恢復語言欄右鍵菜單中「用戶資料同步」一項
+
+#### Bug Fixes
+
+* **server:**  use kernel mutex to ensure single instance (#207) ([bd0c4720](https://github.com/rime/weasel/commit/bd0c4720669c61087dd930b968640c60a526ecb2))
+* **tsf:**
+  *  do not reset composition on document focus set ([124fc947](https://github.com/rime/weasel/commit/124fc9475c30963a9bbbf9a097b452b52e8ab658))
+  *  use `ITfContext::GetSelection` to get cursor position ([5664481c](https://github.com/rime/weasel/commit/5664481cc9ddd28db35c3155f7ddf83a55b65275))
+  *  recover sync option in TSF language bar menu ([7a0a8cc2](https://github.com/rime/weasel/commit/7a0a8cc2a3dd913ce34204d6e966b263af766f3b))
+
+#### Features
+
+* **build.bat:**  build installer ([e18117b7](https://github.com/rime/weasel/commit/e18117b7b42d5af0fbfa807e4c858c40206b4967))
+* **installer:**  bundle curl, update rime-install.bat, fixes #180 ([2f3b283d](https://github.com/rime/weasel/commit/2f3b283d6ef4aa0580d186e626dadb9e1030dfd5))
+* **rime-install.bat:**  built-in ZIP package installer ([739be9bc](https://github.com/rime/weasel/commit/739be9bc9ba08e294f51e1d7232407148ded716c))
+
 
 <a name="0.11.0"></a>
 ## 0.11.0 (2018-04-07)
