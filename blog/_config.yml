@@ -62,10 +62,10 @@ per_page: 10
 pagination_dir: page
 
 # Disqus
-disqus_shortname: rimeime
+#disqus_shortname: rimeime
 
 # Duoshuo
-duoshuo_shortname: rime
+#duoshuo_shortname: rime
 
 # Extensions
 ## Plugins: http://hexo.io/plugins/

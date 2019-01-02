@@ -1,5 +1,5 @@
 title: 參加討論
-comment: false
+comments: true
 icon: fa fa-comments-o
 content_class: nofancybox
 date: 2015-04-01 21:43:48

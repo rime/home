@@ -7,9 +7,11 @@
 <script src="<%- config.root %>js/gallery.js"></script>
 <script src="<%- config.root %>js/bootstrap.min.js"></script>
 <script src="<%- config.root %>js/main.js"></script>
+<% if (page.comments) { %>
 <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+<% } %>
 
-<% if (config.disqus_shortname && page.comment){ %>
+<% if (config.disqus_shortname && page.comments){ %>
 <script type="text/javascript">
 var disqus_shortname = '<%= config.disqus_shortname %>';
 
@@ -23,7 +25,7 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
 </script>
 <% } %>
 
-<% if (config.duoshuo_shortname && page.comment){ %>
+<% if (config.duoshuo_shortname && page.comments){ %>
 <!-- 多说公共JS代码 start -->
 <script type="text/javascript">
 var duoshuoQuery = {short_name:'<%= config.duoshuo_shortname %>'};
