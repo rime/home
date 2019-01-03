@@ -11,13 +11,15 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 ## 小狼毫 <small>Weasel</small>
 
-  * [小狼毫 0.12.0](https://bintray.com/rime/weasel/release)〔[下載](https://dl.bintray.com/rime/weasel/weasel-0.12.0.0-installer.exe)〕〔[更新日誌](/release/weasel/)〕，適用於 Windows XP SP3, Windows 7, Windows 8/8.1, Windows 10
+  * [小狼毫 0.12.0](https://bintray.com/rime/weasel/release)〔[下載](https://dl.bintray.com/rime/weasel/weasel-0.12.0.0-installer.exe)〕〔[更新日誌](/release/weasel/)〕〔[歷史版本](https://bintray.com/rime/weasel/release)〕〔[0.9.x 版本](https://bintray.com/lotem/rime/Weasel)〕
+  適用於 Windows XP SP3, Windows 7, Windows 8/8.1, Windows 10
 
 # <a name="mac">macOS</a>
 
 ## 鼠鬚管 <small>Squirrel</small>
 
-  * [鼠鬚管 0.10.0](https://bintray.com/rime/squirrel/release)〔[下載](https://dl.bintray.com/rime/squirrel/Squirrel-0.10.0.zip)〕〔[更新日誌](/release/squirrel/)〕，適用於64位 macOS 10.7+
+  * [鼠鬚管 0.10.0](/release/squirrel/)〔[下載](https://dl.bintray.com/rime/squirrel/Squirrel-0.10.0.zip)〕〔[更新日誌](/release/squirrel/)〕〔[歷史版本](https://bintray.com/rime/squirrel/release)〕〔[0.9.x 版本](https://bintray.com/lotem/rime/Squirrel)〕
+    適用於64位 macOS 10.7+
 
 其他安裝方式：
 
