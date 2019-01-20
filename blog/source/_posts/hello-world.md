@@ -4,4 +4,4 @@ tags:
 ---
 
 寫輸入法的目的是更舒服地用鍵盤寫字。
-而今博客開張了。[Rime](http://rime.github.io) 終於有了用武之地。
+而今博客開張了。[Rime](https://rime.im) 終於有了用武之地。
