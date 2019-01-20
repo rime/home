@@ -6,7 +6,7 @@ Rime 代碼之家
 
 ## Project home page
 
-<http://rime.im>
+<https://rime.im>
 
 ## Docs
 

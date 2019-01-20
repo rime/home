@@ -11,7 +11,7 @@ tags: QnA
 
 <!-- more -->
 
-原題：http://rime.im/discuss/#comment-2620725368
+原題：https://rime.im/discuss/#comment-2620725368
 
 ## 立意
 
@@ -74,7 +74,7 @@ tags: QnA
 於是「[小狼毫](https://github.com/rime/weasel)」就不再指稱 Rime 一個支持了新平臺的版本，而固化爲該 Windows 輸入法前端的項目名。
 與其對應的是 librime 庫，純粹是跨平臺的輸入法引擎代碼。
 
-「[鼠鬚管](https://github.com/rime/squirrel)」亦然。名出歐陽修詩《[奉送原甫侍讀出守永興](http://rime.im/blog/2013/11/24/screencasts/#rime-middle-chinese)》。
+「[鼠鬚管](https://github.com/rime/squirrel)」亦然。名出歐陽修詩《[奉送原甫侍讀出守永興](https://rime.im/blog/2013/11/24/screencasts/#rime-middle-chinese)》。
 
 ## 點名
 
@@ -82,7 +82,7 @@ tags: QnA
 
   * [**東風破**](https://github.com/rime/plum)：一份 Rime 輸入方案集，得名於《[韻畧易通](https://zh.wikipedia.org/wiki/%E9%9F%BB%E7%95%A7%E6%98%93%E9%80%9A)》開篇的《[早梅詩](https://zh.wikipedia.org/wiki/%E6%97%A9%E6%A2%85%E8%A9%A9)》，詩中明代官話二十字母排列爲「東風破早梅」
   * **八股文**：一份詞彙表和簡陋的語言模型
-  * [**朙月拼音**](http://rime.im/blog/2013/09/19/luna-pinyin/)：與 Rime 同時開發的傳統字形的拼音輸入方案，爲致敬他山「昇陽拼音」，即 Mac / Linux 平臺的知名開源拼音輸入法 [SunPinyin](http://sunpinyin.org)
+  * [**朙月拼音**](https://rime.im/blog/2013/09/19/luna-pinyin/)：與 Rime 同時開發的傳統字形的拼音輸入方案，爲致敬他山「昇陽拼音」，即 Mac / Linux 平臺的知名開源拼音輸入法 [SunPinyin](http://sunpinyin.org)
   * **地球拼音**：地球人學的用的都是包括聲調的《[漢語拼音](http://www.zdic.net/appendix/f8.htm)》。打倒聲調失傳的（僞）[全拼](https://zh.wikipedia.org/wiki/%E5%85%A8%E6%8B%BC)
   * [**宮保拼音**](https://github.com/rime/home/wiki/ComboPinyin)：利用標準 PC 鍵盤的多鍵並擊（chord）輸入法。以拼音輸入法爲基礎，融合了速錄鍵盤的操作方式。「宮保」爲「Combo」的音譯，可能包含着私廚祕製的意味
 

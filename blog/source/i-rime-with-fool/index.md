@@ -8,7 +8,7 @@ Code name: `iRime`<font color="white">WithFool</font>
 
 適用機型 iPhone 5c 以上，尚未支持 iPad；系統版本 iOS 12.3 以上
 
-[下載 iRime](http://rime.im/download/) 並請充分閱讀 [安裝說明](https://github.com/rime/home/wiki/RimeWithTheCode)
+[下載 iRime](https://rime.im/download/) 並請充分閱讀 [安裝說明](https://github.com/rime/home/wiki/RimeWithTheCode)
 
 Note: <font color="red">UNSTABLE!!</font> Use at your own risk.
 
