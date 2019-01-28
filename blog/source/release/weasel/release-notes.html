@@ -4,32 +4,29 @@
 <meta charset="utf-8">
 </head>
 <body>
-<p><a name="0.12.0"></a></p>
-<h2 id="0-12-0-2018-11-12-">0.12.0  (2018-11-12)</h2>
-<h4 id="-">主要更新</h4>
+<p><a name="0.13.0"></a></p>
+<h2 id="0130-2019-01-28">0.13.0 (2019-01-28)</h2>
+<h4 id="主要更新">主要更新</h4>
 <ul>
-<li>合併小狼毫與小狼毫（TSF）兩種輸入法</li>
-<li>合併32位與64位系統下的安裝程序</li>
-<li>使用系統的關閉輸入法功能（默認快捷鍵 Ctrl + Space）後，輸入法圖標將顯示禁用狀態</li>
-<li>修復一些情況下的崩潰問題</li>
-<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#132-2018-11-12">librime 1.3.2</a><ul>
-<li>允許多個翻譯器共用同一個詞典時的組詞，實現固定單字順序的形碼組詞(<a href="https://github.com/rime/librime/issues/184">librime#184</a>)。</li>
-<li>新增 translator/always_show_comments 選項，允許始終顯示候選詞註解。</li>
+<li>升級核心算法庫 <a href="https://github.com/rime/librime/blob/master/CHANGELOG.md#140-2019-01-16">librime 1.4.0</a><ul>
+<li>新增 <a href="https://github.com/rime/librime/pull/228">拼寫糾錯</a> 選項
+當前僅限 QWERTY 鍵盤佈局及使用 <code>script_translator</code> 的方案</li>
+<li>修復升級、部署數據時發生的若干錯誤</li>
 </ul>
 </li>
-</ul>
-<h4 id="bug-fixes">Bug Fixes</h4>
-<ul>
-<li><strong>candidate:</strong> fix COM pointer reference (<a href="https://github.com/nameoverflow/weasel/commit/63d6d9a">63d6d9a</a>)</li>
-<li><strong>ipc:</strong> eliminate some trivial warnings (<a href="https://github.com/nameoverflow/weasel/commit/dae945c">dae945c</a>)</li>
-<li>fix constructor (<a href="https://github.com/nameoverflow/weasel/commit/b25f968">b25f968</a>)</li>
+<li>更換輸入法狀態圖標，適配高分辨率屏幕</li>
 </ul>
 <h4 id="features">Features</h4>
 <ul>
-<li><strong>compartment:</strong> show IME disabled on language bar (<a href="https://github.com/nameoverflow/weasel/issues/263">#263</a>) (<a href="https://github.com/nameoverflow/weasel/commit/4015d18">4015d18</a>)</li>
-<li><strong>install:</strong> combine IME and TSF (<a href="https://github.com/nameoverflow/weasel/issues/257">#257</a>) (<a href="https://github.com/nameoverflow/weasel/commit/91cbd2c">91cbd2c</a>)</li>
-<li><strong>tsf:</strong> get IME keyboard identifier by searching registry (<a href="https://github.com/nameoverflow/weasel/issues/272">#272</a>) (<a href="https://github.com/nameoverflow/weasel/commit/b60b5b1">b60b5b1</a>)</li>
-<li><strong>WeaselSetup:</strong> detect 64-bit on single 32-bit build (<a href="https://github.com/nameoverflow/weasel/issues/266">#266</a>) (<a href="https://github.com/nameoverflow/weasel/commit/fb3ae0f">fb3ae0f</a>)</li>
+<li><strong>tsf:</strong>  register as GUID_TFCAT_TIPCAP_UIELEMENTENABLED (<a href="https://github.com/rime/weasel/commit/ae8769166ea50b319aa89460b60890d598c618c5">ae876916</a>)</li>
+<li><strong>ui:</strong>  high-res icons (#324) (<a href="https://github.com/rime/weasel/commit/ad3e2027644f80c6a384b7730da20dd239e780af">ad3e2027</a>)</li>
+</ul>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li><strong>WeaselSetup.vcxproj:</strong>  Debug build linker options (<a href="https://github.com/rime/weasel/commit/eb885fe06ffd720d3de1101be2410a94bd3747c0">eb885fe0</a>)</li>
+<li><strong>output/install.nsi:</strong>  bundle new yaml files from rime/rime-prelude (<a href="https://github.com/rime/weasel/commit/cba35e9b2c34d095b9ca1eb44e923e004cf23ddc">cba35e9b</a>)</li>
+<li><strong>test:</strong>  Debug build (<a href="https://github.com/rime/weasel/commit/c771126c74fa1c4f91d4bfd8fb5ab8c16dcb7c4c">c771126c</a>)</li>
+<li><strong>tsf:</strong>  set current page to 0 as page count is always 1 (<a href="https://github.com/rime/weasel/commit/5447f63bc7c9d0e31d7ba8ead1e1229938be276d">5447f63b</a>)</li>
 </ul>
 
 </body>

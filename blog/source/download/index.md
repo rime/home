@@ -1,6 +1,6 @@
 title: 下載及安裝
 icon: fa fa-download
-date: 2019-01-23 00:00:00
+date: 2019-01-28 00:00:00
 s: download
 ---
 
@@ -11,7 +11,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 ## 小狼毫 <small>Weasel</small>
 
-  * [小狼毫 0.12.0](https://bintray.com/rime/weasel/release)〔[下載](https://dl.bintray.com/rime/weasel/weasel-0.12.0.0-installer.exe)〕〔[更新日誌](/release/weasel/)〕〔[歷史版本](https://bintray.com/rime/weasel/release)〕〔[0.9.x 版本](https://bintray.com/lotem/rime/Weasel)〕
+  * [小狼毫 0.13.0](https://bintray.com/rime/weasel/release)〔[下載](https://dl.bintray.com/rime/weasel/weasel-0.13.0.0-installer.exe)〕〔[更新日誌](/release/weasel/)〕〔[歷史版本](https://bintray.com/rime/weasel/release)〕〔[0.9.x 版本](https://bintray.com/lotem/rime/Weasel)〕
   適用於 Windows XP SP3, Windows 7, Windows 8/8.1, Windows 10
 
 # <a name="mac">macOS</a>
