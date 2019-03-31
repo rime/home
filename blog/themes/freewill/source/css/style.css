@@ -11,10 +11,18 @@ body {
   padding-bottom: 70px;
 }
 
+body.fool-mode {
+  background-color: #f001;
+}
+
 body.rip-mode {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+.fool-mode .notice {
+  font-size: 20px;
 }
 
 .content {
