@@ -11,14 +11,16 @@ body {
   padding-bottom: 70px;
 }
 
-body.fool-mode {
-  background-color: #f001;
-}
-
 body.rip-mode {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+body.fool-mode {
+  -webkit-filter: invert(1);
+  -moz-filter: invert(1);
+  filter: invert(1);
 }
 
 .fool-mode .notice {
