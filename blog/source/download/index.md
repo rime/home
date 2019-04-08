@@ -1,4 +1,5 @@
 title: 下載及安裝
+comments: false
 icon: fa fa-download
 date: 2019-01-28 00:00:00
 s: download

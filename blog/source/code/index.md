@@ -1,5 +1,6 @@
 title: How Do I Rime with the Code
 icon: fa fa-code
+comments: false
 content_class: nofancybox
 date: 2015-03-14 17:34:02
 ---

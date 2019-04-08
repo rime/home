@@ -3,6 +3,11 @@
 <section id="comment">
   <h2 class="title"><%= __('comment') %></h2>
 
+  <span class="badges">
+    <a href="https://gitter.im/rime/home?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge" target="_blank" rel="noopener">
+      <img class="nofancybox" src="https://badges.gitter.im/Join%20Chat.svg" alt="https://gitter.im/rime/home">
+    </a>
+  </span>
   <% if (theme.comment_provider == "facebook") {
       if (theme.facebook) { %>
       <%- partial('_partial/facebook_comment', {fbConfig: theme.facebook}) %>

@@ -21,7 +21,7 @@ if (!item.icon) {
 			<a href="<%- config.root %><%- item.path %>" <% if(item.description) { %>title="<%= item.description %>"<% } %>><%= item.title %></a>
 			<span class="text-muted pull-right">
 				<small> <%= item.date.format(config.date_format) %> </small>
-				<small style="padding-left:1em;"><a href="<%- config.root %><%- item.path %>#disqus_thread"><%= __('comment') %></a></small>
+				<small style="padding-left:1em;"><a href="<%- config.root %><%- item.path %>#comment"><%= __('comment') %></a></small>
 			</span>
 		</h3>
 	<% } else { %>

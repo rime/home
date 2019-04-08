@@ -1,5 +1,5 @@
 title: 幫助與反饋
-comments: true
+comments: false
 content_class: nofancybox
 date: 2015-03-14 17:33:46
 ---
@@ -22,5 +22,5 @@ date: 2015-03-14 17:33:46
 無法確切分類的、或有關項目網站及文檔的問題，請 [提交 Issue](https://github.com/rime/home/issues/new) 到 [Rime 代碼之家](https://github.com/rime/home)：
 <span class="badges">[![GitHub issues](https://img.shields.io/github/issues/rime/home.svg)](https://github.com/rime/home/issues)</span>
 
-如需其他幫助，也可在 `rime/home` 聊天室提問：
+如需其他幫助，也可在 `rime/home` 聊天室提問。
 <span class="badges">[![https://gitter.im/rime/home](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/rime/home?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)</span>
