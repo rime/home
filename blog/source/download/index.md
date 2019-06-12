@@ -12,7 +12,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 ## 小狼毫 <small>Weasel</small>
 
-  * [小狼毫 0.13.0](https://bintray.com/rime/weasel/release)〔[下載](https://dl.bintray.com/rime/weasel/weasel-0.13.0.0-installer.exe)〕〔[更新日誌](/release/weasel/)〕〔[歷史版本](https://bintray.com/rime/weasel/release)〕〔[0.9.x 版本](https://bintray.com/lotem/rime/Weasel)〕
+  * [小狼毫 0.14.0](https://bintray.com/rime/weasel/release)〔[下載](https://dl.bintray.com/rime/weasel/weasel-0.14.0.135-installer.exe)〕〔[更新日誌](/release/weasel/)〕〔[歷史版本](https://bintray.com/rime/weasel/release)〕〔[0.9.x 版本](https://bintray.com/lotem/rime/Weasel)〕
   適用於 Windows XP SP3, Windows 7, Windows 8/8.1, Windows 10
 
 # <a name="mac">macOS</a>
@@ -28,12 +28,12 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 相關軟件：
 
-  * [neolee/SCU](https://github.com/neolee/SCU) 是由 [Neo Lee](https://github.com/neolee) 開發的圖形化配置工具。
+  * *（第三方軟件）* [neolee/SCU](https://github.com/neolee/SCU) 是由 [Neo Lee](https://github.com/neolee) 開發的圖形化配置工具。（可能不匹配鼠鬚管的最新版本）
 
 
 ## XIME <small>XIME Input Method Editor</small>
 
-[stackia/XIME](https://github.com/stackia/XIME) 是由 [Stackie Jia](https://github.com/stackia) 創作的基於 Rime 引擎的 macOS 輸入法。
+*（第三方軟件）* [stackia/XIME](https://github.com/stackia/XIME) 是由 [Stackie Jia](https://github.com/stackia) 創作的基於 Rime 引擎的 macOS 輸入法。
 
 # <a name="linux">Linux</a>
 
@@ -44,13 +44,13 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 ## fcitx-rime
 
-基於 Fcitx 輸入法框架的 [fcitx-rime](https://github.com/fcitx/fcitx-rime)，由 Fcitx 團隊開發和維護。
+*（第三方軟件）* 基於 Fcitx 輸入法框架的 [fcitx-rime](https://github.com/fcitx/fcitx-rime)，由 Fcitx 團隊開發和維護。
 
 # <a name="android">Android</a>
 
 ## 同文 <small>Tongwen Rime Input Method Editor</small>
 
-[同文安卓輸入法平臺](https://github.com/osfans/trime) 〔[下載](https://github.com/osfans/trime/releases)〕是由 [osfans](https://github.com/osfans) 創作的基於 Rime 引擎的 Android 輸入法。
+*（第三方軟件）* [同文安卓輸入法平臺](https://github.com/osfans/trime) 〔[下載傳送門](https://github.com/osfans/trime/releases)〕是由 [osfans](https://github.com/osfans) 創作的基於 Rime 引擎的 Android 輸入法。
 
 <hr/>
 

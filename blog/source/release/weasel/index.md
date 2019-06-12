@@ -1,7 +1,28 @@
 title: 【小狼毫】更新日誌
 comments: false
-date: 2019-01-28 00:00:00
+date: 2019-06-12 00:00:00
 ---
+
+<a name="0.14.0"></a>
+## 0.14.0 (2019-06-11)
+
+
+#### 主要更新
+
+* 升級核心算法庫 [librime 1.5.0](https://github.com/rime/librime/blob/master/CHANGELOG.md#150-2019-06-06)
+  * 遷移到VS2017構建工具；建設安全可靠的全自動構建、發佈流程
+  * 通過更新第三方庫，修復userdb文件夾大量佔用磁盤空間的問題
+  * 將Rime插件納入自動化構建流程。本次發行包含兩款插件：
+    - [librime-lua](https://github.com/hchunhui/librime-lua)
+    - [librime-octagram](https://github.com/lotem/librime-octagram)
+* 高清重製真彩輸入法狀態圖標
+
+
+#### Features
+
+* **ui:**  high-res status icons; display larger icons in WeaselPanel ([093fa806](https://github.com/rime/weasel/commit/093fa80678422f972e7a7285060553eeedb0e591))
+
+
 
 <a name="0.13.0"></a>
 ## 0.13.0 (2019-01-28)
@@ -57,6 +78,8 @@ date: 2019-01-28 00:00:00
 * **tsf:** get IME keyboard identifier by searching registry ([#272](https://github.com/rime/weasel/issues/272)) ([b60b5b1](https://github.com/rime/weasel/commit/b60b5b1))
 * **WeaselSetup:** detect 64-bit on single 32-bit build ([#266](https://github.com/rime/weasel/issues/266)) ([fb3ae0f](https://github.com/rime/weasel/commit/fb3ae0f))
 
+
+
 <a name="0.11.1"></a>
 ## 0.11.1 (2018-04-26)
 
@@ -81,6 +104,7 @@ date: 2019-01-28 00:00:00
 * **build.bat:**  build installer ([e18117b7](https://github.com/rime/weasel/commit/e18117b7b42d5af0fbfa807e4c858c40206b4967))
 * **installer:**  bundle curl, update rime-install.bat, fixes #180 ([2f3b283d](https://github.com/rime/weasel/commit/2f3b283d6ef4aa0580d186e626dadb9e1030dfd5))
 * **rime-install.bat:**  built-in ZIP package installer ([739be9bc](https://github.com/rime/weasel/commit/739be9bc9ba08e294f51e1d7232407148ded716c))
+
 
 
 <a name="0.11.0"></a>
