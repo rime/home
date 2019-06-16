@@ -15,7 +15,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
   * [小狼毫 0.14.1](https://bintray.com/rime/weasel/release)〔[下載](https://dl.bintray.com/rime/weasel/weasel-0.14.1.138-installer.exe)〕〔[更新日誌](/release/weasel/)〕〔[歷史版本](https://bintray.com/rime/weasel/release)〕〔[0.9.x 版本](https://bintray.com/lotem/rime/Weasel)〕
     適用於 Windows XP SP3, Windows 7, Windows 8/8.1, Windows 10
 
-  * [語言模型數據包](https://bintray.com/rime/weasel/data)
+  * [語言模型數據包](https://bintray.com/rime/weasel/data)〔[配方](https://github.com/lotem/rime-octagram-data)〕
 
 # <a name="mac">macOS</a>
 
