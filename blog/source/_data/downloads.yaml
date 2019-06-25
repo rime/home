@@ -17,12 +17,12 @@ librime:
 
 squirrel:
   name: 鼠鬚管
-  version: '0.13.0'
+  version: '0.14.0'
   repo: https://github.com/rime/squirrel
-  url: https://dl.bintray.com/rime/squirrel/Squirrel-0.13.0.zip
+  url: https://dl.bintray.com/rime/squirrel/Squirrel-0.14.0.zip
 
 weasel:
   name: 小狼毫
-  version: '0.14.2'
+  version: '0.14.3'
   repo: https://github.com/rime/weasel
-  url: https://dl.bintray.com/rime/weasel/weasel-0.14.2.140-installer.exe
+  url: https://dl.bintray.com/rime/weasel/weasel-0.14.3.0-installer.exe
