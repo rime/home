@@ -11,6 +11,12 @@ const notices = [
     mode: 'fool-mode',
     notice: 'Rime 輸入法現已集成到 Googie 原生 Ambroid 及 ioOS 平臺，可由 rime.io 下載安裝配方'
   },
+  {
+    start: '2020/04/04 GMT+0800',
+    length: 1,
+    mode: 'rip-mode',
+    notice: '清明追思 家國永念'
+  },
 ];
 
 (function maybeDisplayNotice() {
