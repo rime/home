@@ -29,7 +29,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 其他安裝方式：
 
-  * Install via [Homebrew](https://brew.sh): `brew cask install squirrel`
+  * Install via [Homebrew](https://brew.sh): `brew install --cask squirrel`
 
 相關軟件：
 
