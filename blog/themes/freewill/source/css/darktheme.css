@@ -1,0 +1,53 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: #b4bcc2;
+  }
+  .downloads {
+    background-color: #0f0f0f;
+  }
+  .user-quotes {
+    background-color: #0f0f0f;
+  }
+  .home hr {
+    border-color: #0f0f0f;
+  }
+  #sidebar {
+    border-left: 1px solid #1f1f1f;
+  }
+  .widget {
+    border-bottom: 1px solid #1f1f1f;
+  }
+  .has-success .form-control,
+  .has-success .form-control:focus {
+    background-color: #000;
+  }
+
+  table tr { border-top: 1px solid #333333; background-color: black; margin: 0; padding: 0; }
+  table tr:nth-child(2n) { background-color: #080808; }
+  table tr th { font-weight: bold; border: 1px solid #333333; margin: 0; padding: 6px 13px; }
+  table tr td { border: 1px solid #333333; margin: 0; padding: 6px 13px; }
+
+  code {
+    background: #111;
+    border: 1px solid #1a1a1a;
+    color: #ff4f7c;
+    text-shadow: 0 1px #000;
+  }
+
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+    color: #767c80;
+
+  .panel {
+    background-color: #000 !important;
+  }
+  .panel-default {
+    border-color: #0e1013 !important;
+  }
+  .mypage > .panel-default > .panel-heading {
+    border-bottom: 1px solid #0e1013 !important;
+  }
+  .mypage > .panel-default > .panel-heading:not(:first-child) {
+    border-top: 1px solid #0e1013 !important;
+  }
+}

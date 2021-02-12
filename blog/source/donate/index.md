@@ -4,16 +4,6 @@ content_class: nofancybox
 date: 2015-04-26 18:00:00
 ---
 
-<style>
-table { padding: 0;border-collapse: collapse; }
-table tr { border-top: 1px solid #cccccc; background-color: white; margin: 0; padding: 0; }
-table tr:nth-child(2n) { background-color: #f8f8f8; }
-table tr th { font-weight: bold; border: 1px solid #cccccc; margin: 0; padding: 6px 13px; }
-table tr td { border: 1px solid #cccccc; margin: 0; padding: 6px 13px; }
-table tr th :first-child, table tr td :first-child { margin-top: 0; }
-table tr th :last-child, table tr td :last-child { margin-bottom: 0; }
-</style>
-
 很高興 Rime 輸入法能幫到您。
 
 時有 Rime 的用家通過小額贊助的方式寄來對 Rime 開發工作的支持和鼓勵。
