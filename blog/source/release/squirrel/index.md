@@ -1,7 +1,28 @@
 title: 【鼠鬚管】更新日誌
 comments: false
-date: 2021-02-12 13:24:26
+date: 2021-02-13 23:20:40
 ---
+
+<a name="0.15.2"></a>
+## 0.15.2 (2021-02-13)
+
+
+#### 主要更新
+
+* 切換到其他輸入法或鍵盤時提交未轉換的輸入
+* 修復工單 [#513](https://github.com/rime/squirrel/issues/513)
+* 重製應用圖標，提升暗色背景下的可見度
+
+#### Bug Fixes
+
+* **SquirrelInputController:**  commit raw input when switching to other IME, closes #146 ([b875d194](https://github.com/rime/squirrel/commit/b875d194d9799ccc74453292c670fcca892799fa))
+* **SquirrelPanel:**  use of uninitialized local variable linear, vertical ([e8b87a4f](https://github.com/rime/squirrel/commit/e8b87a4f97994001c6889ecc1d43fa38e7589e66))
+
+#### Features
+
+* **RimeIcon:**  updated app icon ([76d742b8](https://github.com/rime/squirrel/commit/76d742b8ee271c24dae5f98251a93930e57279ec))
+
+
 
 <a name="0.15.1"></a>
 ## 0.15.1 (2021-02-11)
