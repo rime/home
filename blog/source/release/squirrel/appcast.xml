@@ -10,7 +10,7 @@
       <sparkle:releaseNotesLink>https://rime.github.io/release/squirrel/</sparkle:releaseNotesLink>
       <sparkle:minimumSystemVersion>10.9.0</sparkle:minimumSystemVersion>
       <pubDate>Sat, 13 Feb 2021 23:19:20 +0800</pubDate>
-      <enclosure url="https://dl.bintray.com/rime/squirrel/Squirrel-0.15.2.zip"
+      <enclosure url="https://github.com/rime/squirrel/releases/download/0.15.2/Squirrel-0.15.2.zip"
                  sparkle:version="0.15.2"
                  sparkle:dsaSignature="MCwCFCR6MS6jD4D0lNS4W7KFr+IN12paAhR3KjR+4Nbw+RPDT1GgvzFtqYb3Bg=="
                  length="22522751"

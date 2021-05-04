@@ -1,7 +1,7 @@
 title: 下載及安裝
 comments: false
 icon: fa fa-download
-date: 2021-02-06 21:00:00
+date: 2021-05-04 12:00:00
 s: download
 ---
 
@@ -12,19 +12,17 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 ## 小狼毫 <small>Weasel</small>
 
-  * [小狼毫 0.14.3](https://bintray.com/rime/weasel/release)〔[下載](https://dl.bintray.com/rime/weasel/weasel-0.14.3.0-installer.exe)〕〔[更新日誌](/release/weasel/)〕〔[歷史版本](https://bintray.com/rime/weasel/release)〕〔[0.9.x 版本](https://bintray.com/lotem/rime/Weasel)〕〔[測試頻道](https://bintray.com/rime/weasel/testing)〕
+  * [小狼毫 0.14.3](https://github.com/rime/weasel/releases/latest)〔[下載](https://github.com/rime/weasel/releases/download/0.14.3/weasel-0.14.3.0-installer.exe)〕〔[更新日誌](/release/weasel/)〕〔[歷史版本](https://github.com/rime/weasel/releases)〕
     適用於 Windows 7, Windows 8/8.1, Windows 10
 
-  * [小狼毫 0.12.0](https://bintray.com/rime/weasel/release/0.12.0)〔[下載](https://dl.bintray.com/rime/weasel/weasel-0.12.0.0-installer.exe)〕
-    適用於 Windows XP SP3
-
-  * [語言模型數據包](https://bintray.com/rime/weasel/data)〔[配方](https://github.com/lotem/rime-octagram-data)〕
+  * [小狼毫 0.9.30](https://github.com/rime/weasel/releases/tag/0.9.30)〔[下載](https://github.com/rime/weasel/releases/download/0.9.30/weasel-0.9.30.0-installer.exe)〕
+    適用於 Windows XP SP3（不再更新）
 
 # <a name="mac">macOS</a>
 
 ## 鼠鬚管 <small>Squirrel</small>
 
-  * [鼠鬚管 0.15.2](https://bintray.com/rime/squirrel/release)〔[下載](https://dl.bintray.com/rime/squirrel/Squirrel-0.15.2.zip)〕〔[更新日誌](/release/squirrel/)〕〔[歷史版本](https://bintray.com/rime/squirrel/release)〕〔[0.9.x 版本](https://bintray.com/lotem/rime/Squirrel)〕〔[測試頻道](https://bintray.com/rime/squirrel/testing)〕
+  * [鼠鬚管 0.15.2](https://github.com/rime/squirrel/releases/latest)〔[下載](https://github.com/rime/squirrel/releases/download/0.15.2/Squirrel-0.15.2.zip)〕〔[更新日誌](/release/squirrel/)〕〔[歷史版本](https://github.com/rime/squirrel/releases)〕
     適用於 macOS 10.9+
 
 其他安裝方式：
