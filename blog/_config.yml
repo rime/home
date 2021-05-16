@@ -78,6 +78,7 @@ deploy:
   type: git
   repo: https://github.com/rime/rime.github.io.git
   branch: master
+  ignore_hidden: false
 
 include:
   - .nojekyll
