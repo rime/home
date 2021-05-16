@@ -15,6 +15,9 @@ date: 2015-04-26 18:00:00
 用 [手機支付寶](https://mobile.alipay.com/) 掃描二維碼，捐款到支付寶賬號 <code>chen.sst<span>@</span>gmail.com</code>
 <span class="badges">![掃描二維碼捐贈](/images/qr-donate.jpg)</span>
 
+用微信掃描二維碼支付善款
+<span class="badges">![掃描二維碼捐贈](/images/wechatpay.jpg)</span>
+
 或付款至開發者的PayPal帳號 https://paypal.me/kiung
 
 ### 捐贈記錄
