@@ -4,18 +4,22 @@ content_class: nofancybox
 date: 2015-04-26 18:00:00
 ---
 
-很高興 Rime 輸入法能幫到您。
+<span class="badges">![功德箱](/images/gongdexiang.jpg "哎呀、使不得")</span>
 
-時有 Rime 的用家通過小額贊助的方式寄來對 Rime 開發工作的支持和鼓勵。
-
-無論金額多少都足夠表達您的一份心意。謝謝！
+很高興Rime輸入法能幫到您。
+時有Rime用家通過小額贊助的方式寄來對Rime開發工作的支持和鼓勵。謝謝你們！
+贊助款用於添置開發工具、維護網站域名，以及答謝部分積極的開源貢獻者。
 
 ### 捐贈方式
 
-用 [手機支付寶](https://mobile.alipay.com/) 掃描二維碼，捐款到支付寶賬號 <code>chen.sst@gmail.com</code>
+用 [手機支付寶](https://mobile.alipay.com/) 掃描二維碼，捐款到支付寶賬號 <code>chen.sst<span>@</span>gmail.com</code>
 <span class="badges">![掃描二維碼捐贈](/images/qr-donate.jpg)</span>
 
+或付款至開發者的PayPal帳號 https://paypal.me/kiung
+
 ### 捐贈記錄
+
+（節選）
 
 |日期|施主|捐贈金額|寄語|
 |--------------------|
@@ -123,6 +127,5 @@ date: 2015-04-26 18:00:00
 |2015-04-24|黄施主|100.00|　|
 
 ……
-篇幅所限，後續受贈記錄未能全部列入表格。
-贊助款已用於添置開發工具、維護網站域名。
+篇幅所限，後續受贈記錄未能全部列出。
 再次感謝大家！
