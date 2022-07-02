@@ -54,5 +54,5 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: rime/rime.github.io
           publish_branch: master
-          publish_dir: ./public
+          publish_dir: ./blog/public
           cname: rime.im
