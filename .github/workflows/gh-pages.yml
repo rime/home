@@ -1,0 +1,57 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+    pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    defaults:
+      run:
+        working-directory: blog
+    env:
+      TZ: Asia/Shanghai
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Setup Hexo
+        run: npm install -g hexo-cli
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: |
+          pwd
+          ls ${{ github.workspace }}
+          ls ${{ github.workspace }}/blog
+
+      - run: npm ci
+
+      - run: |
+          hexo clean
+          hexo generate
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/master' }}
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: rime/rime.github.io
+          publish_branch: master
+          publish_dir: ./public
+          cname: rime.im
