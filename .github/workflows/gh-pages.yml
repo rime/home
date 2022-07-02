@@ -3,6 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
+      - ci
       - master
     pull_request:
 
