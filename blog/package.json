@@ -6,8 +6,8 @@
     "version": "4.2.1"
   },
   "dependencies": {
-    "hexo": "^4.2.1",
-    "hexo-deployer-git": "^1.0.0",
+    "hexo": "^6.3.0",
+    "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^0.1.0",
     "hexo-generator-category": "^0.1.0",
     "hexo-generator-index": "^0.1.0",
