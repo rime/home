@@ -17,6 +17,12 @@ const notices = [
     mode: 'rip-mode',
     notice: '清明追思 家國永念'
   },
+  {
+    start: '2022/11/30 GMT+0800',
+    length: 7,
+    mode: 'rip-mode',
+    notice: '人的生命是有限的　知識是那麼浩瀚　即使你怎麼盡全力地努力　也只能得到一點點'
+  },
 ];
 
 (function maybeDisplayNotice() {
