@@ -1,7 +1,7 @@
 title: 下載及安裝
 comments: false
 icon: fa fa-download
-date: 2021-05-04 12:00:00
+date: 2023-02-02 00:00:00
 s: download
 ---
 
@@ -22,7 +22,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 ## 鼠鬚管 <small>Squirrel</small>
 
-  * [鼠鬚管 0.15.2](https://github.com/rime/squirrel/releases/latest)〔[下載](https://github.com/rime/squirrel/releases/download/0.15.2/Squirrel-0.15.2.zip)〕〔[更新日誌](/release/squirrel/)〕〔[歷史版本](https://github.com/rime/squirrel/releases)〕
+  * [鼠鬚管 0.16.1](https://github.com/rime/squirrel/releases/latest)〔[下載](https://github.com/rime/squirrel/releases/download/0.16.1/Squirrel-0.16.1.zip)〕〔[更新日誌](/release/squirrel/)〕〔[歷史版本](https://github.com/rime/squirrel/releases)〕
     適用於 macOS 10.9+
 
 其他安裝方式：
