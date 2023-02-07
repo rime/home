@@ -3,7 +3,6 @@ $(document).ready(function() {
   setupScrolling();
   detectOSForDownloads();
   initializeChineseConversion();
-  initializeGitterSidecar();
 });
 
 function detectSvgSupport() {
@@ -101,10 +100,4 @@ function initializeChineseConversion() {
     simplifyTextInPage(simplified);
     $(this).blur();
   });
-}
-
-function initializeGitterSidecar() {
-  ((window.gitter = {}).chat = {}).options = {
-    room: 'rime/home'
-  };
 }
