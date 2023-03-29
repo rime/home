@@ -55,6 +55,12 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 *（第三方軟件）* [同文安卓輸入法平臺](https://github.com/osfans/trime) 〔[下載傳送門](https://github.com/osfans/trime/releases)〕是由 [osfans](https://github.com/osfans) 創作的基於 Rime 引擎的 Android 輸入法。
 
+# <a name="web">在線輸入法</a>
+
+## My RIME
+
+*（第三方軟件）* [My RIME](https://github.com/LibreService/my_rime)：自由開源在線中文輸入法。
+
 <hr/>
 
 ## 下一步：選擇輸入方案
