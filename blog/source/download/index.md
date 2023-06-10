@@ -12,11 +12,8 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 ## 小狼毫 <small>Weasel</small>
 
-  * [小狼毫 0.15.0](https://github.com/rime/weasel/releases/latest)〔[下載](https://github.com/rime/weasel/releases/download/0.15.0/weasel-0.15.0.0-installer.exe)〕〔[更新日誌](/release/weasel/)〕〔[歷史版本](https://github.com/rime/weasel/releases)〕
-    適用於 Windows 8.1, Windows 10, Windows 11
-
-  * [小狼毫 0.14.3](https://github.com/rime/weasel/releases/tag/0.14.3)〔[下載](https://github.com/rime/weasel/releases/download/0.14.3/weasel-0.14.3.0-installer.exe)〕
-    適用於 Windows 7, Windows 8/8.1, Windows 10（不再更新）
+  * [小狼毫 0.14.3](https://github.com/rime/weasel/releases/latest)〔[下載](https://github.com/rime/weasel/releases/download/0.14.3/weasel-0.14.3.0-installer.exe)〕〔[更新日誌](/release/weasel/)〕〔[歷史版本](https://github.com/rime/weasel/releases)〕
+    適用於 Windows 7, Windows 8/8.1, Windows 10
 
   * [小狼毫 0.9.30](https://github.com/rime/weasel/releases/tag/0.9.30)〔[下載](https://github.com/rime/weasel/releases/download/0.9.30/weasel-0.9.30.0-installer.exe)〕
     適用於 Windows XP SP3（不再更新）
