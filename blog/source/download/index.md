@@ -52,6 +52,10 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 *（第三方軟件）* 基於 Fcitx 輸入法框架的 [fcitx-rime](https://github.com/fcitx/fcitx-rime)，由 Fcitx 團隊開發和維護。
 
+## fcitx5-rime
+
+*（第三方軟件）* 基於 Fcitx5 輸入法框架的 [fcitx5-rime](https://github.com/fcitx/fcitx5-rime)，由 Fcitx 團隊開發和維護。
+
 # <a name="android">Android</a>
 
 ## 同文 <small>Tongwen Rime Input Method Editor</small>
