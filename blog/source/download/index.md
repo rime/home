@@ -64,7 +64,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 ## fcitx5-android
 
-*（第三方軟件）* [fcitx5-android](https://github.com/fcitx5-android/fcitx5-android) 是由 [fcitx5-android](https://github.com/fcitx5-android) 製作的 Fcitx5 Android 輸入法。〔[下載傳送門](https://github.com/fcitx5-android/fcitx5-android/releases)〕需要下載app 本體及 plugin.rime 插件。
+*（第三方軟件）* [fcitx5-android](https://github.com/fcitx5-android/fcitx5-android) 是由 [fcitx5-android](https://github.com/fcitx5-android) 製作的 Fcitx5 Android 輸入法。〔[下載傳送門](https://github.com/fcitx5-android/fcitx5-android/releases)〕需要下載 app 本體及 plugin.rime 插件。
 
 # <a name="web">在線輸入法</a>
 
