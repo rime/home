@@ -54,17 +54,17 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 ## fcitx5-rime
 
-*（第三方軟件）* 基於 Fcitx5 輸入法框架的 [fcitx5-rime](https://github.com/fcitx/fcitx5-rime)，由 Fcitx 團隊開發和維護。查看[安裝方式](https://fcitx-im.org/wiki/Install_Fcitx_5/zh-cn)
+*（第三方軟件）* 基於 Fcitx5 輸入法框架的 [fcitx5-rime](https://github.com/fcitx/fcitx5-rime)，由 Fcitx 團隊開發和維護。查看 [安裝方式](https://fcitx-im.org/wiki/Install_Fcitx_5/zh-cn) 
 
 # <a name="android">Android</a>
 
 ## 同文 <small>Tongwen Rime Input Method Editor</small>
 
-*（第三方軟件）* [同文安卓輸入法平臺](https://github.com/osfans/trime) 是由 [osfans](https://github.com/osfans) 創作的基於 Rime 引擎的 Android 輸入法。〔[下載傳送門](https://github.com/osfans/trime/releases)〕
+*（第三方軟件）* [同文安卓輸入法平臺](https://github.com/osfans/trime) 是由 [osfans](https://github.com/osfans) 創作的基於 Rime 引擎的 Android 輸入法。 〔[下載傳送門](https://github.com/osfans/trime/releases)〕
 
 ## fcitx5-android
 
-*（第三方軟件）* [fcitx5-android](https://github.com/fcitx5-android/fcitx5-android) 是由 [fcitx5-android](https://github.com/fcitx5-android) 製作的Fcitx5 Android輸入法。〔[下載傳送門](https://github.com/fcitx5-android/fcitx5-android/releases)〕需要下載app本體及plugin.rime插件。
+*（第三方軟件）* [fcitx5-android](https://github.com/fcitx5-android/fcitx5-android) 是由 [fcitx5-android](https://github.com/fcitx5-android) 製作的Fcitx5 Android輸入法。 〔[下載傳送門](https://github.com/fcitx5-android/fcitx5-android/releases)〕 需要下載app本體及plugin.rime插件。
 
 # <a name="web">在線輸入法</a>
 
