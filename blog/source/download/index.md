@@ -37,6 +37,11 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
   * *（第三方軟件）* [neolee/SCU](https://github.com/neolee/SCU) 是由 [Neo Lee](https://github.com/neolee) 開發的圖形化配置工具。（可能不匹配鼠鬚管的最新版本）
 
 
+## 小企鹅 <small>fcitx5-macos</small>
+
+*（第三方軟件）* [fcitx5-macos](https://github.com/fcitx-contrib/fcitx5-macos) 是 Fcitx 輸入法的 macOS 移植。〔[下載傳送門](https://github.com/fcitx-contrib/fcitx5-macos-installer/blob/master/README.zh-CN.md)〕需要下載中州韻版安裝器。
+
+
 ## XIME <small>XIME Input Method Editor</small>
 
 *（第三方軟件）* [stackia/XIME](https://github.com/stackia/XIME) 是由 [Stackie Jia](https://github.com/stackia) 創作的基於 Rime 引擎的 macOS 輸入法。
@@ -62,7 +67,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 *（第三方軟件）* [同文安卓輸入法平臺](https://github.com/osfans/trime) 是由 [osfans](https://github.com/osfans) 創作的基於 Rime 引擎的 Android 輸入法。〔[下載傳送門](https://github.com/osfans/trime/releases)〕
 
-## fcitx5-android
+## 小企鹅 <small>fcitx5-android</small>
 
 *（第三方軟件）* [fcitx5-android](https://github.com/fcitx5-android/fcitx5-android) 是由 Fcitx 團隊製作的 Android 輸入法。〔[下載傳送門](https://github.com/fcitx5-android/fcitx5-android/releases)〕需要下載 app 本體及 plugin.rime 插件。
 
