@@ -17,9 +17,9 @@ librime:
 
 squirrel:
   name: 鼠鬚管
-  version: '0.16.2'
+  version: '0.18'
   repo: https://github.com/rime/squirrel
-  url: https://github.com/rime/squirrel/releases/download/0.16.2/Squirrel-0.16.2.zip
+  url: https://github.com/rime/squirrel/releases/download/0.18/Squirrel-0.18.pkg
 
 weasel:
   name: 小狼毫
