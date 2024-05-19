@@ -1,9 +1,28 @@
 title: 【鼠鬚管】更新日誌
 comments: false
-date: 2024-05-05 06:00:00
+date: 2024-06-01 06:00:00
 ---
+<a name="1.0.0"></a>
+## 1.0.0 (2024-06-01)
+#### 主要功能更新
+* 用 Swift 重寫，代碼更易維護，更易讀，貢獻代碼的門檻更低。今天就來看看源代碼，嘗試動手吧！
+#### 其它更新內容
+* `style/candidate_format` 格式修改爲 `"[index]. [candidate] [comment]"`，原格式仍能使用，建議遷移至更靈活、直觀的新格式
+* `style/horizontal` 將徹底移除，雖然本版程序仍支持，但會被新控件的默認值覆蓋，請使用 `candidate_list_layout`: `stacked`/`linear` 和 `text_orientation`: `horizontal`/`vertical`
+* 在菜單欄新增日志檔案夾，方便快速進入
+* 序號居中顯示，更像原生輸入法
+* `native` 配色小幅修改，減小字號，更像原生輸入法
 
-<a name="0.16.2"></a>
+#### Major Update
+* Migrated code to pure Swift, which is easier to maintain, read and contribute. Build your own Squirrel today!
+#### Other Updates
+* `style/candidate_format` now updated to `"[index]. [candidate] [comment]"`, while the old format still works, please migrate to this more readable and flexible format at your convenience
+* `style/horizontal` will be dropped, it's still supported but will be overwrite by the default values of new options. Please adopt `candidate_list_layout`: `stacked`/`linear` and `text_orientation`: `horizontal`/`vertical`
+* Added a menu item for logs folder for quick access
+* labels will vertically center if label font is smaller than candidate font, better matches macOS builtin IME
+* `native` color scheme is updated with smaller font size, better matches macOS builtin IME
+
+<a name="0.18"></a>
 ## 0.18 (2024-05-05)
 
 #### 主要功能更新
