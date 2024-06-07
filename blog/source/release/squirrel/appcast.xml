@@ -6,14 +6,14 @@
     <description>鼠鬚管 Appcast 更新頻道</description>
     <language>zh</language>
     <item>
-      <title>鼠鬚管 1.0.1</title>
+      <title>鼠鬚管 1.0.2</title>
       <sparkle:releaseNotesLink>https://rime.github.io/release/squirrel/</sparkle:releaseNotesLink>
       <sparkle:minimumSystemVersion>13.0.0</sparkle:minimumSystemVersion>
-      <pubDate>Fri, 31 May 2024 13:57:38 -0400</pubDate>
-      <enclosure url="https://github.com/rime/squirrel/releases/download/1.0.1/Squirrel-1.0.1.pkg"
-                 sparkle:version="1.0.1"
-                 sparkle:edSignature="+5+hh4Mqf5wThIykwSSTVGzs0vmqZAxzvjGcqPJ3U1Ve1HB0GOZmHdRJqH6CbTaiaGlHwCok7lOqOzl+tgZ0Cg=="
-                 length="22942964"
+      <pubDate>Fri, 07 Jun 2024 11:37:29 -0400</pubDate>
+      <enclosure url="https://github.com/rime/squirrel/releases/download/1.0.2/Squirrel-1.0.2.pkg"
+                 sparkle:version="1.0.2"
+                 sparkle:edSignature="E0wppOyf1g3nH9xS4b6rS1gdP9rYVr0bU1D5PtunFgLHlLGXcSaHzwoeKbb71SiZ6DTv3gXrqDleov9XD2CZDg=="
+                 length="22943169"
                  type="application/octet-stream"/>
     </item>
   </channel>

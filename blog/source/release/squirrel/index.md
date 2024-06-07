@@ -1,7 +1,33 @@
 title: 【鼠鬚管】更新日誌
 comments: false
-date: 2024-06-01 06:00:00
+date: 2024-06-07 11:41:28
 ---
+
+<a name="1.0.2"></a>
+## 1.0.2 (2024-06-07)
+
+#### 其它更新內容
+* bug 修復
+  * 未設定暗色主題時，配色不生效
+  * 橫排時序號偏高
+  * 帶 Alt 的快捷鍵不生效
+  * App 特定設置 inline 不生效
+  * `good_old_caps_lock` 關閉，且 Caps Lock 啓用時，Shift 無法輸入大寫字母
+* Edge 瀏覧器默認行內編輯 (修 #906)
+* 日誌置於 $TMPDIR/rime.squirrel 內，以便查找
+
+#### Other Updates
+* Bug fixes:
+  * `color_scheme` doesn't apply in dark mode when `color_scheme_dark` is not set
+  * Label baseline too high in horizontal orientation
+  * Shortcut with Alt doesn't work
+  * inline option in app specific setting doesn't work
+  * when `good_old_caps_lock` turned to false, and Caps Lock is on, Shift cannot product upper case letter
+* Edge defaults to inline mode (fix #906)
+* Logs dir is now $TMPDIR/rime.squirrel for clarity
+
+**Full Changelog**: https://github.com/rime/squirrel/compare/1.0.1...1.0.2
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2024-06-01)
 
@@ -22,7 +48,7 @@ date: 2024-06-01 06:00:00
 **Full Changelog**: https://github.com/rime/squirrel/compare/1.0.0...1.0.1
 
 <a name="1.0.0"></a>
-## 1.0.0 (2024-06-01)
+## 1.0.0 (2024-05-30)
 
 #### 主要功能更新
 * 純 Swift 重寫，代碼更易維護，更易讀，貢獻代碼的門檻更低。今天就來看看源代碼，嘗試動手吧！
@@ -63,7 +89,7 @@ date: 2024-06-01 06:00:00
 **Full Changelog**: https://github.com/rime/squirrel/compare/0.18...1.0.0
 
 <a name="0.18"></a>
-## 0.18 (2024-05-05)
+## 0.18 (2024-05-04)
 
 #### 主要功能更新
 * 現可設定非高亮候選項背景色：
@@ -147,8 +173,6 @@ date: 2024-06-01 06:00:00
 * @ksqsf made their first contribution in https://github.com/rime/squirrel/pull/860
 
 **Full Changelog**: https://github.com/rime/squirrel/compare/0.16.2...0.18
-
-
 
 <a name="0.16.2"></a>
 ## 0.16.2 (2023-02-05)
