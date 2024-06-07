@@ -1,7 +1,150 @@
 title: 【小狼毫】更新日誌
 comments: false
-date: 2019-06-25 22:24:46
+date: 2024-06-06 20:00:00
 ---
+
+<a name="0.16.1"></a>
+## [0.16.1](https://github.com/rime/weasel/compare/0.16.0...0.16.1) (2024-06-06)
+
+
+#### 安裝須知
+
+**⚠️如您由0.16.0之前的版本升級，由於參數變化，安裝小狼毫前請保存好文件資料，於安裝後重啓或註銷 Windows，否則正在使用小狼毫的應用可能會崩潰。**
+
+**⚠如您由0.16.0之前的版本升級，請確認您的 `installation.yaml` 文件編碼爲 `UTF-8`, 否則如您在其中修改了非 ASCII 字符內容的路徑時，有可能會引起未明錯誤。**
+
+#### 主要更新
+* 爲`WeaselServer.exe`使能Windows Error Reporting, 提供對應的`WeaselServer.pdb`文件, 在`WeaselServer.exe`崩潰時可以生成dmp報告文件在日誌文件夾中
+* 提供`WeaselServer.exe`守護，在服務崩潰後6個按鍵事件（三次擊鍵Down&Up)後拉起服務
+* 新增英文界面語言
+* 更新7z和curl到最新版本，修復一些因爲7z的bug引起的問題
+* 優化預覽圖PNG文件大小
+* 新增語言欄菜單，打開日誌文件夾，調整日誌文件夾路徑爲`%TEMP%\rime.weasel`,方便查閱管理
+* 異步處理消息，避免服務崩潰時長時間未響應引起客戶端程序崩潰
+* 不在服務中部署方案，避免在守護拉起服務進入長耗時部署引起的僵死問題
+
+#### Bug 修復
+
+* 修復自動折行未正確處理標點符號（標點在折行後最前）的問題
+* 修復`vim-mode`下的typo引起的`<C-C>`無法生效問題
+* 修復部署消息未更新問題
+* 修復卸載小狼毫時意外安裝語言包問題
+* 修復`semi_hilite`下的UI未正確響應問題, `semi_hilite`顏色調整爲高亮色的半透明度狀態，改善體驗
+* 減少不必要的服務端UI更新，提高性能減少服務崩潰機率
+* 修復在非`DPI=96`的副屏上響應慢的問題
+* 修復在高分屏上layout參數未dpi aware問題
+* 修復Windows 11下Chrome等瀏覽器中非激活光標狀態下的按鍵響應異常問題
+* 修復64位系統下默認安裝路徑不準確的問題
+
+
+
+<a name="0.16.0"></a>
+## [0.16.0](https://github.com/rime/weasel/compare/0.15.0...0.16.0) (2024-05-14)
+
+
+#### 安裝須知
+
+**⚠️由於參數變化，安裝小狼毫前請保存好文件資料，於安裝後重啓或註銷 Windows，否則正在使用小狼毫的應用可能會崩潰。**
+
+**⚠請確認您的 `installation.yaml` 文件編碼爲 `UTF-8`, 否則如您在其中修改了非 ASCII 字符內容的路徑時，有可能會引起未明錯誤。**
+
+#### 主要更新
+
+* 升級核心算法庫至 [librime 1.11.2](https://github.com/rime/librime/releases/tag/1.11.2)
+* 改善輸入法病毒誤報問題
+* 新增 64 位算法服務程序，支持 64 位 librime，支持大內存（可部署大規模詞庫方案）
+* 支持 arm/arm64 架構
+* 單安裝包支持 win32/x64/arm/arm64 架構系統的自動釋放文件
+* 32 位算法服務增加 LARGE ADDRESS AWARE 支持
+* 升級 boost 算法庫至 1.84.0
+* IME改爲可選項，默認不安裝
+* 棄用 `weaselt*.dll`，增加註冊香港、澳門、新加坡區域語言配置（默認未啓用，需在控制面板/設置中手工添加）；支持簡繁體小狼毫同時使能
+* 棄用 `weaselt*.ime`
+* 移除 `pyweasel`
+* 候選窗口 UI 內存優化
+* 改善候選窗口 UI 繪製性能
+* 升級 WTL 庫至 10.0，gdi+ 至 1.1
+* 每顯示器 dpi aware，自適應不同顯示器不同 dpi 設定變化
+* 更新高清圖標
+* 增大 IPC 數據長度限制至 64k，支持長候選
+* 升級 plum
+* 應用界面及菜單簡繁體自動適應
+* `app_options` 中應用名大小寫不敏感
+* 字體抗鋸齒設定參數 `style/antialias_mode: {force_dword|cleartype|grayscale|aliased|default}`
+* ASCII狀態提示跟隨鼠標光標設定 `style/ascii_tip_follow_cursor: bool`
+* 新增參數 `style/layout/hilite_padding_x: int`、`style/layout/hilite_padding_y: int`，支持分別設置xy向的 padding
+* 新增參數 `schema/full_icon: string`, `schema/half_icon: string`，支持在方案中設定全半角圖標
+* 新增參數 `style/text_orientation: "horizontal" | "vertical"`, 與 `style/vertical_text: bool` 冗餘，設定文字繪製方向，兼容 squirrel 參數
+* 新增參數 `style/paging_on_scroll: bool`，可設定滾輪相應類型（翻頁或切換前後候選）
+* 新增參數，Windows10 1809後版本的Windows，支持 `style/color_scheme_dark: string` 設定暗色模式配色
+* 新增參數 `style/candidate_abbreviate_length: int`，支持候選字數超限時縮略顯示
+* 新增參數 `style/click_to_capture: bool` 設定鼠標點擊是否截圖
+* 新增參數 `show_notifications_time: int` 可設定提示顯示時間，單位 ms；設置 0 時不顯示提示
+* 新增參數 `show_notifications: bool` 或 `show_notifications: 開關列表 | "schema"`，可定製是否顯示切換提示、顯示那些切換提示
+* 新增參數 `style/layout/baseline: int` 和 `style/layout/linespacing: int`，可自行調整參數修復候選窗高度跳躍閃爍問題
+* 棄用 `style/mouse_hover_ms`；新增 `style/hover_type: "none"|"semi_hilite"|"hilite"`，改善鼠標懸停相應體驗
+* 新增參數 `global_ascii: bool`, 支持全局 ascii 模式
+* 新增 `app_options`，支持應用專用 `vim_mode: bool`，支持常見 vim 切換 normal 模式按鍵時，切換到 `ascii_mode`
+* 新增 `app_options`，支持應用專用 `inline_preedit: bool` 設定，優先級高於方案內設定，高於 `weasel.yaml` 中的設定
+* 支持命令行設置小狼毫 `ascii_mode` 狀態，`WeaselServer.exe /ascii`，`WeaselServer.exe /nascii`
+* 支持設置 `comment_text_color`、`hilited_comment_text_color` 透明來隱藏對應文字顯示
+* `hilited_mark_color` 非透明，`mark_text` 爲空字符串時，類 windowns 11 的高亮標識
+* 切換方案後，提示方案圖標和方案名字
+* 支持全部 switch 提示使用方案內設定的 label
+* WeaselSetup通過打開目錄窗口設置用戶目錄路徑
+* 新增支持方案內定義方案專用配色
+* 支持 imtip
+* 增加類微軟拼音的高亮標識在鼠標點擊時的動態
+* 支持在字體設定任一分組中設置字體整體的字重或字形
+* 優化點擊選字邏輯
+* 豎直佈局反轉時，互換上下方向鍵
+* 候選窗超出下方邊界時，在當前合成結束前保持在輸入位置上方，減少候選窗口高度變小時潛在的窗口上下跳動
+* 調整 TSF 光標位置（`inline_preedit: false` 時），減少光標閃爍
+* WeaselSetup 修改用戶目錄路徑（已安裝時）
+* 語言欄新增菜單，重啓服務
+* IPC 報文轉義 `\n`、`\t`，不再因 `\n` 引發應用崩潰
+* 使用 clang-format 格式化代碼，統一代碼風格
+* 自動文件版本信息
+* 測試項目 test 只在 debug 配置狀態下編譯構建
+
+#### Bug 修復
+
+* 修復 word 365 中候選窗閃爍無法正常顯示的問題
+* 修復 word 行尾輸入時候選窗反覆跳動問題
+* 修復 word 中無法點擊選詞問題
+* 修復 excel 等應用中，第一鍵 keydown 時未及時彈出候選窗問題
+* 修復導出詞典數據後引起的多個 explorer 進程的問題，優化對應對話框界面顯示
+* 修復打開用戶目錄，程序目錄引起的多個 explorer.exe 進程問題，支持服務未啓動時打開這些目錄
+* 修復系統托盤重啓後未及時顯示的問題
+* 修復 `style/layout/min_width` 在部分佈局下未生效問題
+* 修復 preedit 寬高計算錯誤問題
+* 修復翻頁按鈕在豎直佈局反轉時位置錯誤
+* 修復豎直佈局帶非空 mark_text 時的計算錯誤
+* 修復 composing 中候選窗隨文字移動問題
+* 修復 wezterm gpu 模式下無法使用問題
+* 修復 `style/inline_preedit: true` 時第一鍵輸入時候選窗位置錯誤
+* 修復算法服務單例運行
+* 修復調用 WeaselServer.exe 未正常重啓服務問題
+* 修復偶發的顯卡關聯文字空白問題
+* 修復部署過程中如按鍵輸入引發的重複發出 tip 提示窗問題
+* 修復部分方案中的圖標顯示（`english.schema.yaml`）
+* 修復 `preedit_type: preview` 時的光標錯誤問題
+* 修復 `shadow_color` 透明時截圖尺寸過大問題，減小截圖尺寸
+* 修復天園地方時，高亮候選圓角半徑不正確問題
+* 修復某些狀態下天園地方的 preedit 背景色圓角異常問題
+* 修復候選尾部空白字符引起的佈局計算錯誤問題
+* 修復 mark_text 繪製鋸齒問題
+* 修復靜默安裝彈窗問題
+* 修復 librime-preedit 引起的應用崩潰問題
+* 修復 plum 用戶目錄識別錯誤問題
+* 修復安裝後未在控制面板中添加輸入法、卸載後未刪除控制面板中的輸入法清單問題
+* 修復一些其他已知的 bug
+
+#### 已知問題
+
+* 部分應用仍存在輸入法無法輸入文字或響應異常的問題
+* WeaselServer 仍可能發生崩潰
+* 仍有極少部分防病毒軟件可能誤報病毒
 
 <a name="0.15.0"></a>
 ## [0.15.0](https://github.com/rime/weasel/compare/0.15.0...0.14.3) (2023-06-06)
