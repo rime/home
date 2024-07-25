@@ -1,6 +1,9 @@
 name: GitHub Pages
 
 on:
+  # trigger on schedule every day at 00:00 GMT+8
+  schedule:
+    - cron: '0 16 * * *'
   push:
     branches:
       - ci
@@ -42,6 +45,8 @@ jobs:
           ls ${{ github.workspace }}/blog
 
       - run: npm ci
+
+      - run: python ./weasel_testing_appcast.py
 
       - run: |
           hexo clean
