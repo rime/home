@@ -1,9 +1,7 @@
 name: GitHub Pages
 
 on:
-  # trigger on schedule every day at 00:00 GMT+8
-  schedule:
-    - cron: '0 16 * * *'
+  workflow_dispatch:
   push:
     branches:
       - ci
