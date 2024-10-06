@@ -41,7 +41,7 @@ formatted_time = local_time.strftime("%a, %d %b %Y %H:%M:%S %z")
 if tags_name[latest_index] == "latest":
     releaseNotesLink = "https://github.com/rime/weasel/releases/tag/latest"
 else:
-    releaseNotesLink = "http://rime.github.io/testing/weasel/release-notes.html"
+    releaseNotesLink = "http://rime.github.io/testing/weasel/"
 # format xml file content
 template = f"""<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
