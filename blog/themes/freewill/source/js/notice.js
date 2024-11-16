@@ -23,6 +23,11 @@ const notices = [
     mode: 'rip-mode',
     notice: '人的生命是有限的　知識是那麼浩瀚　即使你怎麼盡全力地努力　也只能得到一點點'
   },
+  {
+    start: '2025/02/11 GMT+0800',
+    length: 1,
+    notice: '《汉语拼音方案》是中国人名、地名和中文文献罗马字母拼写法的统一规范，并用于汉字不便或不能使用的领域。'
+  },
 ];
 
 (function maybeDisplayNotice() {
