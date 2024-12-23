@@ -1,10 +1,11 @@
 <!-- _partial/post/title -->
 <%
 if (!item.icon) {
-  var subpath = item.path.replace(/\/index\.html$/, '');
-  item.icon =  _.result(_.find(theme.menu, function(m) {
+  let subpath = item.path.replace(/\/index\.html$/, '');
+  let result = theme.menu.find(function(m) {
     return (m.url == subpath);
-  }), 'icon', '');
+  });
+  item.icon = result === undefined ? '' : result.icon;
 }
 %>
 <div class="panel-heading">
