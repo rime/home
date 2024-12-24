@@ -22,6 +22,9 @@ menu:
     url: blog
     intro: "Rime::Blog"
     icon: "fa fa-pencil-square-o"
+  - title: 體驗
+    url: online
+    icon: "fa fa-cloud"
 #  - title: 分類
 #    url: categories
 #    intro: "所有分類"

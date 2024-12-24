@@ -1,1 +1,5 @@
 .DS_Store
+# fcitx5-rime.js
+Fcitx5.*
+libFcitx5*
+*.zip
