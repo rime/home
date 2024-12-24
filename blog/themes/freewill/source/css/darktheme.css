@@ -51,4 +51,8 @@
   .mypage > .panel-default > .panel-heading:not(:first-child) {
     border-top: 1px solid #0e1013 !important;
   }
+
+  textarea.form-control {
+    color: white;
+  }
 }
