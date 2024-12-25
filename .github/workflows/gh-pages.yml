@@ -50,8 +50,8 @@ jobs:
 
       - name: Install fcitx5-rime.js
         run: |
-          wget -P /tmp https://github.com/rimeinn/fcitx5-rime.js/releases/download/0.1.0/fcitx5-rime-0.1.0.tgz
-          tar xf /tmp/fcitx5-rime-0.1.0.tgz -C /tmp
+          wget -P /tmp https://github.com/rimeinn/fcitx5-rime.js/releases/download/0.1.1/fcitx5-rime.tgz
+          tar xf /tmp/fcitx5-rime.tgz -C /tmp
           mv /tmp/package/dist/* source/online
           rm -f source/online/Fcitx5.d.ts
 
