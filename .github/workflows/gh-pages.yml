@@ -6,7 +6,7 @@ on:
     branches:
       - ci
       - master
-    pull_request:
+  pull_request:
 
 jobs:
   deploy:
@@ -26,9 +26,6 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Setup Hexo
-        run: npm install -g hexo-cli
-
       - name: Cache dependencies
         uses: actions/cache@v4
         with:
@@ -37,18 +34,39 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - run: |
-          pwd
-          ls ${{ github.workspace }}
-          ls ${{ github.workspace }}/blog
-
       - run: npm ci
 
       - run: python ./weasel_testing_appcast.py
 
-      - run: |
-          hexo clean
-          hexo generate
+      - name: Deploy luna pinyin and stroke
+        uses: rimeinn/deploy-schema@master
+        with:
+          user-recipe-list: |-
+            luna-pinyin
+            stroke
+          schema-list: |-
+            luna_pinyin
+            stroke
+
+      - name: Install fcitx5-rime.js
+        run: |
+          wget -P /tmp https://github.com/rimeinn/fcitx5-rime.js/releases/download/0.1.1/fcitx5-rime.tgz
+          tar xf /tmp/fcitx5-rime.tgz -C /tmp
+          mv /tmp/package/dist/* source/online
+          rm -f source/online/Fcitx5.d.ts
+
+      - name: Generate site
+        run: |
+          mv /tmp/deploy-schema/artifact.zip source/online/rime.zip
+          npx hexo clean
+          npx hexo generate
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: public
+          path: |
+            blog/public
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
