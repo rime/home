@@ -93,14 +93,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 ### 安裝更多輸入方案
 
-通過 [/plum/](https://github.com/rime/plum) 配置管理器獲取並安裝輸入方案：〔[庫藏一覽](https://github.com/rime/plum#packages)〕
-
-  - 現代標準漢語：[朙月拼音](https://github.com/rime/rime-luna-pinyin)、[地球拼音](https://github.com/rime/rime-terra-pinyin)、[注音](https://github.com/rime/rime-bopomofo)
-  - 拼音的變體：[雙拼](https://github.com/rime/rime-double-pinyin)、[宮保拼音](https://github.com/rime/rime-combo-pinyin)、[打字速記法](https://github.com/rime/rime-stenotype)
-  - 漢語方言：[粵拼](https://github.com/rime/rime-jyutping)、吳語（[上海話](https://github.com/rime/rime-wugniu)、[蘇州話](https://github.com/rime/rime-soutzoe)）
-  - 歷史音韻：[中古漢語拼音](https://github.com/rime/rime-middle-chinese)
-  - 字形輸入法：[五筆畫](https://github.com/rime/rime-stroke)、[倉頡](https://github.com/rime/rime-cangjie)、[速成](https://github.com/rime/rime-quick)、[五筆](https://github.com/rime/rime-wubi)
-  - 符號輸入：[繪文字](https://github.com/rime/rime-emoji)、[國際音標](https://github.com/rime/rime-ipa)
+通過 [/plum/](https://github.com/rime/plum) 配置管理器獲取並安裝輸入方案。詳見〔[配方](/recipes)〕。
 
 <hr/>
 

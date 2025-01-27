@@ -11,7 +11,7 @@ intermediate:
   subtitle: Rime with input schemata, and innovate.
   description: |
     Rime 輸入方案貴在原創。
-    不止於拼音、注音、倉頡、速成、五筆、雙拼、宮保拼音、粵拼、吳語、中古漢語拼音、五筆畫、Emoji、國際音標……
+    不止於拼音、注音、倉頡、速成、五筆、雙拼、宮保拼音、粵拼、吳語、中古漢語拼音、五筆畫、Emoji、國際音標等[庫藏配方](/recipes)。
     讀《[方案設計書](https://github.com/rime/home/wiki/RimeWithSchemata)》，親手來創作，把輸入法變成理想的模樣。
 
 advanced:
