@@ -10,6 +10,6 @@ comments: false
   loadZip('./rime.zip')
 </script>
 <div class="has-success">
-  <textarea class="form-control" style="width: 100%; height: 300px"></textarea>
+  <textarea class="form-control" spellcheck="false" style="width: 100%; height: 300px"></textarea>
 </div>
 {% endraw %}
