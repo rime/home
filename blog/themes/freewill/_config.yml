@@ -41,13 +41,13 @@ links:
   - title: Rime Wiki
     url: https://github.com/rime/home/wiki
     icon: "fa fa-github"
-  - title: Rime on Github
+  - title: "Rime @ Github"
     url: https://github.com/rime
-    intro: "Rime's Github repository."
+    intro: Rime 開發者社區
     icon: "fa fa-github"
   - title: "佛振 @ Github"
-    url: http://www.github.com/lotem
-    intro: "Rime 開發者佛振"
+    url: https://github.com/lotem
+    intro: Rime 初創開發者佛振
     icon: "fa fa-github"
 
 widgets:

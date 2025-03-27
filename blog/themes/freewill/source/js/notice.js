@@ -28,6 +28,21 @@ const notices = [
     length: 1,
     notice: '《汉语拼音方案》是中国人名、地名和中文文献罗马字母拼写法的统一规范，并用于汉字不便或不能使用的领域。'
   },
+  {
+    start: '2025/04/01 GMT+0800',
+    length: 1,
+    mode: 'fool-mode',
+    notice: 'R²ime 高階開發者測試版震驚出爐！在線試用，可由 rime.io 安裝配方 ',
+    linkIcon: 'fa fa-flask',
+    linkUrl: 'https://rime.io'
+  },
+  {
+    start: '2025/04/02 GMT+0800',
+    length: 3,
+    notice: '鼠鬚管　爲物雖微情不淺　新詩醉墨時一揮　別後寄我無辭遠　',
+    linkIcon: 'fa fa-music',
+    linkUrl: '/blog/2025/03/01/theme-music/#其三-鼠鬚管'
+  },
 ];
 
 (function maybeDisplayNotice() {
@@ -47,7 +62,14 @@ const notices = [
     }
     if (entry.notice) {
       $('.front-matter .slogan').hide();
-      $('.front-matter .notice').text(entry.notice);
+      let notice = $('.front-matter .notice');
+      notice.append($('<span/>').text(entry.notice));
+      if (entry.linkUrl) {
+        notice.append($('<a/>').attr({
+          'href': entry.linkUrl,
+          'class': entry.linkIcon || 'fa fa-link',
+        }));
+      }
     }
     return;
   }
