@@ -36,7 +36,9 @@ jobs:
 
       - run: npm ci
 
-      - run: python ./weasel_testing_appcast.py
+      - run: |
+          pip install ruamel.yaml
+          python ./update_weasel_appcast.py
 
       - name: Deploy luna pinyin and stroke
         uses: rimeinn/deploy-schema@master
