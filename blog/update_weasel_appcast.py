@@ -46,9 +46,9 @@ formatted_time = format_time(update_time[latest_index])
 
 # get release notes link
 if tags_name[latest_index] == "latest":
-    releaseNotesLink = "https://github.com/rime/weasel/releases/tag/latest"
+    releaseNotesLink = "http://github.com/rime/weasel/releases/tag/latest/index.html"
 else:
-    releaseNotesLink = "http://rime.github.io/testing/weasel/"
+    releaseNotesLink = "http://rime.github.io/testing/weasel/index.html"
 # format xml file content
 template = f"""<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
@@ -85,7 +85,7 @@ if 'release_json' in locals() or 'release_json' in globals():
             break
     if 'release_url' not in locals():
         print("release_url not found, using default url")
-        release_url = f"https://github.com/rime/weasel/releases/download/{release_json["tag_name"]}/weasel-{release_json["tag_name"]}.0-installer.exe"
+        release_url = f"https://github.com/rime/weasel/releases/download/{release_json['tag_name']}/weasel-{release_json['tag_name']}.0-installer.exe"
     # update appcast.xml
     template_release = f"""<?xml version="1.0" encoding="utf-8"?>
     <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
@@ -96,7 +96,7 @@ if 'release_json' in locals() or 'release_json' in globals():
         <language>zh</language>
         <item>
         <title>小狼毫 {release_json["tag_name"]}</title>
-        <sparkle:releaseNotesLink>http://rime.github.io/release/weasel/</sparkle:releaseNotesLink>
+        <sparkle:releaseNotesLink>http://rime.github.io/release/weasel/index.html</sparkle:releaseNotesLink>
         <pubDate>{release_formatted_time}</pubDate>
         <enclosure url="{release_url}"
                     sparkle:version="{release_json["tag_name"]}"
