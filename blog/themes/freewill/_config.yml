@@ -57,7 +57,7 @@ widgets:
 - recent_posts
 - links
 
-rss: true
+rss: atom.xml
 fancybox: true
 favicon: favicon.png
 google_analytics:
