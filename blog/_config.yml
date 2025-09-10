@@ -82,3 +82,9 @@ deploy:
 
 include:
   - .nojekyll
+
+# Feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
