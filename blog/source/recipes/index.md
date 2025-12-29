@@ -24,7 +24,7 @@ s: recipes
     - `℞ stenotype` [打字速記法](https://github.com/rime/rime-stenotype)
     - `℞ combo-pinyin` [宮保拼音](https://github.com/rime/rime-combo-pinyin)〔[專題介紹](https://github.com/rime/home/wiki/ComboPinyin)〕
   - 漢語方言
-    - `℞ jyutping` [粵拼](https://github.com/rime/rime-jyutping)
+    - `℞ cantonese` [粵拼](https://github.com/rime/rime-cantonese)
     - `℞ wugniu` [吳語上海話](https://github.com/rime/rime-wugniu)
     - `℞ soutzoe` [蘇州話](https://github.com/rime/rime-soutzoe)
   - 歷史音韻
