@@ -1,7 +1,15 @@
 title: 【鼠鬚管】更新日誌
 comments: false
-date: 2026-01-11 14:40:00
+date: 2026-01-11 19:00:00
 ---
+<a name="1.1.1"></a>
+## 1.1.1 (2026-01-11)
+
+### 構建 | Build
+- build universal binary (2154997)
+
+**Full Changelog**: https://github.com/rime/squirrel/compare/1.1.0...1.1.1
+
 <a name="1.1.0"></a>
 ## 1.1.0 (2026-01-11)
 
