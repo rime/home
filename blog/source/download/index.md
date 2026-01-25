@@ -44,21 +44,12 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 *（第三方軟件）* [fcitx5-macos](https://github.com/fcitx-contrib/fcitx5-macos) 是 Fcitx 輸入法的 macOS 移植。〔[下載傳送門](https://github.com/fcitx-contrib/fcitx5-macos-installer/blob/master/README.zh-CN.md)〕需要下載中州韻版安裝器。
 
-
-## XIME <small>XIME Input Method Editor</small>
-
-*（第三方軟件）* [stackia/XIME](https://github.com/stackia/XIME) 是由 [Stackie Jia](https://github.com/stackia) 創作的基於 Rime 引擎的 macOS 輸入法。
-
 # <a name="linux">Linux</a>
 
 ## ibus-rime
 
 基於 IBus 輸入法框架。
 請 [查看](https://github.com/rime/home/wiki/RimeWithIBus) 各 Linux 發行版安裝說明，或從源碼編譯安裝。
-
-## fcitx-rime
-
-*（第三方軟件）* 基於 Fcitx 輸入法框架的 [fcitx-rime](https://github.com/fcitx/fcitx-rime)，由 Fcitx 團隊開發和維護。
 
 ## fcitx5-rime
 
