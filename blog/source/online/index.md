@@ -7,9 +7,22 @@ comments: false
 {% raw %}
 <script type="module">
   import { loadZip } from './Fcitx5.js'
-  loadZip('./rime.zip')
+  await loadZip('./rime.zip')
+  let timer = null
+  window.fcitx.setSystemInputMethodInUseCallback(() => {
+    const message = document.querySelector('#message')
+    message.textContent = '請禁用系統輸入法'
+    if (timer !== null) {
+      clearTimeout(timer)
+    }
+    timer = setTimeout(() => {
+      message.textContent = ''
+      timer = null
+    }, 5000)
+  })
 </script>
 <div class="has-success">
   <textarea class="form-control" spellcheck="false" style="width: 100%; height: 300px"></textarea>
+  <div id="message"></div>
 </div>
 {% endraw %}

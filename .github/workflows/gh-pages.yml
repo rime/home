@@ -19,10 +19,10 @@ jobs:
     env:
       TZ: Asia/Shanghai
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: '22'
 
@@ -52,7 +52,7 @@ jobs:
 
       - name: Install fcitx5-rime.js
         run: |
-          wget -P /tmp https://github.com/rimeinn/fcitx5-rime.js/releases/download/0.3.1/fcitx5-rime.tgz
+          wget -P /tmp https://github.com/rimeinn/fcitx5-rime.js/releases/download/0.4.0/fcitx5-rime.tgz
           tar xf /tmp/fcitx5-rime.tgz -C /tmp
           mv /tmp/package/dist/* source/online
           rm -f source/online/Fcitx5.d.ts
@@ -64,7 +64,7 @@ jobs:
           npx hexo generate
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: public
           path: |
