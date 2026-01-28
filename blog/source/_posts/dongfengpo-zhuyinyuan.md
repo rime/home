@@ -79,4 +79,5 @@ tags: [音樂, 注音, Rime, 輸入法]
 [4]: https://zh.wikipedia.org/wiki/%E9%9F%BB%E7%95%A7%E6%98%93%E9%80%9A#%E8%81%B2%E6%AF%8D
 [5]: https://www.bilibili.com/video/BV1Q2kWB4E8S/
 [6]: https://www.youtube.com/watch?v=4rXc3QZ5jfw
-[7]: https://github.com/rime/rime-combo-pinyin
+[7]: https://github.com/rime/rime-bopomofo
+[8]: https://github.com/rime/rime-combo-pinyin
