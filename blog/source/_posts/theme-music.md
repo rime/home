@@ -31,7 +31,7 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 ### 其一　中州韻
 
 <figure>
-    <p><audio controls src="/media/中州韻.mp3"></audio></p>
+  <p><audio controls src="/media/中州韻.mp3"></audio></p>
 </figure>
 
 中州韻
@@ -97,6 +97,23 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 䑕須管　為物雖㣲情不淺
 新詩醉墨時一揮
 別後寄我無辭逺
+
+## Rime 三部曲鋼琴版
+
+<figure>
+  <p><figcaption>中州韻-鋼琴</figcaption></p>
+  <p><audio controls src="/media/中州韻-鋼琴.mp3"></audio></p>
+</figure>
+
+<figure>
+  <p><figcaption>小狼毫-鋼琴</figcaption></p>
+  <p><audio controls src="/media/小狼毫-鋼琴.mp3"></audio></p>
+</figure>
+
+<figure>
+  <p><figcaption>鼠鬚管-鋼琴</figcaption></p>
+  <p><audio controls src="/media/鼠鬚管-鋼琴.mp3"></audio></p>
+</figure>
 
 [1]: https://rime.im
 [2]: https://github.com/lotem/rime-theme-music
