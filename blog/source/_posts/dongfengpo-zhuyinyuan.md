@@ -24,6 +24,11 @@ tags: [音樂, 注音, Rime, 輸入法]
 
 <!-- more -->
 
+<figure>
+  <p><figcaption>〈東風破〉鋼琴版</figcaption></p>
+  <p><audio controls src="/media/東風破-鋼琴.mp3"></audio></p>
+</figure>
+
 **觀看影片：** [B站][5] · [YouTube][6]
 
 影片伴隨著音樂節奏，模擬了從「手寫注音」到當代各種「神級方案」的演變，致敬那段不滅的開源熱情。
