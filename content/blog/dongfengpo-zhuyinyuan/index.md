@@ -1,8 +1,14 @@
-title: 東風破·注音緣：記一段 Rime 輸入法的神級往事
-date: 2026-01-27 22:00:00
-tags: [音樂, 注音, Rime, 輸入法]
 ---
-
+aliases:
+- blog/2026/01/27/dongfengpo-zhuyinyuan/
+date: 2026-01-27 22:00:00
+tags:
+- 音樂
+- 注音
+- Rime
+- 輸入法
+title: 東風破·注音緣：記一段 Rime 輸入法的神級往事
+---
 十餘年前，BYVoid 在部落格中記述了與 Rime 作者佛振的一面之緣，震驚於其「手寫注音」的神技。
 這份「緣、驚、愧」成了 Rime 發展史上一段佳話。
 
@@ -19,14 +25,14 @@ tags: [音樂, 注音, Rime, 輸入法]
 
 <figure>
   <p><figcaption>〈東風破·注音緣〉音軌試聽</figcaption></p>
-  <p><audio controls src="/media/東風破.mp3"></audio></p>
+  <p><audio controls src="東風破.mp3"></audio></p>
 </figure>
 
 <!-- more -->
 
 <figure>
   <p><figcaption>〈東風破〉鋼琴版</figcaption></p>
-  <p><audio controls src="/media/東風破-鋼琴.mp3"></audio></p>
+  <p><audio controls src="東風破-鋼琴.mp3"></audio></p>
 </figure>
 
 **觀看影片：** [B站][5] · [YouTube][6]
@@ -43,10 +49,10 @@ tags: [音樂, 注音, Rime, 輸入法]
     改編自「[宮保拼音][8]」，採用**並擊**輸入。一擊一字，兩翼齊飛，多指並落。這種「叩擊」的節奏感，絕非拖泥帶水的全拼可比。
 2.  **大千式注音** (方案：`bopomofo`)
     如何打破「注音必須依賴數字鍵」的限制？在標準字母鍵位上，注音可否同樣流暢如飛？
-    ![](/images/keyboard-layout-bopomofo.png)
+    ![](keyboard-layout-bopomofo.png)
 3.  **動態能力注音** (方案：`detenele`)
     純字母佈局，聲韻調動態流轉。無需大幅移手，心到字到。此乃「動」之奧義，「能」之化境。
-    ![](/images/keyboard-layout-detenele.png)
+    ![](keyboard-layout-detenele.png)
 
 ---
 

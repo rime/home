@@ -1,9 +1,11 @@
-title: 新譜的 Rime 輸入法配置管理器
+---
+aliases:
+- blog/2018/04/22/rime-configuration-manager/
 date: 2018-04-22 22:28:54
 tags:
-  - plum
+- plum
+title: 新譜的 Rime 輸入法配置管理器
 ---
-
 〔首發於 [V2EX](https://www.v2ex.com/t/445778)〕
 
 某最近的一個小作品，分享給 Rime 用家。

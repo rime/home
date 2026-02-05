@@ -1,8 +1,10 @@
-title: Rime Screencasts
-date: 2013-11-24 11:25:24
-tags:
 ---
-
+aliases:
+- blog/2013/11/24/screencasts/
+date: 2013-11-24 11:25:24
+tags: null
+title: Rime Screencasts
+---
 最近錄製了一些[Rime 輸入法](https://rime.im)的打字視頻：
 
 * [重度輸入法控](#rime-con)

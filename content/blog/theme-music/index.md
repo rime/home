@@ -1,8 +1,10 @@
-title: Rime 主題曲
+---
+aliases:
+- blog/2025/03/01/theme-music/
 date: 2025-03-01 00:00:00
 tags: 音樂
+title: Rime 主題曲
 ---
-
 Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 
 某有幸發起了 [Rime 輸入法][1] 這款開源軟件，十幾年來備受用家關愛；
@@ -13,7 +15,7 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 
 <figure>
   <p><figcaption>中州韻輸入法主題曲</figcaption></p>
-  <p><audio controls src="/media/RIME_主題曲.mp3"></audio></p>
+  <p><audio controls src="RIME_主題曲.mp3"></audio></p>
 </figure>
 
 若本站播放不流暢，請移步 [B 站備份][3]。
@@ -31,7 +33,7 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 ### 其一　中州韻
 
 <figure>
-  <p><audio controls src="/media/中州韻.mp3"></audio></p>
+  <p><audio controls src="中州韻.mp3"></audio></p>
 </figure>
 
 中州韻
@@ -50,7 +52,7 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 ### 其二　小狼毫
 
 <figure>
-  <p><audio controls src="/media/小狼毫.mp3"></audio></p>
+  <p><audio controls src="小狼毫.mp3"></audio></p>
 </figure>
 
 小狼毫
@@ -75,7 +77,7 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 ### 其三　鼠鬚管
 
 <figure>
-  <p><audio controls src="/media/鼠鬚管.mp3"></audio></p>
+  <p><audio controls src="鼠鬚管.mp3"></audio></p>
 </figure>
 
 鼠鬚管
@@ -102,17 +104,17 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 
 <figure>
   <p><figcaption>中州韻-鋼琴</figcaption></p>
-  <p><audio controls src="/media/中州韻-鋼琴.mp3"></audio></p>
+  <p><audio controls src="中州韻-鋼琴.mp3"></audio></p>
 </figure>
 
 <figure>
   <p><figcaption>小狼毫-鋼琴</figcaption></p>
-  <p><audio controls src="/media/小狼毫-鋼琴.mp3"></audio></p>
+  <p><audio controls src="小狼毫-鋼琴.mp3"></audio></p>
 </figure>
 
 <figure>
   <p><figcaption>鼠鬚管-鋼琴</figcaption></p>
-  <p><audio controls src="/media/鼠鬚管-鋼琴.mp3"></audio></p>
+  <p><audio controls src="鼠鬚管-鋼琴.mp3"></audio></p>
 </figure>
 
 [1]: https://rime.im
