@@ -1,0 +1,26 @@
+{# --- 導航欄 (Navigation) --- #}
+{% set menu_data = load_data(path="data/menu.toml") %}
+<nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">切換導航菜單</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ config.base_url }}">{{ config.title }}</a>
+      <button id="btn-simplify" type="button" class="navbar-convert">簡</button>
+      <div class="collapse navbar-collapse nav-menu">
+          <ul class="nav navbar-nav">
+              {% for m in menu_data.main %}
+              <li>
+                  <a href="{{ m.url }}" title="{{ m.intro | default(value="") }}">
+                      <i class="{{ m.icon }}"></i>{{ m.title }}
+                  </a>
+              </li>
+              {% endfor %}
+          </ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>

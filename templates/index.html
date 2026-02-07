@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% set home = load_data(path="data/home.toml") %}
+{% set downloads = load_data(path="data/downloads.toml") %}
+<div class="front-matter page-header">
+  <img src="/images/home-title.svg" data-png-fallback="/images/home-title.png" />
+  <img src="/images/home-slogan.svg" data-png-fallback="/images/home-slogan.png" class="slogan" />
+  <div class="notice"></div>
+</div>
+<script src="/js/notice.js"></script>
+
+<div class="home">
+    <div class="downloads container">
+        <div class="download os-windows hidden">
+            <a class="btn btn-lg btn-primary" href="{{ downloads.weasel.url }}">
+                <i class="fa fa-windows"></i>{{ downloads.weasel.name }}
+                <small>{{ downloads.weasel.version }}</small>
+            </a>
+        </div>
+
+        <div class="download os-mac hidden">
+            <a class="btn btn-lg btn-primary" href="{{ downloads.squirrel.url }}">
+                <i class="fa fa-apple"></i>{{ downloads.squirrel.name }}
+                <small>{{ downloads.squirrel.version }}</small>
+            </a>
+        </div>
+
+        <div class="download os-linux hidden">
+            <a class="btn btn-lg btn-primary" href="/download#linux">
+                <i class="fa fa-linux"></i>安裝到 Linux
+            </a>
+        </div>
+
+        <div class="download os-ios hidden">
+            <a class="btn btn-lg btn-primary" href="/i-rime-with-fool">
+                <i class="fa fa-apple"></i>新韻 for iOS
+            </a>
+        </div>
+
+        <div class="download os-unknown">
+            <a class="btn btn-lg btn-primary" href="/download">
+                <i class="fa fa-arrow-down"></i>下載 Rime 輸入法
+            </a>
+        </div>
+
+        <div class="download">
+            <a class="btn btn-lg btn-default" href="/code">
+                <i class="fa fa-code-fork"></i>複刻源碼
+            </a>
+        </div>
+
+        <div class="footnote text-muted">
+            {{ downloads.footnote | markdown(inline=true) | safe }}
+            <span class="hidden">
+                　<a href="/download">下載更多版本 <i class="fa fa-arrow-down"></i></a>
+            </span>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="features container">
+
+        <div class="feature alpha">
+            <div class="left illustration"></div>
+            <div class="right">
+                <h3>
+                    {{ home.features.beginner.title }}<br />
+                    <small>{{ home.features.beginner.subtitle }}</small>
+                </h3>
+                {{ home.features.beginner.description | markdown | safe }}
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="feature beta">
+            <div class="left">
+                <h3>
+                    {{ home.features.intermediate.title }}<br />
+                    <small>{{ home.features.intermediate.subtitle }}</small>
+                </h3>
+                {{ home.features.intermediate.description | markdown | safe }}
+            </div>
+            <div class="right illustration"></div>
+        </div>
+
+        <hr />
+
+        <div class="feature gamma">
+            <div class="left illustration"></div>
+            <div class="right">
+                <h3>
+                    {{ home.features.advanced.title }}<br />
+                    <small>{{ home.features.advanced.subtitle }}</small>
+                </h3>
+                {{ home.features.advanced.description | markdown | safe }}
+            </div>
+        </div>
+    </div>
+
+    <div class="user-quotes">
+        <div class="features container">
+            <div class="feature delta">
+                <div class="left">
+                    {% for review in home.reviews %}
+                    <div class="quote">
+                        <div class="quote-header">{{ review.header | markdown | safe }}</div>
+                        <div class="quote-content">{{ review.content | markdown | safe }}</div>
+                    </div>
+                    {% endfor %}
+
+                    <div>
+                        <a href="https://github.com/rime/home/wiki/UserQuotes">更多說法 <i class="fa fa-arrow-right"></i></a>
+                        &nbsp;&nbsp;
+                        <a href="/discuss">參加討論 <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="right illustration"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="finale container">
+        <div class="download">
+            <a class="btn btn-lg btn-primary" href="/download">
+                <i class="fa fa-arrow-down"></i>下載 Rime 輸入法
+            </a>
+        </div>
+        <p>今天不想打字？一賞 <a href="/blog/theme-music/">Rime 主題曲</a>，一閱《<a href="https://github.com/rime/home/wiki/MoodCollection">Rime 心情集</a>》。</p>
+        <p>純粹地喜歡？您可以通過 <a href="/donate">小額贊助</a>，支持開發者爲 Rime 投入更大的努力。</p>
+    </div>
+</div>
+{% endblock content %}

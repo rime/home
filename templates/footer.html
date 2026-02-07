@@ -1,0 +1,15 @@
+{# --- 頁腳 (Footer) --- #}
+<div class="container">
+    <footer>
+        <p>
+            &copy; {{ now() | date(format="%Y") }} {{ config.author | default(value=config.title) }}
+            &nbsp;
+            <span class="text-muted">Powered by:
+                <a class="text-muted" href="https://www.getzola.org/" target="_blank">Zola</a>,
+                <a class="text-muted" href="http://github.com/yieme/hexo-theme-freewill/" target="_blank">Freewill</a>
+                &amp;
+                <a class="text-muted" href="http://bootswatch.com/" target="_blank">Bootswatch</a>
+            </span>
+        </p>
+    </footer>
+</div>

@@ -1,6 +1,6 @@
 <!-- _partial/head -->
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <%
   var title = [];
   if (page.current > 1) title.push(__('page', page.current));
@@ -58,8 +58,5 @@
   <script src="<%- config.root %>js/jquery.cookie.js"></script>
   <script src="<%- config.root %>js/jquery.t2s.js"></script>
   <script src="<%- config.root %>js/modernizr.js"></script>
-
-  <!-- analytics -->
-  <%- partial('post/google_analytics') %>
 
 </head>

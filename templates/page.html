@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="panel-heading">
+    {# --- 頁面標題 --- #}
+    <div class="page-header">
+        <h1><i class="{{ page.extra.icon | default(value="") }}"></i> {{ page.title }}</h1>
+    </div>
+</div>
+
+<div class="row page">
+    {# --- 左側主要內容 --- #}
+    <div class="col-md-12">
+
+        {# 描述框 #}
+        {% if page.description %}
+        <div class="alert alert-success"><i class="fa fa-info-circle"></i> {{ page.description }}</div>
+        {% endif %}
+
+        {# 正文 #}
+        <div class="mypage">
+            {{ page.content | safe }}
+        </div>
+
+        {# 評論區 (Giscus) #}
+        {% if page.extra.comments %}
+        {% include "comments.html" %}
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}

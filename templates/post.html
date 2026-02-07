@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="panel-heading">
+    {# --- 頁面標題 --- #}
+    <div class="page-header">
+        <h1>{{ page.title }}</h1>
+    </div>
+</div>
+
+<div class="row post">
+    {# --- 左側主要內容 --- #}
+    <div class="col-md-9">
+
+        {# 描述框 #}
+        {% if page.description %}
+        <div class="alert alert-success"><i class="fa fa-info-circle"></i> {{ page.description }}</div>
+        {% endif %}
+
+        {# 正文 #}
+        <div class="mypage">
+            {{ page.content | safe }}
+        </div>
+
+        {# [分頁導航] #}
+        <center>
+            <ul class="pagination">
+                {% if page.lower %}
+                <li class="prev"><a href="{{ page.lower.path }}" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>後一篇</a></li>
+                {% else %}
+                <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>後一篇</a></li>
+                {% endif %}
+                <li><a href="/blog"><i class="fa fa-book"></i>網誌</a></li>
+                {% if page.higher %}
+                <li class="next"><a href="{{ page.higher.path }}" class="alignright next">前一篇<i class="fa fa-arrow-circle-o-right"></i></a></li>
+                {% else %}
+                <li class="next disabled"><a>前一篇<i class="fa fa-arrow-circle-o-right"></i></a></li>
+                {% endif %}
+            </ul>
+        </center>
+
+        {# 評論區 (Giscus) #}
+        {% if page.extra.comments | default(value=true) %}
+        {% include "comments.html" %}
+        {% endif %}
+    </div>
+
+    {# --- 右側邊欄 --- #}
+    <div class="col-md-3">
+
+        {# --- 1. 日期與評論鏈接 --- #}
+        {% if page.date %}
+        <div class="meta-widget">
+            <i class="fa fa-clock-o"></i>
+            {{ page.date | date(format="%Y-%m-%d") }}
+        </div>
+        <div>
+            <a href="{{ page.permalink }}#comment"><i class="fa fa-comments"></i> 留言</a>
+        </div>
+        {% endif %}
+
+        {# --- 2. 標籤 (Tags) --- #}
+        {% if page.taxonomies.tags %}
+        <div class="meta-widget">
+            <a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>
+            <ul id="tags" class="tag_box list-unstyled collapse in">
+                {% for tag in page.taxonomies.tags %}
+                <li>
+                    <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">
+                        {{ tag }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {# --- 3. 目錄 (TOC) --- #}
+        {# Zola 的 page.toc 是一個包含 headers 的數組 #}
+        {% if page.toc %}
+        <div class="meta-widget">
+            <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+            <div id="toc" class="toc collapse in">
+                {# 手動構建目錄列表 #}
+                <ol class="toc-article">
+                    {% for h1 in page.toc %}
+                    <li>
+                        <a href="{{ h1.permalink }}">{{ h1.title }}</a>
+                        {# 如果有二級標題 (H2/H3)，渲染子列表 #}
+                        {% if h1.children %}
+                        <ol>
+                            {% for h2 in h1.children %}
+                            <li><a href="{{ h2.permalink }}">{{ h2.title }}</a></li>
+                            {% endfor %}
+                        </ol>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ol>
+            </div>
+        </div>
+        {% endif %}
+
+        <hr>
+    </div>
+</div>
+{% endblock content %}
