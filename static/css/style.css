@@ -298,12 +298,12 @@ table tr th :last-child, table tr td :last-child { margin-bottom: 0; }
   content: '\f02d  ';
 }
 
-.archive-title-tag:before {
+.archive-title-tags:before {
   font-family: FontAwesome;
   content: '\f02c  ';
 }
 
-.archive-title-category:before {
+.archive-title-categories:before {
   font-family: FontAwesome;
   content: '\f07b  ';
 }

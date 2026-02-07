@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="page-header">
+    <h1 class="archive-title-{{ taxonomy.name }}">{{ term.name }}</h1>
+</div>
+
+<div class="row page">
+
+    {# --- 左側內容 --- #}
+    <div class="col-md-9">
+
+        <div class="archive">
+
+            {# --- 初始化循環變量 --- #}
+            {# 用於記錄上一次循環的年份 #}
+            {% set_global last_year = "" %}
+
+            {# --- 開始遍歷該標籤下的所有文章 --- #}
+            {% for page in term.pages %}
+
+                {# 獲取當前文章年份 #}
+                {% set current_year = page.date | date(format="%Y") %}
+
+                {# --- 年份變化檢測邏輯 (對應 Hexo 的 if year != last_year) --- #}
+                {% if current_year != last_year %}
+
+                    {# 如果不是第一組，需要閉合上一個年份的 ul 標籤 #}
+                    {% if last_year != "" %}
+                        </ul>
+                    {% endif %}
+
+                    {# 渲染年份標題 (點擊可折疊) #}
+                    <h4 class="archive-ul" data-toggle="collapse" data-target="#{{ current_year }}">{{ current_year }}<b class="caret"></b></h4>
+
+                    {# 開啟新的 ul #}
+                    <ul id="{{ current_year }}" class="collapse in">
+
+                    {# 更新全局變量 #}
+                    {% set_global last_year = current_year %}
+                {% endif %}
+
+                {# --- 文章列表項 --- #}
+                <li class="listing-item">
+                    <span class="date_class">
+                        {{ page.date | date(format="%Y-%m-%d") }}
+                    </span>
+                    &raquo;
+
+                    {# 標題與鏈接 #}
+                    <span class="title">
+                        {# 檢查是否為外鏈文章 #}
+                        {% if page.extra.link %}
+                            <a href="{{ page.extra.link }}" target="_blank" title="{{ page.description | default(value="") }}">{{ page.title }}</a>
+                        {% else %}
+                            <a href="{{ page.permalink }}" title="{{ page.description | default(value="") }}">{{ page.title }}</a>
+                        {% endif %}
+                    </span>
+                </li>
+
+                {% endfor %}
+                
+                {# --- 循環結束後的清理 --- #}
+                {# 如果有文章，記得閉合最後一個年份的 ul #}
+                {% if last_year != "" %}
+                    </ul>
+                {% endif %}
+
+        </div>
+    </div>
+
+    {# --- 右側邊欄 --- #}
+    {% include "sidebar.html" %}
+
+</div>
+
+{% endblock content %}

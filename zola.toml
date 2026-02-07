@@ -7,6 +7,7 @@ generate_feeds = true
 
 taxonomies = [
   {name = "tags", feed = true, paginate_by = 10},
+  {name = "categories", feed = true, paginate_by = 10},
 ]
 
 [markdown.highlighting]
@@ -16,3 +17,6 @@ theme = "catppuccin-mocha"
 taxonomies = "safe"
 paths = "safe"
 anchors = "safe"
+
+[extra]
+taxonomy_names = { tags = "標籤", categories = "分類" }
