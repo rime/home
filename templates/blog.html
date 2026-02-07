@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="panel-heading">
+    <div class="page-header">
+        <h1><i class="{{ section.extra.icon }}"></i> {{ section.title }}<small>｜{{ section.extra.slogan }}</small></h1>
+    </div>
+</div>
+
+<div class="row page">
+    {# 左側內容欄 #}
+    <div class="col-md-9">
+        <div class="mypage">
+            <div class="panel panel-default">
+                {# 開始遍歷文章 #}
+                {% for page in paginator.pages %}
+
+                {# [標題區域] #}
+                <div class="panel-heading">
+                    <h3 class="xtitle">
+                        <a href="{{ page.permalink }}" {% if page.description %}title="{{ page.description }}"{% endif %}>{{ page.title }}</a>
+                        <span class="text-muted pull-right">
+                            <small>{{ page.date | date(format="%Y-%m-%d") }}</small>
+                            <small style="padding-left:1em;">
+                                <a href="{{ page.permalink }}#comment">留言</a>
+                            </small>
+                        </span>
+                    </h3>
+                </div>
+
+                {# [內容摘要區域] #}
+                <div class="panel-body">
+                    <div class="row">
+
+                        {# 1. 判斷是否有特色圖片，決定文字寬度 #}
+                        {% if page.extra.feature %}
+                        <div class="col-md-8">
+                        {% else %}
+                        <div class="col-md-12">
+                        {% endif %}
+
+                            {# 顯示摘要或截斷的內容 #}
+                            {% if page.summary %}
+                            {{ page.summary | safe }}
+                            {% else %}
+                            {{ page.content | striptags | truncate(length=200) }}
+                            {% endif %}
+
+                        </div>
+
+                        {# 2. 如果有特色圖片，顯示在右側 #}
+                        {% if page.extra.feature %}
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="{{ page.permalink }}">
+                                    {# 圖片路徑處理：如果是相對路徑，可能需要加斜槓，這裡假設是用戶輸入的完整路徑 #}
+                                    <img src="{{ page.extra.feature }}" alt="{{ page.title }}">
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                    </div>
+                    {# 3. 閱讀全文按鈕 #}
+                    <a type="button" href="{{ page.permalink }}#more" class="btn btn-default more">全文</a>
+                </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    {# 右側邊欄 #}
+    {% include "sidebar.html" %}
+</div>
+{% endblock content %}

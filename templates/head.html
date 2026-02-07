@@ -1,0 +1,77 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    {# --- 1. 標題生成邏輯 (Title Logic) --- #}
+    <title>
+        {# 處理分頁 (例如: 第 2 頁) #}
+        {% if paginator and paginator.current_index > 1 %}
+        第 {{ paginator.current_index }} 頁 |
+        {% endif %}
+
+        {# 處理不同類型的頁面標題 #}
+        {% if page.title %}
+        {{ page.title }} |
+        {% elif section.title %}
+        {{ section.title }} |
+        {% elif term.name %}
+        {# 用於標籤(Tags)或分類(Categories)頁面 #}
+        {{ term.name }} |
+        {% endif %}
+
+        {# 最後加上網站標題 #}
+        {{ config.title }}
+    </title>
+
+    {# --- 2. Meta 元數據 --- #}
+    <meta name="author" content="{{ config.author }}">
+
+    {# Description 優先級: 頁面描述 > 配置描述 > 頁面摘要 > 截取內容 #}
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% elif config.description %}
+    <meta name="description" content="{{ config.description }}">
+    {% elif page.summary %}
+    <meta name="description" content="{{ page.summary | striptags | trim }}">
+    {% elif page.content %}
+    <meta name="description" content="{{ page.content | striptags | trim | truncate(length=150) }}">
+    {% endif %}
+
+    {# Keywords: 使用 Zola 的 tags #}
+    {% if page.taxonomies.tags %}
+    <meta name="keywords" content="{{ page.taxonomies.tags | join(sep=", ") }}">
+    {% endif %}
+
+    {# --- 3. Open Graph (OG) --- #}
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}"/>
+    {% endif %}
+    <meta property="og:site_name" content="{{ config.title }}"/>
+
+    {# 圖片處理: 優先使用文章封面上傳到 extra.cover #}
+    {% if page.extra.cover %}
+    <meta property="og:image" content="{{ get_url(path=page.extra.cover) }}" />
+    {% elif config.extra.cover %}
+    <meta property="og:image" content="{{ get_url(path=config.extra.cover) }}"/>
+    {% endif %}
+
+    {# --- 4. RSS & Favicon --- #}
+    {% if config.generate_feeds %}
+    <link rel="alternate" href="/{{ config.feed_filenames[0] }}" title="{{ config.title }}" type="application/atom+xml">
+    {% endif %}
+
+    <link href="/favicon.png" rel="icon">
+
+    {# --- 5. CSS 樣式表 --- #}
+    <link rel="stylesheet" href="/css/bootstrap.flatly.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/darktheme.css">
+
+    {# --- 6. JS 腳本 --- #}
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/jquery.t2s.js"></script>
+    <script src="/js/modernizr.js"></script>
+</head>

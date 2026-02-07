@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{# 顯示分類法名稱 (tags 或 categories) #}
+{% set title = config.extra.taxonomy_names[taxonomy.name] | default(value=taxonomy.name | capitalize) %}
+<div class="page-header">
+    <h1>
+        <i class="fa fa-tags"></i> {{ title }}
+    </h1>
+</div>
+
+<div class="row page">
+
+    {# --- 左側主要內容 --- #}
+    <div class="col-md-9">
+
+        {# 只有當存在標籤時才顯示 #}
+        {% if terms %}
+
+            {# --- [上半部分] 標籤雲/列表 --- #}
+            <div class="widget">
+                <ul class="tag_box inline list-unstyled">
+                    {% for term in terms %}
+                    <li>
+                        {# 點擊跳轉到頁面下方的對應區塊 (Anchor) #}
+                        <a href="#{{ term.name }}">
+                            {{ term.name }} <span>{{ term.pages | length }}</span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            {# --- [下半部分] 歸檔詳情 (折疊面板) --- #}
+            <div class="archive">
+                {% for term in terms %}
+
+                {# 標題頭：點擊可折疊 #}
+                {# id="{{ term.name }}" 用於響應上面的錨點跳轉 #}
+                {# data-target 用於控制下方的 ul 展開/收起，這裡建議用 slug 避免空格問題 #}
+                <h4 class="archive-ul show" data-toggle="collapse" id="{{ term.name }}" data-target="#modal-{{ term.slug }}">
+                    {{ term.name }} <b class="caret"></b>
+                </h4>
+
+                {# 文章列表 #}
+                <ul id="modal-{{ term.slug }}" class="collapse in">
+                    {# term.pages 默認已經按時間倒序排列 #}
+                    {% for page in term.pages %}
+                    <li class="listing-item">
+                        <a href="{{ page.permalink }}" title="{{ page.description | default(value="") }}">
+                            {{ page.title }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+                {% endfor %}
+            </div>
+
+        {% else %}
+            <p>暫無標籤。</p>
+        {% endif %}
+
+    </div>
+    {# --- 右側邊欄 --- #}
+    {% include "sidebar.html" %}
+
+</div>
+
+{% endblock content %}

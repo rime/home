@@ -1,0 +1,76 @@
+<div class="col-md-3">
+    <div id="sidebar">
+
+        {# --- 1. 搜索 --- #}
+        <div class="form-group has-success has-feedback">
+            <form action="//google.com/search" method="get" accept-charset="utf-8" target="_blank">
+                <input type="search" name="q" results="0" placeholder="檢索" class="form-control">
+                {# 自動提取當前域名作為 site: 參數 #}
+                <input type="hidden" name="q" value="site:{{ config.base_url | replace(from="https://", to="") | replace(from="http://", to="") }}">
+            </form>
+        </div>
+
+        {# --- 2. 標籤雲 --- #}
+        {# 獲取標籤數據 #}
+        {% set tags = get_taxonomy(kind="tags") %}
+        {% if tags %}
+        <div class="widget">
+            <h4>標籤雲</h4>
+            <ul class="tag_box inline list-unstyled">
+                {# Zola 默認不支援隨機排序，我們按數量或名稱顯示前 30 個，避免側邊欄過長 #}
+                {% for tag in tags.items | slice(end=30) %}
+                <li>
+                    <a href="{{ tag.permalink }}">
+                        {{ tag.name }}<span>{{ tag.pages | length }}</span>
+                    </a>
+                </li>
+                {% endfor %}
+
+                {# 如果標籤超過 30 個，顯示「更多」鏈接 #}
+                {% if tags.items | length > 30 %}
+                <li><a href="/tags">...<span>{{ tags.items | length }}</span></a></li>
+                {% endif %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {# --- 3. 最新文章 --- #}
+        {# 獲取 blog 板塊的數據 #}
+        {% set blog = get_section(path="blog/_index.md") %}
+        {% if blog.pages %}
+        <div class="widget">
+            <h4>新作</h4>
+            <ul class="entry list-unstyled">
+                {# 取前 5 篇 #}
+                {% for post in blog.pages | slice(end=5) %}
+                <li>
+                    <a href="{{ post.permalink }}" title="{{ post.description | default(value=post.title) }}">
+                        <i class="fa fa-file-o"></i> {{ post.title | truncate(length=25) }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {# --- 4. 友情鏈接 --- #}
+        {# 從 data/menu.toml 讀取數據 #}
+        {% set menu = load_data(path="data/menu.toml") %}
+        {% if menu.links %}
+        <div class="widget">
+            <h4>鏈接</h4>
+            <ul class="blogroll list-unstyled">
+                {% for link in menu.links %}
+                <li>
+                    <i class="{{ link.icon | default(value="fa fa-link") }}"></i>
+                    <a href="{{ link.url }}" title="{{ link.intro | default(value="") }}" target="_blank">
+                        {{ link.title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+    </div>
+</div>

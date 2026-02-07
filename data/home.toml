@@ -1,0 +1,58 @@
+[features.beginner]
+title = "擊響中文之韻"
+subtitle = "Rime Input Method Engine, rimes with your keystrokes."
+description = """
+安裝完成後，切換到 Rime 輸入法，立即擊響中文之韻。\\
+按組合鍵 <code>Ctrl+`</code> 或 <code>F4</code> 鍵喚出輸入方案選單，由此切換到朙月拼音、注音、倉頡等已啓用的輸入方案。\\
+亦可調整 Rime 輸入法最常用的選項。〔[說明書](https://github.com/rime/home/wiki/UserGuide)〕
+"""
+
+[features.intermediate]
+title = "設計輸入方案"
+subtitle = "Rime with input schemata, and innovate."
+description = """
+Rime 輸入方案貴在原創。\\
+不止於拼音、注音、倉頡、速成、五筆、雙拼、宮保拼音、粵拼、吳語、中古漢語拼音、五筆畫、Emoji、國際音標等[庫藏配方](/recipes)。\\
+讀《[方案設計書](https://github.com/rime/home/wiki/RimeWithSchemata)》，親手來創作，把輸入法變成理想的模樣。
+"""
+
+[features.advanced]
+title = "破解源碼"
+subtitle = "Rime with the code, and contribute."
+description = """
+[瞭解](https://github.com/rime/home/wiki/RimeWithTheDesign) Rime 解決已知輸入難題的技術方案；\\
+動手 [複刻源碼](code)，增益其所不能。\\
+合力打造功能更完備、擴展更容易的開源輸入法框架。
+"""
+
+[[reviews]]
+header = """
+BYVoid 神牛在 [博客](http://www.byvoid.com/blog/recommend-rime/) 裏寫道：
+"""
+content = """
+「真可謂神級輸入法！」
+"""
+
+[[reviews]]
+header = """
+爱范儿（[www.ifanr.com](http://www.ifanr.com/156409)）：
+"""
+content = """
+「这真是一个让你有惊喜的软件」
+"""
+
+[[reviews]]
+header = """
+〔中州韻 QQ 羣〕P - 溝渠拼音：
+"""
+content = """
+新的一天开始了 又可以用心爱的rime写字了
+"""
+
+[[reviews]]
+header = """
+〔中州韻 QQ 羣〕Super - 五笔：
+"""
+content = """
+好吧，确实又激发了我打字的欲望，哈:D
+"""

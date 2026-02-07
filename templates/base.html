@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ lang | default(value="zh") }}">
+    {% include "head.html" %}
+    <body>
+        {% include "navigation.html" %}
+
+        {# --- 頁面內容區塊 (挖坑給子模板填) --- #}
+        {% if current_path == "/" %}
+        {% block content %}{% endblock content %}
+        {% else %}
+        <div class="container">
+            <div class="content">
+                {% block content %}{% endblock content %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% include "footer.html" %}
+        {% include "scripts.html" %}
+    </body>
+</html>

@@ -1,0 +1,59 @@
+# 主導航菜單
+[[main]]
+title = "下載"
+url = "/download"
+icon = "fa fa-arrow-down"
+
+[[main]]
+title = "配方"
+url = "/recipes"
+icon = "fa fa-flask"
+
+[[main]]
+title = "幫助"
+url = "/docs"
+icon = "fa fa-question-circle"
+
+[[main]]
+title = "源碼"
+url = "/code"
+icon = "fa fa-github"
+
+[[main]]
+title = "捐贈"
+url = "/donate"
+icon = "fa fa-heart"
+
+[[main]]
+title = "討論"
+url = "/discuss"
+icon = "fa fa-comments"
+
+[[main]]
+title = "網誌"
+url = "/blog"
+intro = "Rime::Blog"
+icon = "fa fa-pencil-square-o"
+
+[[main]]
+title = "體驗"
+url = "/online"
+icon = "fa fa-cloud"
+
+# 友情鏈接
+[[links]]
+title = "Rime Wiki"
+url = "https://github.com/rime/home/wiki"
+icon = "fa fa-github"
+
+[[links]]
+title = "Rime @ Github"
+url = "https://github.com/rime"
+intro = "Rime 開發者社區"
+icon = "fa fa-github"
+
+[[links]]
+title = "佛振 @ Github"
+url = "https://github.com/lotem"
+intro = "Rime 初創開發者佛振"
+icon = "fa fa-github"

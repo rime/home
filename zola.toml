@@ -1,0 +1,22 @@
+base_url = "https://rime.im"
+title = "RIME | 中州韻輸入法引擎"
+description = "Le blog de la Rime"
+author = "佛振@式恕堂"
+default_language = "zh"
+generate_feeds = true
+
+taxonomies = [
+  {name = "tags", feed = true},
+  {name = "categories", feed = true},
+]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[slugify]
+taxonomies = "safe"
+paths = "safe"
+anchors = "safe"
+
+[extra]
+taxonomy_names = { tags = "標籤", categories = "分類" }

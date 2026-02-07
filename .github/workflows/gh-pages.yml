@@ -1,4 +1,4 @@
-name: GitHub Pages
+name: Build and Deploy
 
 on:
   workflow_dispatch:
@@ -13,33 +13,32 @@ jobs:
     runs-on: ubuntu-24.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
-    defaults:
-      run:
-        working-directory: blog
     env:
       TZ: Asia/Shanghai
     steps:
+      # 1. 檢出代碼
       - uses: actions/checkout@v6
-
-      - name: Setup Node
-        uses: actions/setup-node@v6
         with:
-          node-version: '22'
+          submodules: recursive
 
-      - name: Cache dependencies
-        uses: actions/cache@v4
+      # 2. 安裝 Zola
+      - name: Install zola
+        uses: taiki-e/install-action@v2
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          tool: zola@0.22.1
 
-      - run: npm ci
+      # 3. Python 環境 (用於 update_weasel_appcast.py)
+      - name: Set up python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
 
-      - run: |
-          pip install ruamel.yaml
+      - name: Update weasel appcast
+        run: |
+          pip install requests tomlkit
           python ./update_weasel_appcast.py
 
+      # 4. 生成 Rime schema 數據
       - name: Deploy luna pinyin and stroke
         uses: rimeinn/deploy-schema@master
         with:
@@ -50,26 +49,38 @@ jobs:
             luna_pinyin
             stroke
 
+      # 5. 準備資源目錄
+      # Zola 的靜態資源放在 static 目錄下，編譯時會原樣複製到 public
+      - name: Prepare static directories
+        run: mkdir -p static/online
+
+        # 6. 安裝 fcitx5-rime.js
       - name: Install fcitx5-rime.js
         run: |
           wget -P /tmp https://github.com/rimeinn/fcitx5-rime.js/releases/download/0.4.0/fcitx5-rime.tgz
           tar xf /tmp/fcitx5-rime.tgz -C /tmp
-          mv /tmp/package/dist/* source/online
-          rm -f source/online/Fcitx5.d.ts
+          # 將解壓後的文件移動到 static/online
+          cp -r /tmp/package/dist/* static/online/
+          rm -f static/online/Fcitx5.d.ts
 
-      - name: Generate site
+      # 7. 移動 schema 構建產物
+      - name: Move schema artifact
         run: |
-          mv /tmp/deploy-schema/artifact.zip source/online/rime.zip
-          npx hexo clean
-          npx hexo generate
+          # 將上一步生成的 zip 移動到 static/online
+          mv /tmp/deploy-schema/artifact.zip static/online/rime.zip
 
+      # 8. 構建網站
+      - name: Build Site
+        run: zola build
+
+      # 9. 上傳構建產物
       - name: Upload artifact
         uses: actions/upload-artifact@v6
         with:
           name: public
-          path: |
-            blog/public
+          path: ./public
 
+      # 10. 部署到 GitHub Pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         if: ${{ github.ref == 'refs/heads/master' }}
@@ -77,5 +88,5 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: rime/rime.github.io
           publish_branch: master
-          publish_dir: ./blog/public
+          publish_dir: ./public
           cname: rime.im

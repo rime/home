@@ -1,0 +1,21 @@
+{% if src is starting_with("http") or src is starting_with("/") %}
+    {# 如果已經是絕對路徑或外部鏈接，直接使用 #}
+    {% set final_src = src %}
+{% else %}
+    {# 如果是相對路徑，拼接當前文章的完整 URL #}
+    {# page.permalink 通常以 / 結尾，直接拼接文件名即可 #}
+    {% set final_src = page.permalink ~ src %}
+{% endif %}
+
+<figure>
+    {% if caption %}
+    <p>
+        <figcaption>{{ caption }}</figcaption>
+    </p>
+    {% endif %}
+    <p>
+        <audio controls src="{{ final_src }}" preload="metadata">
+            您的瀏覽器不支持 audio 元素。
+        </audio>
+    </p>
+</figure>
