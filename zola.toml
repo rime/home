@@ -6,8 +6,8 @@ default_language = "zh"
 generate_feeds = true
 
 taxonomies = [
-  {name = "tags", feed = true, paginate_by = 10},
-  {name = "categories", feed = true, paginate_by = 10},
+  {name = "tags", feed = true},
+  {name = "categories", feed = true},
 ]
 
 [markdown.highlighting]
