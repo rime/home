@@ -36,16 +36,17 @@ version = filenames[latest_index].replace("weasel-", "").replace("-installer.exe
 # download url
 download_url = urls[latest_index]
 # get local time in format like "Thu, 01 Jan 1970 00:00:00 +0000"
+appcast_time_format = "%a, %d %b %Y %H:%M:%S %z"
 # define a function to format time
-def format_time(time_str):
+def format_time(time_str, output_format):
     utc_offset_sec = -time.timezone if time.localtime().tm_isdst == 0 else -time.altzone
     utc_offset = timedelta(seconds=utc_offset_sec)
     current_tz = timezone(utc_offset)
     utc_time = datetime.strptime(time_str, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
     local_time = utc_time.astimezone(current_tz)
-    formatted_time = local_time.strftime("%a, %d %b %Y %H:%M:%S %z")
+    formatted_time = local_time.strftime(output_format)
     return formatted_time
-formatted_time = format_time(update_time[latest_index])
+formatted_time = format_time(update_time[latest_index], appcast_time_format)
 
 # get release notes link
 if tags_name[latest_index] == "latest":
@@ -79,7 +80,7 @@ with open("./content/testing/weasel/appcast.xml", "w", encoding='utf-8') as f:
 # update release appcast.xml automatically, and update other files if needed
 if 'release_json' in locals() or 'release_json' in globals():
     import re
-    release_formatted_time = format_time(release_json['published_at'])
+    release_formatted_time = format_time(release_json['published_at'], appcast_time_format)
     # get release url
     for asset in release_json['assets']:
         if asset['name'].endswith('.exe'):
@@ -124,7 +125,8 @@ if 'release_json' in locals() or 'release_json' in globals():
         exit(0)
     # version tag in CHANGELOG.md has been released
     print("latest version in CHANGELOG.md has been released")
-    index_md = f"""---\ntitle: 【小狼毫】更新日誌\ndate: {release_formatted_time}\n---\n\n{changelog_txt}"""
+    changelog_updated_time = format_time(release_json['published_at'], "%Y-%m-%d %H:%M:%S")
+    index_md = f"""---\ntitle: 【小狼毫】更新日誌\ndate: {changelog_updated_time}\n---\n\n{changelog_txt}"""
     # update ./content/release/weasel/index.md
     with open("./content/release/weasel/index.md", "w", encoding='utf-8') as f:
         f.write(index_md)
