@@ -332,28 +332,6 @@ img {
 }
 
 /* =============================================================================
-   slogan
-   ========================================================================== */
-
-.slogan .icon-heart{
-  opacity: 0.5;
-  margin-right: 5px;
-  margin-top: 3px;
-}
-
-.slogan .icon-heart:hover{
-  opacity: 1;
-}
-
-.slogan{
-  font-size: 1.2em;
-  color: #888;
-  display:block;
-  margin-bottom: 1em;
-}
-
-
-/* =============================================================================
    scroll to top
    ========================================================================== */
 
@@ -387,14 +365,15 @@ img {
    ========================================================================== */
 
 .front-matter {
-  height: 460px;
+  height: auto;
+  min-height: 460px;
   margin: 0;
   padding: 150px 0 120px;
   background-color: #3f4144;
   background-image: url(/images/home-watermarks.svg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 83%;
+  background-size: auto 380px;
+  background-position: center 40px;
 }
 
 .no-svg .front-matter {
@@ -406,9 +385,124 @@ img {
   height: auto;
 }
 
+.slogan .icon-heart{
+  opacity: 0.5;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+.slogan .icon-heart:hover{
+  opacity: 1;
+}
+
+.slogan{
+  font-size: 1.2em;
+  color: #888;
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* --- 告示 / 打字機 / 播放器樣式 --- */
+
+/* 基礎容器樣式 */
 .front-matter .notice {
+  font-family: inherit;
+  font-size: 1.2em;
+  font-weight: normal;
   color: white;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+  line-height: 1.5;
   text-align: center;
+
+  width: 100%;
+  margin-top: 20px;
+  min-height: 40px;
+}
+
+/* 鏈接樣式 */
+.front-matter .notice a {
+    margin-left: 10px;
+    color: inherit;
+    text-decoration: none; /* 去掉默認下劃線 */
+    border-bottom: 1px dashed rgba(255,255,255,0.5); /* 自定義虛線 */
+    transition: all 0.2s; /* 加個過渡動畫 */
+}
+
+/* 鼠標懸停效果，增加交互感 */
+.front-matter .notice a:hover {
+    border-bottom-style: solid; /* 懸停時變實線 */
+    opacity: 0.8;
+}
+
+/* 打字機模式專用修飾類 */
+.front-matter .notice.typewriter-mode {
+  font-family: "Consolas", "Monaco", "Courier New", monospace; /* 切換為代碼字體 */
+  font-size: 28px; /* 放大字號 */
+  line-height: 1.4;
+}
+
+/* 平日隱藏 */
+.front-matter .notice:empty {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 光標樣式 */
+.notice-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  color: #009bd1;
+  font-weight: normal;
+  animation: blink 1s step-end infinite;
+  vertical-align: baseline;
+}
+
+/* 拼音預編輯區 */
+.rime-preview {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #009bd1;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Iframe 樣式 */
+.strudel-frame {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  background: #fff;
+  z-index: 10;
+  margin: 30px auto 0 auto;
+}
+
+/* 手機適配 */
+@media (max-width: 768px) {
+  /* 普通模式手機字號 */
+  .front-matter .notice {
+    font-size: 16px;
+  }
+  /* 打字機模式手機字號 */
+  .front-matter .notice.typewriter-mode {
+    font-size: 20px;
+  }
+
+  .strudel-frame {
+    height: 300px;
+    max-width: 90%;
+  }
+  .front-matter {
+    background-size: auto 300px;
+    background-position: center 80px;
+  }
 }
 
 /* =============================================================================
