@@ -39,7 +39,7 @@ tags = ["plum", "工具", "作品"]
 `bash rime-install :preset combo-pinyin jyutping wubi`
 
 交互菜單用例截圖：\
-![](https://github.com/rime/home/raw/master/images/rime-install-select.png)
+![](rime-install-select.png)
 
 ## 前景
 
