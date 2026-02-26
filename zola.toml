@@ -11,7 +11,8 @@ taxonomies = [
 ]
 
 [markdown.highlighting]
-theme = "catppuccin-mocha"
+light_theme = "github-light"
+dark_theme = "github-dark"
 
 [slugify]
 taxonomies = "safe"

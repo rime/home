@@ -29,10 +29,8 @@
   table tr td { border: 1px solid #333333; margin: 0; padding: 6px 13px; }
 
   code {
-    background: #111;
-    border: 1px solid #1a1a1a;
+    background-color: #111;
     color: #ff4f7c;
-    text-shadow: 0 1px #000;
   }
 
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
