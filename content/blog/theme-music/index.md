@@ -15,9 +15,11 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 甲辰年末，某決計爲 Rime 輸入法題寫一首主題曲，\
 紀念這一來之不易的成就，勉勵輸入法開發者再譜新篇。
 
-{{ audio(src="RIME_主題曲_鋼琴版.mp3", caption="中州韻輸入法主題曲") }}
+{{ audio(src="RIME_主題曲.mp3", caption="中州韻輸入法主題曲") }}
 
-若本站播放不流暢，請移步 [B 站備份][3]。
+{{ audio(src="RIME_主題曲_鋼琴版.mp3", caption="中州韻輸入法主題曲　鋼琴版") }}
+
+若本站播放不流暢，請移步 B 站備份：[合奏版][6] | [鋼琴版][3]
 
 曲調早有構思，無奈某是門外漢，全憑直覺在打譜軟件中點選，勉強拼湊成曲，但願拋磚引玉。\
 將曲譜上傳 [開源網站][2]，以期行家裏手指點，修改潤色些許，哪敢奢求演繹續寫？
@@ -106,3 +108,4 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 [3]: https://www.bilibili.com/audio/am33746732
 [4]: https://zh.wikisource.org/zh-hant/文忠集_(歐陽修,_四庫全書本)/卷008#奉送原甫侍讀出守永興 
 [5]: https://github.com/rime/home/wiki/MoodCollection
+[6]: https://www.bilibili.com/audio/am1280271264
