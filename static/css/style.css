@@ -404,6 +404,24 @@ img {
 
 /* --- 告示 / 打字機 / 播放器樣式 --- */
 
+/* 1. 掛載明快打字機微縮版字體 */
+@font-face {
+  font-family: 'MingKwai';
+  /* 路徑設定為 static 目錄下的 /fonts/ 資料夾 */
+  src: url('/fonts/mingkwai-homepage.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* 2. 喚醒字體的 OpenType 連字引擎，並限定「只有明快模式」才生效 */
+body.mingkwai-mode .typewriter-mode #rime-typewriter,
+body.mingkwai-mode .typewriter-mode .rime-preview {
+  font-family: 'MingKwai', "Consolas", "Monaco", "Courier New", monospace !important;
+  font-variant-ligatures: normal;
+  font-feature-settings: "ccmp" 1, "liga" 1; /* 啟動鍵面字魔法的關鍵 */
+}
+
 /* 基礎容器樣式 */
 .front-matter .notice {
   font-family: inherit;
@@ -437,7 +455,7 @@ img {
 /* 打字機模式專用修飾類 */
 .front-matter .notice.typewriter-mode {
   font-family: "Consolas", "Monaco", "Courier New", monospace; /* 切換為代碼字體 */
-  font-size: 28px; /* 放大字號 */
+  font-size: 1.8em; /* 放大字號 */
   line-height: 1.4;
 }
 
@@ -486,13 +504,9 @@ img {
 
 /* 手機適配 */
 @media (max-width: 768px) {
-  /* 普通模式手機字號 */
-  .front-matter .notice {
-    font-size: 16px;
-  }
   /* 打字機模式手機字號 */
   .front-matter .notice.typewriter-mode {
-    font-size: 20px;
+    font-size: 1.5em;
   }
 
   .strudel-frame {
