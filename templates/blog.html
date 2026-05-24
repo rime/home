@@ -67,6 +67,30 @@
 
                 {% endfor %}
             </div>
+
+            {# --- 分頁導航按鈕 --- #}
+            {% if paginator.number_pagers > 1 %}
+            <center>
+                <ul class="pagination">
+                    {# 上一頁按鈕 #}
+                    {% if paginator.previous %}
+                    <li class="prev"><a href="{{ paginator.previous }}"><i class="fa fa-arrow-circle-o-left"></i> 上一頁</a></li>
+                    {% else %}
+                    <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i> 上一頁</a></li>
+                    {% endif %}
+
+                    {# 分頁頁碼指示（例如：1 / 5） #}
+                    <li class="active"><a>{{ paginator.current_index }} / {{ paginator.number_pagers }}</a></li>
+
+                    {# 下一頁按鈕 #}
+                    {% if paginator.next %}
+                    <li class="next"><a href="{{ paginator.next }}">下一頁 <i class="fa fa-arrow-circle-o-right"></i></a></li>
+                    {% else %}
+                    <li class="next disabled"><a>下一頁 <i class="fa fa-arrow-circle-o-right"></i></a></li>
+                    {% endif %}
+                </ul>
+            </center>
+            {% endif %}
         </div>
     </div>
 
