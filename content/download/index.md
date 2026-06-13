@@ -37,7 +37,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。\
 
 相關軟件：
 
-  * *（第三方軟件）* [neolee/SCU](https://github.com/neolee/SCU) 是由 [Neo Lee](https://github.com/neolee) 開發的圖形化配置工具。
+  * *（第三方軟件）* [Squirrel Configuration Tool (SCT)](https://github.com/neolee/sct) 是由 [Neo Lee](https://github.com/neolee) 開發的圖形化配置工具。
 
 
 ## 小企鹅 <small>fcitx5-macos</small>
