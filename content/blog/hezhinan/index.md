@@ -6,9 +6,17 @@ date = "2026-05-24"
 tags = ["音樂", "視頻", "河南", "名勝古蹟", "洛陽", "嵩山", "開封", "焦作", "鄭州", "黃河", "訪古"]
 +++
 
+**黃河史詩**｜[嗶哩嗶哩](https://www.bilibili.com/video/BV1UsGL6sEGA/) · [YouTube](https://youtu.be/CMvC91zaSmo)
+
 ![](河之南.png)
 
-觀賞音樂視頻，去 [嗶哩嗶哩](https://www.bilibili.com/video/BV1UsGL6sEGA/) · [YouTube](https://youtu.be/JdPoELlNQKA)
+---
+
+**鋼琴獨奏**｜[嗶哩嗶哩](https://www.bilibili.com/video/BV14Kj86BEkx/) · [YouTube](https://youtu.be/wmPBzVc5jKE)
+
+![](黃河沿上的黑白鍵.png)
+
+---
 
 在此，以此曲——\
 致敬這片土地，\
