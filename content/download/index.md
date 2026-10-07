@@ -12,7 +12,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。\
 
 ## 小狼毫 <small>Weasel</small>
 
-  * [小狼毫 0.17.0](https://github.com/rime/weasel/releases/latest)〔[下載](https://github.com/rime/weasel/releases/download/0.17.0/weasel-0.17.0.0-installer.exe)〕〔[更新日誌](/release/weasel/)〕〔[歷史版本](https://github.com/rime/weasel/releases)〕\
+  * [小狼毫 0.17.4](https://github.com/rime/weasel/releases/latest)〔[下載](https://github.com/rime/weasel/releases/download/0.17.4/weasel-0.17.4.0-installer.exe)〕〔[更新日誌](/release/weasel/)〕〔[歷史版本](https://github.com/rime/weasel/releases)〕\
     適用於 Windows 8.1, Windows 10, Windows 11
 
   * [小狼毫 0.14.3](https://github.com/rime/weasel/releases/tag/0.14.3)〔[下載](https://github.com/rime/weasel/releases/download/0.14.3/weasel-0.14.3.0-installer.exe)〕\
@@ -103,5 +103,5 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。\
 <ul style="list-style-type: '※ ';">
 <li>本品是按照 GPL 授權條款發佈的自由軟件，您可嘗試按照本站提供的指南自行編譯安裝。</li>
 <li>輸入法是一種有較高權限的系統軟件，所以一些 Windows 安全防護軟件會在輸入法安裝過程中彈出提示，需要選擇「允許繼續操作」方可正確安裝。</li>
-<li>〔小狼毫〕的開發與發佈均在受保護的環境中完成。如果使用過程中，您系統中某種“安全”軟件稱「發現木馬」，那麼此種情形將考驗您的判斷力。</li>
+<li>若安全防護軟件報告威脅，請先確認安裝檔來自<a href="https://github.com/rime/weasel/releases">小狼毫官方發佈頁</a>；若警示仍未能解釋，請暫停安裝並聯絡維護者。請勿僅憑本站說明忽略安全警示。</li>
 </ul>

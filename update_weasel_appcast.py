@@ -148,3 +148,20 @@ if 'release_json' in locals() or 'release_json' in globals():
     with open("./data/downloads.toml", "w", encoding='utf-8') as f:
         f.write(doc.as_string())
         print("./data/downloads.toml updated")
+
+    # Keep the manually maintained download page in sync with the stable release.
+    download_page_path = "./content/download/index.md"
+    with open(download_page_path, "r", encoding="utf-8") as f:
+        download_page = f.read()
+    weasel_link = re.compile(
+        r"(?m)^(  \* \[小狼毫 )[^\]]+(\]\(https://github.com/rime/weasel/releases/latest\)〔\[下載\]\()[^)]*(\)〕.*)$"
+    )
+    download_page, updated_links = weasel_link.subn(
+        lambda match: f"{match.group(1)}{new_version}{match.group(2)}{release_url}{match.group(3)}",
+        download_page,
+    )
+    if updated_links != 1:
+        raise ValueError(f"Expected one stable Weasel download entry, found {updated_links}")
+    with open(download_page_path, "w", encoding="utf-8") as f:
+        f.write(download_page)
+        print(f"{download_page_path} updated")
