@@ -8,7 +8,7 @@ icon = "fa fa-question-circle"
 
 # 幫助文檔
 
-  * [打字入門](https://github.com/rime/home/wiki/GettingStarted)：新手須知的使用方法和技巧
+  * [打字入門](https://github.com/rime/home/wiki/UserGuide#打字入門)：新手須知的使用方法和技巧
   * [定製指南](https://github.com/rime/home/wiki/CustomizationGuide)（初階）
   * [方案設計](https://github.com/rime/home/wiki/RimeWithSchemata)（中階）
   * [程序開發](/code)（高階）
