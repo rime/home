@@ -18,7 +18,7 @@
             <h4>標籤雲</h4>
             <ul class="tag_box inline list-unstyled">
                 {# Zola 默認不支援隨機排序，我們按數量或名稱顯示前 30 個，避免側邊欄過長 #}
-                {% for tag in tags.items | slice(end=30) %}
+                {% for tag in tags.items[0:30] %}
                 <li>
                     <a href="{{ tag.permalink }}">
                         {{ tag.name }}<span>{{ tag.pages | length }}</span>
@@ -42,7 +42,7 @@
             <h4>新作</h4>
             <ul class="entry list-unstyled">
                 {# 取前 5 篇 #}
-                {% for post in blog.pages | slice(end=5) %}
+                {% for post in blog.pages[0:5] %}
                 <li>
                     <a href="{{ post.permalink }}" title="{{ post.description | default(value=post.title) }}">
                         <i class="fa fa-file-o"></i> {{ post.title | truncate(length=25) }}

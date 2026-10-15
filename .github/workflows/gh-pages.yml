@@ -25,7 +25,7 @@ jobs:
       - name: Install zola
         uses: taiki-e/install-action@v2
         with:
-          tool: zola@0.22.1
+          tool: zola@0.23.6
 
       # 3. Python 環境 (用於 update_weasel_appcast.py)
       - name: Set up python

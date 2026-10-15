@@ -15,9 +15,9 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 甲辰年末，某決計爲 Rime 輸入法題寫一首主題曲，\
 紀念這一來之不易的成就，勉勵輸入法開發者再譜新篇。
 
-{{ audio(src="RIME_主題曲.mp3", caption="中州韻輸入法主題曲") }}
+{{ <audio src="RIME_主題曲.mp3" caption="中州韻輸入法主題曲" /> }}
 
-{{ audio(src="RIME_主題曲_鋼琴版.mp3", caption="中州韻輸入法主題曲　鋼琴版") }}
+{{ <audio src="RIME_主題曲_鋼琴版.mp3" caption="中州韻輸入法主題曲　鋼琴版" /> }}
 
 若本站播放不流暢，請移步 B 站備份：[合奏版][6] | [鋼琴版][3]
 
@@ -45,7 +45,7 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 
 ### 其一　中州韻
 
-{{ audio(src="中州韻.mp3") }}
+{{ <audio src="中州韻.mp3" /> }}
 
 中州韻 \
 作詞　作曲：居戎氏
@@ -62,7 +62,7 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 
 ### 其二　小狼毫
 
-{{ audio(src="小狼毫.mp3") }}
+{{ <audio src="小狼毫.mp3" /> }}
 
 小狼毫 \
 蒼頡轉世賦 \
@@ -85,7 +85,7 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 
 ### 其三　鼠鬚管
 
-{{ audio(src="鼠鬚管.mp3") }}
+{{ <audio src="鼠鬚管.mp3" /> }}
 
 鼠鬚管 \
 奉送原甫侍讀出守永興 \
@@ -109,11 +109,11 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 
 ## Rime 三部曲鋼琴版
 
-{{ audio(src="中州韻-鋼琴.mp3", caption="〈中州韻〉鋼琴版") }}
+{{ <audio src="中州韻-鋼琴.mp3" caption="〈中州韻〉鋼琴版" /> }}
 
-{{ audio(src="小狼毫-鋼琴.mp3", caption="〈小狼毫〉鋼琴版") }}
+{{ <audio src="小狼毫-鋼琴.mp3" caption="〈小狼毫〉鋼琴版" /> }}
 
-{{ audio(src="鼠鬚管-鋼琴.mp3", caption="〈鼠鬚管〉鋼琴版") }}
+{{ <audio src="鼠鬚管-鋼琴.mp3" caption="〈鼠鬚管〉鋼琴版" /> }}
 
 [1]: https://rime.im
 [2]: https://github.com/lotem/rime-theme-music

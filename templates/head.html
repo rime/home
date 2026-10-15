@@ -10,11 +10,11 @@
         {% endif %}
 
         {# 處理不同類型的頁面標題 #}
-        {% if page.title %}
+        {% if page is defined and page.title %}
         {{ page.title }} |
-        {% elif section.title %}
+        {% elif section is defined and section.title %}
         {{ section.title }} |
-        {% elif term.name %}
+        {% elif term is defined and term.name %}
         {# 用於標籤(Tags)或分類(Categories)頁面 #}
         {{ term.name }} |
         {% endif %}
@@ -27,7 +27,7 @@
     <meta name="author" content="{{ config.author }}">
 
     {# Description 優先級: 頁面描述 > 配置描述 > 頁面摘要 > 截取內容 #}
-    {% if page.description %}
+    {% if page is defined and page.description %}
     <meta name="description" content="{{ page.description }}">
     {% elif config.description %}
     <meta name="description" content="{{ config.description }}">
@@ -38,18 +38,18 @@
     {% endif %}
 
     {# Keywords: 使用 Zola 的 tags #}
-    {% if page.taxonomies.tags %}
+    {% if page is defined and page.taxonomies.tags %}
     <meta name="keywords" content="{{ page.taxonomies.tags | join(sep=", ") }}">
     {% endif %}
 
     {# --- 3. Open Graph (OG) --- #}
-    {% if page.title %}
+    {% if page is defined and page.title %}
     <meta property="og:title" content="{{ page.title }}"/>
     {% endif %}
     <meta property="og:site_name" content="{{ config.title }}"/>
 
     {# 圖片處理: 優先使用文章封面上傳到 extra.cover #}
-    {% if page.extra.cover %}
+    {% if page is defined and page.extra.cover %}
     <meta property="og:image" content="{{ get_url(path=page.extra.cover) }}" />
     {% elif config.extra.cover %}
     <meta property="og:image" content="{{ get_url(path=config.extra.cover) }}"/>

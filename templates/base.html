@@ -5,12 +5,14 @@
         {% include "navigation.html" %}
 
         {# --- 頁面內容區塊 (挖坑給子模板填) --- #}
-        {% if current_path == "/" %}
-        {% block content %}{% endblock content %}
-        {% else %}
+        {% if current_path != "/" %}
         <div class="container">
             <div class="content">
+        {% endif %}
+
                 {% block content %}{% endblock content %}
+
+        {% if current_path != "/" %}
             </div>
         </div>
         {% endif %}
