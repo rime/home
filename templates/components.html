@@ -1,20 +1,8 @@
-{% component audio(src, caption="") %}
-{% if src is starting_with(pat="http") or src is starting_with(pat="/") %}
-{% set final_src = src %}
-{% else %}
-{% set final_src = src %}
-{% endif %}
-
+{% component audio(src, caption="") -%}
 <figure>
-    {% if caption != "" %}
-    <p>
-        <figcaption>{{ caption }}</figcaption>
-    </p>
-    {% endif %}
-    <p>
-        <audio controls src="{{ final_src }}" preload="metadata">
-            您的瀏覽器不支持 audio 元素。
-        </audio>
-    </p>
+{%- if caption != "" -%}
+<p><figcaption>{{ caption }}</figcaption></p>
+{%- endif -%}
+<p><audio controls src="{{ src }}" preload="metadata">您的瀏覽器不支持 audio 元素。</audio></p>
 </figure>
-{% endcomponent audio %}
+{%- endcomponent audio %}
