@@ -19,10 +19,10 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 
 {{ <audio src="RIME_主題曲_鋼琴版.mp3" caption="中州韻輸入法主題曲　鋼琴版" /> }}
 
-若本站播放不流暢，請移步 B 站備份：[合奏版][6] | [鋼琴版][3]
-
 曲調早有構思，無奈某是門外漢，全憑直覺在打譜軟件中點選，勉強拼湊成曲，但願拋磚引玉。\
 將曲譜上傳 [開源網站][2]，以期行家裏手指點，修改潤色些許，哪敢奢求演繹續寫？
+
+<!-- more -->
 
 ## 後記：構思中的原作出爐
 
@@ -32,16 +32,14 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 而今，填詞、編曲的思路逐漸齊備，又有電腦參謀建議，兩首詞曲終於出爐。\
 請欣賞——
 
-- 式恕堂｜[音樂視頻][7]｜[詞作 · 創作感言](/blog/shishutang/)
-- 河之南｜[音樂視頻][8]｜[詞作 · 創作感言](/blog/hezhinan/)
-
-<!-- more -->
+- 式恕堂｜[音樂視頻][5]｜[詞作 · 創作感言](/blog/shishutang/)
+- 河之南｜[音樂視頻][6]｜[詞作 · 創作感言](/blog/hezhinan/)
 
 ## Rime 三部曲
 
 借《式恕堂》《河之南》的曲調，重新填詞爲單曲《中州韻》《鼠鬚管》。《小狼毫》亦是《河之南》的變奏。
 
-歌詞選自歐陽脩詩[《奉送原甫侍讀出守永興》][4]和[《Rime 心情集》][5]。不會唱；本意是用作輸入法跟打演示。
+歌詞選自歐陽脩詩[《奉送原甫侍讀出守永興》][3]和[《Rime 心情集》][4]。不會唱；本意是用作輸入法跟打演示。
 
 ### 其一　中州韻
 
@@ -117,9 +115,7 @@ Rime 三部曲——中州韻、小狼毫、鼠鬚管。
 
 [1]: https://rime.im
 [2]: https://github.com/lotem/rime-theme-music
-[3]: https://www.bilibili.com/audio/am33746732
-[4]: https://zh.wikisource.org/zh-hant/文忠集_(歐陽修,_四庫全書本)/卷008#奉送原甫侍讀出守永興 
-[5]: https://github.com/rime/home/wiki/MoodCollection
-[6]: https://www.bilibili.com/audio/am1280271264
-[7]: https://www.bilibili.com/video/BV1pQLg6GEDv/
-[8]: https://www.bilibili.com/video/BV1UsGL6sEGA/
+[3]: https://zh.wikisource.org/zh-hant/文忠集_(歐陽修,_四庫全書本)/卷008#奉送原甫侍讀出守永興
+[4]: https://github.com/rime/home/wiki/MoodCollection
+[5]: https://www.bilibili.com/video/BV1pQLg6GEDv/
+[6]: https://www.bilibili.com/video/BV1UsGL6sEGA/
