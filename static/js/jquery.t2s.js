@@ -144,10 +144,11 @@
                 tranAttr(childNode, ['title', 'data-original-title', 'alt', 'placeholder'], toT);
 
                 // input 标签
-                // 对text类型的input输入框不做处理
+                // 对text和search类型的input输入框不做处理
                 if (childNode.tagName === "INPUT"
                     && childNode.value !== ""
                     && childNode.type !== "text"
+                    && childNode.type !== "search"
                     && childNode.type !== "hidden")
                 {
                     translateOrRestore(!toT && childNode.value, childNode, 'data-hant-value', function(value) {
