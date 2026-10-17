@@ -1,8 +1,24 @@
 {% component audio(src, caption="") -%}
 <figure>
-{%- if caption != "" -%}
-<p><figcaption>{{ caption }}</figcaption></p>
-{%- endif -%}
-<p><audio controls src="{{ src }}" preload="metadata">您的瀏覽器不支持 audio 元素。</audio></p>
+    {%- if caption != "" -%}
+    <p><figcaption>{{ caption }}</figcaption></p>
+    {%- endif -%}
+    <p><audio controls src="{{ src }}" preload="metadata">您的瀏覽器不支持 audio 元素。</audio></p>
 </figure>
 {%- endcomponent audio %}
+
+{% component download_item(id) -%}
+{% set downloads = load_data(path="data/downloads.toml") -%}
+{% set item = downloads[id] -%}
+- [{{ item.name }} {{ item.version }}]({{ item.repo }}/releases/tag/{{ item.version }})〔[下載]({{ item.url }})〕{% if item.changelog is defined %}〔[更新日誌]({{ item.changelog }})〕〔[歷史版本]({{ item.repo }}/releases)〕{% endif %}\
+  適用於 {{ item.platform_desc }}
+{%- endcomponent download_item %}
+
+{% component download_val(id, field="") -%}
+{% set downloads = load_data(path="data/downloads.toml") -%}
+{%- if field != "" -%}
+{{ downloads[id][field] }}
+{%- else -%}
+{{ downloads[id] }}
+{%- endif -%}
+{%- endcomponent download_val %}

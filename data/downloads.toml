@@ -21,9 +21,34 @@ name = "鼠鬚管"
 version = "1.1.2"
 repo = "https://github.com/rime/squirrel"
 url = "https://github.com/rime/squirrel/releases/download/1.1.2/Squirrel-1.1.2.pkg"
+platform_desc = "macOS 13.0+"
+changelog = "/release/squirrel/"
+
+[squirrel_macos10_9_compat]
+name = "鼠鬚管"
+version = "0.16.2"
+repo = "https://github.com/rime/squirrel"
+url = "https://github.com/rime/squirrel/releases/download/0.16.2/Squirrel-0.16.2.zip"
+platform_desc = "macOS 10.9+ (不再更新)"
 
 [weasel]
 name = "小狼毫"
-version = "0.17.0"
+version = "0.17.4"
 repo = "https://github.com/rime/weasel"
-url = "https://github.com/rime/weasel/releases/download/0.17.0/weasel-0.17.0.0-installer.exe"
+url = "https://github.com/rime/weasel/releases/download/0.17.4/weasel-0.17.4.0-installer.exe"
+platform_desc = "Windows 8.1, Windows 10, Windows 11"
+changelog = "/release/weasel/"
+
+[weasel_win7_compat]
+name = "小狼毫"
+version = "0.14.3"
+repo = "https://github.com/rime/weasel"
+url = "https://github.com/rime/weasel/releases/download/0.14.3/weasel-0.14.3.0-installer.exe"
+platform_desc = "Windows 7, Windows 8/8.1, Windows 10（不再更新）"
+
+[weasel_winxp_compat]
+name = "小狼毫"
+version = "0.9.30"
+repo = "https://github.com/rime/weasel"
+url = "https://github.com/rime/weasel/releases/download/0.9.30/weasel-0.9.30.0-installer.exe"
+platform_desc = "Windows XP SP3（不再更新）"

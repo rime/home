@@ -12,24 +12,19 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。\
 
 ## 小狼毫 <small>Weasel</small>
 
-  * [小狼毫 0.17.0](https://github.com/rime/weasel/releases/latest)〔[下載](https://github.com/rime/weasel/releases/download/0.17.0/weasel-0.17.0.0-installer.exe)〕〔[更新日誌](/release/weasel/)〕〔[歷史版本](https://github.com/rime/weasel/releases)〕\
-    適用於 Windows 8.1, Windows 10, Windows 11
+{{ <download_item id="weasel" /> }}
 
-  * [小狼毫 0.14.3](https://github.com/rime/weasel/releases/tag/0.14.3)〔[下載](https://github.com/rime/weasel/releases/download/0.14.3/weasel-0.14.3.0-installer.exe)〕\
-    適用於 Windows 7, Windows 8/8.1, Windows 10（不再更新）
+{{ <download_item id="weasel_win7_compat" /> }}
 
-  * [小狼毫 0.9.30](https://github.com/rime/weasel/releases/tag/0.9.30)〔[下載](https://github.com/rime/weasel/releases/download/0.9.30/weasel-0.9.30.0-installer.exe)〕\
-    適用於 Windows XP SP3（不再更新）
+{{ <download_item id="weasel_winxp_compat" /> }}
 
 # <a name="mac">macOS</a>
 
 ## 鼠鬚管 <small>Squirrel</small>
 
-  * [鼠鬚管 1.1.2](https://github.com/rime/squirrel/releases/latest)〔[下載](https://github.com/rime/squirrel/releases/download/1.1.2/Squirrel-1.1.2.pkg)〕〔[更新日誌](/release/squirrel/)〕〔[歷史版本](https://github.com/rime/squirrel/releases)〕\
-    適用於 macOS 13.0+
+{{ <download_item id="squirrel" /> }}
 
-  * [鼠鬚管 0.16.2](https://github.com/rime/squirrel/releases/0.16.2)〔[下載](https://github.com/rime/squirrel/releases/download/0.16.2/Squirrel-0.16.2.zip)〕\
-    適用於 macOS 10.9+ (不再更新)
+{{ <download_item id="squirrel_macos10_9_compat" /> }}
 
 其他安裝方式：
 
@@ -71,7 +66,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。\
 
 *（第三方軟件）* [My RIME](https://github.com/LibreService/my_rime)：自由開源在線中文輸入法。
 
-<hr/>
+---
 
 ## 下一步：選擇輸入方案
 
@@ -86,7 +81,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。\
 
 通過 [/plum/](https://github.com/rime/plum) 配置管理器獲取並安裝輸入方案。詳見〔[配方](/recipes)〕。
 
-<hr/>
+---
 
 ## 再一步：學習如何 DIY
 
@@ -94,14 +89,12 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。\
 
 熟悉了基本的定製方法以後，如果需要製作自己的輸入方案，請進階閱讀《[Rime 輸入方案設計書](https://github.com/rime/home/wiki/RimeWithSchemata)》。
 
-<hr/>
+---
 
 ## 敬告 Rime 用家
 
 請您知曉：
 
-<ul style="list-style-type: '※ ';">
-<li>本品是按照 GPL 授權條款發佈的自由軟件，您可嘗試按照本站提供的指南自行編譯安裝。</li>
-<li>輸入法是一種有較高權限的系統軟件，所以一些 Windows 安全防護軟件會在輸入法安裝過程中彈出提示，需要選擇「允許繼續操作」方可正確安裝。</li>
-<li>〔小狼毫〕的開發與發佈均在受保護的環境中完成。如果使用過程中，您系統中某種“安全”軟件稱「發現木馬」，那麼此種情形將考驗您的判斷力。</li>
-</ul>
+※ 本品是按照 GPL 授權條款發佈的自由軟件，您可嘗試按照本站提供的指南自行編譯安裝。\
+※ 輸入法屬於系統底層軟件，部分安全防護軟件在安裝或註冊服務時可能彈出提示，需選擇「允許」方可正常安裝。\
+※ 若安全防護軟件報告威脅，請務必先確認安裝檔來自官方發佈頁（可比對 Checksum 校驗值）；若疑慮未能排除，請暫停安裝並向維護者反饋，切勿在來源未明時忽略警示。
