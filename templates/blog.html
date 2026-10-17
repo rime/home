@@ -62,7 +62,7 @@
 
                     </div>
                     {# 3. 閱讀全文按鈕 #}
-                    <a type="button" href="{{ page.permalink }}#more" class="btn btn-default more">全文</a>
+                    <a type="button" href="{{ page.permalink }}{% if page.summary %}#continue-reading{% endif %}" class="btn btn-default more">全文</a>
                 </div>
 
                 {% endfor %}
