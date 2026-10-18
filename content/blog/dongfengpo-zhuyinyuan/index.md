@@ -21,7 +21,7 @@ tags = ["音樂", "視頻", "注音", "方案", "緣驚愧"]
 
 ### 作品展示
 
-{{ <audio src="東風破.mp3" caption="〈東風破·注音緣〉音軌試聽" /> }}
+{{ <audio src="/blog/dongfengpo-zhuyinyuan/東風破.mp3" caption="〈東風破·注音緣〉音軌試聽" /> }}
 
 <!-- more -->
 
