@@ -152,6 +152,10 @@ Là où le texte original raconte la volonté de s'arracher à une *« zone sale
 毋遺我於斯地兮，挈我凌雲；
 * **Croiser d'autres yeux qui ne se résignent pas**\
 將遇彼不屈之眸兮，共睇九霄。
+* **Envole-moi, tire-moi de là**\
+舉我乘風兮，拔余出此幽牢；
+* **Montre-moi ces autres vies que je ne sais pas**\
+示余未識之殊途兮，瞻彼廣遙。
 * **Regarde-moi bien, je ne leur ressemble pas**\
 試諦視吾貌兮，豈與彼輩同流？
 * **Avec ou sans toi, je n'finirai pas comme ça**\
