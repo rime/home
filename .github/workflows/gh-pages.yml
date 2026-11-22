@@ -36,6 +36,7 @@ jobs:
       - name: Update weasel appcast
         run: |
           pip install requests tomlkit
+          python -m unittest discover -s tests
           python ./update_weasel_appcast.py
 
       # 4. 生成 Rime schema 數據

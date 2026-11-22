@@ -15,6 +15,7 @@ filenames = []
 urls = []
 update_time = []
 tags_name = []
+release_json = None
 for data in datas:
     if data["prerelease"] == False:
         release_json = data
@@ -24,6 +25,14 @@ for data in datas:
             urls.append(asset['browser_download_url'])
             update_time.append(data['published_at'])
             tags_name.append(data['tag_name'])
+
+if release_json is not None:
+    # Fetch the changelog before writing either appcast.
+    changelog_url = f"https://raw.githubusercontent.com/rime/weasel/refs/tags/{release_json['tag_name']}/CHANGELOG.md"
+    changelog_response = requests.get(changelog_url)
+    changelog_response.raise_for_status()
+    changelog_txt = changelog_response.text
+
 # compare update_time and get the latest one
 latest_time = update_time[0]
 latest_index = 0
@@ -78,7 +87,7 @@ with open("./content/testing/weasel/appcast.xml", "w", encoding='utf-8') as f:
     f.write(template)
     print("./content/testing/weasel/appcast.xml updated\n")
 # update release appcast.xml automatically, and update other files if needed
-if 'release_json' in locals() or 'release_json' in globals():
+if release_json is not None:
     import re
     release_formatted_time = format_time(release_json['published_at'], appcast_time_format)
     # get release url
@@ -111,9 +120,6 @@ if 'release_json' in locals() or 'release_json' in globals():
     with open("./content/release/weasel/appcast.xml", "w", encoding='utf-8') as f:
         f.write(template_release)
         print("./content/release/weasel/appcast.xml updated\n")
-    # get changelog.md
-    changelog_url = f"https://raw.githubusercontent.com/rime/weasel/refs/tags/{release_json['tag_name']}/CHANGELOG.md"
-    changelog_txt = requests.get(changelog_url).text
     match = re.search(r'(\d+\.\d+\.\d+)', changelog_txt)
     if not match:
         print("No version number found in CHANGELOG.md")
